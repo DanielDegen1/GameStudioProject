@@ -97,6 +97,14 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Stasis"",
+                    ""type"": ""Button"",
+                    ""id"": ""26f74867-f23b-44ef-b70c-8cee939eda7e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -275,6 +283,17 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""action"": ""Shoot"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""28c94b64-b18f-4b7b-9864-752c0aee42b7"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Stasis"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -293,6 +312,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_PlayerMovement_Interact = m_PlayerMovement.FindAction("Interact", throwIfNotFound: true);
         m_PlayerMovement_Throw = m_PlayerMovement.FindAction("Throw", throwIfNotFound: true);
         m_PlayerMovement_Shoot = m_PlayerMovement.FindAction("Shoot", throwIfNotFound: true);
+        m_PlayerMovement_Stasis = m_PlayerMovement.FindAction("Stasis", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -352,6 +372,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputAction m_PlayerMovement_Interact;
     private readonly InputAction m_PlayerMovement_Throw;
     private readonly InputAction m_PlayerMovement_Shoot;
+    private readonly InputAction m_PlayerMovement_Stasis;
     public struct PlayerMovementActions
     {
         private @PlayerControls m_Wrapper;
@@ -366,6 +387,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         public InputAction @Interact => m_Wrapper.m_PlayerMovement_Interact;
         public InputAction @Throw => m_Wrapper.m_PlayerMovement_Throw;
         public InputAction @Shoot => m_Wrapper.m_PlayerMovement_Shoot;
+        public InputAction @Stasis => m_Wrapper.m_PlayerMovement_Stasis;
         public InputActionMap Get() { return m_Wrapper.m_PlayerMovement; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -405,6 +427,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Shoot.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnShoot;
                 @Shoot.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnShoot;
                 @Shoot.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnShoot;
+                @Stasis.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnStasis;
+                @Stasis.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnStasis;
+                @Stasis.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnStasis;
             }
             m_Wrapper.m_PlayerMovementActionsCallbackInterface = instance;
             if (instance != null)
@@ -439,6 +464,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Shoot.started += instance.OnShoot;
                 @Shoot.performed += instance.OnShoot;
                 @Shoot.canceled += instance.OnShoot;
+                @Stasis.started += instance.OnStasis;
+                @Stasis.performed += instance.OnStasis;
+                @Stasis.canceled += instance.OnStasis;
             }
         }
     }
@@ -455,5 +483,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         void OnInteract(InputAction.CallbackContext context);
         void OnThrow(InputAction.CallbackContext context);
         void OnShoot(InputAction.CallbackContext context);
+        void OnStasis(InputAction.CallbackContext context);
     }
 }

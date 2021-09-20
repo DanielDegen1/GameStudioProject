@@ -122,6 +122,13 @@ public class PlayerInput : MonoBehaviour
             return playerControls.PlayerMovement.Shoot.triggered;
         }
     }
+    public bool Stasis
+    {
+        get
+        {
+            return playerControls.PlayerMovement.Stasis.triggered;
+        }
+    }
 
 
     /*
