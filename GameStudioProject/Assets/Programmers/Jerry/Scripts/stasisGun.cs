@@ -6,6 +6,14 @@ public class stasisGun : MonoBehaviour
 {
     PlayerInput input;
     RaycastHit hit;
+    public int stasisRange = 10; // the current range of the stasis gun
+    public float stasisDuration = 10.0f; //the current duration of the stasis effect
+    private GameObject stasisObject; //stores the object that is currently frozen in stasis
+    private Rigidbody stasisRigid; //stores reference to the stasis object's rigidbody
+    private bool stasisActive = false; //flag variable for whether an object is currently frozen
+    private float timeCounter = 0.0f; //stores the time that has currently passed while an object is stasis'd
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,23 +23,44 @@ public class stasisGun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(input.Stasis)
+        if(input.Stasis && stasisActive == false)
         {
             Stasis();
         }
-    }
-    void Stasis()
-    {
-        if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity))
+        if(stasisActive == true)
         {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-            Debug.Log("Did Hit");
+            StasisCounter();
+        }
+    }
+    void Stasis() //function to handle the stasis input
+    {
+        Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity); //REMINDER change infinity to range once interating is done
+        if (hit.rigidbody == true)
+        {
+            stasisObject = hit.collider.gameObject;
+            stasisRigid = GetComponent<Rigidbody>();
+            stasisActive = true;
+            stasisRigid.useGravity = false;
+            Debug.Log("stasis hit");
         }
         else
         {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-            Debug.Log("Did Hit");
+            Debug.Log("stasis missed");
+            //missed stasis feedback
         }
                
+    }
+    void StasisCounter() //function to handle the object that is currently frozen in time
+    {
+        if(timeCounter <= stasisDuration)
+        {
+            timeCounter += Time.deltaTime;
+        }
+        else
+        {
+            stasisRigid.useGravity = true;
+            stasisActive = false;
+            timeCounter = 0.0f;
+        }
     }
 }
