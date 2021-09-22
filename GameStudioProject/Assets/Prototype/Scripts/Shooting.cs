@@ -6,7 +6,8 @@ using UnityEngine;
 public class Shooting : MonoBehaviour
 {
     PlayerInput playerInput;
-    private Camera cam;
+    [HideInInspector]
+    public Camera cam;
     [SerializeField]
     private GameObject projectile;
     public Transform sourcePoint;
