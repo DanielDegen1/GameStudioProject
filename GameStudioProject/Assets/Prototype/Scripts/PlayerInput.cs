@@ -130,6 +130,12 @@ public class PlayerInput : MonoBehaviour
         }
     }
 
+    public bool Pause {
+        get {
+            return playerControls.PlayerMovement.Pause.triggered;
+        }
+    }
+
 
     /*
     public bool throw {
