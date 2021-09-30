@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TempPlatform : MonoBehaviour
 {
-    private Vector2 p;
+    
     private GameObject Player;
     public GameObject Platform;
     private float platformRespawn = 5;
@@ -13,18 +13,20 @@ public class TempPlatform : MonoBehaviour
     private float timer = 3;
     private bool timerStart = false;
     private bool respawntimerStart = false;
+   
 
     // Start is called before the first frame update
     void Start()
     {
         Player = GameObject.FindWithTag("Player");
-        p = this.transform.position;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+        //should check for collision w/ player instead but wasnt working 
         if (Vector3.Distance(transform.position, Player.transform.position) <= 1)
         {
             Debug.Log("p");
@@ -41,7 +43,7 @@ public class TempPlatform : MonoBehaviour
             timerStart = false;
             timer = timerReset;
             respawntimerStart = true;
-            Platform.SetActive(false);
+            transform.position = transform.position * -1;
         }
 
         if (respawntimerStart == true)
@@ -52,10 +54,13 @@ public class TempPlatform : MonoBehaviour
 
         if (platformRespawn < 0)
         {
-            
+
             respawntimerStart = false;
-            Platform.SetActive(true);
+            transform.position = transform.position * -1;
             platformRespawn = platformReset;
         }
+
     }
+
+   
 }
