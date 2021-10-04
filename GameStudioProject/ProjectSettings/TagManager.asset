@@ -3,11 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Destination
-  - Projectile
-  - temp
-  - moving
+  tags: []
   layers:
   - Default
   - TransparentFX
