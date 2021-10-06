@@ -1,35 +1,44 @@
 fileFormatVersion: 2
-guid: f77bddf17e47d42c0a239c035c2276ae
+guid: 7396fc5f7befd4aa59e92bcfd8b00d94
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: 1037311041112452823
-    second: LeftArm|Idle
+      74: -9126667958187821443
+    second: LeftArm|LeftArmAction
   - first:
-      74: 6072974268471635682
-    second: LeftArm|Run
+      74: 2444589268493556487
+    second: LeftArm|LeftArmAction.001
   - first:
-      74: -8264075934833501203
-    second: LeftArm|Running
+      74: -7878564875035803693
+    second: LeftArm|RightArmAction
   - first:
-      74: -6377922292630931257
-    second: LeftArm|Sprinting
+      74: -4343596426362203166
+    second: LeftArm|RightArmAction.001
   - first:
-      74: 111314248719782705
-    second: RightArm|Idle
+      74: -3007269554364051546
+    second: LeftArm|Sprint
   - first:
-      74: -6878662778884009572
-    second: RightArm|Run
+      74: 7154888835107680077
+    second: LeftArm|Sprint_Smooth
   - first:
-      74: 2909677318212359149
-    second: RightArm|Running
+      74: 1455239167536536077
+    second: RightArm|LeftArmAction
   - first:
-      74: 7412498264217736672
-    second: RightArm|Sprinting
+      74: 1810268216617870872
+    second: RightArm|LeftArmAction.001
   - first:
-      74: -7752929724831713927
-    second: Bow|Run
+      74: -6379552911849881254
+    second: RightArm|RightArmAction
+  - first:
+      74: -737483518483008387
+    second: RightArm|RightArmAction.001
+  - first:
+      74: -6746484865952578155
+    second: RightArm|Sprint
+  - first:
+      74: -4720868178934856806
+    second: RightArm|Sprint_Smooth
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -49,7 +58,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
-    importConstraints: 1
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5

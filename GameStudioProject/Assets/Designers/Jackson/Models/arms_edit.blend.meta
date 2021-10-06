@@ -1,59 +1,11 @@
 fileFormatVersion: 2
-guid: bcb3c9498b68b1c4e91b344dd9029d86
+guid: 61a201f44867c4784b581dd07387fd69
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: -8922692938717321451
-    second: LeftArm|BowAction
-  - first:
-      74: -9010000087370422626
-    second: LeftArm|BowAction.001
-  - first:
-      74: 1037311041112452823
-    second: LeftArm|Idle
-  - first:
-      74: -7878564875035803693
-    second: LeftArm|RightArmAction
-  - first:
-      74: 6072974268471635682
-    second: LeftArm|Run
-  - first:
-      74: -8264075934833501203
-    second: LeftArm|Running
-  - first:
-      74: -6377922292630931257
-    second: LeftArm|Sprinting
-  - first:
-      74: 2136075005510815643
-    second: RightArm|BowAction
-  - first:
-      74: 6932465898483689728
-    second: RightArm|BowAction.001
-  - first:
-      74: 111314248719782705
-    second: RightArm|Idle
-  - first:
-      74: -6379552911849881254
-    second: RightArm|RightArmAction
-  - first:
-      74: -6878662778884009572
-    second: RightArm|Run
-  - first:
-      74: 2909677318212359149
-    second: RightArm|Running
-  - first:
-      74: 7412498264217736672
-    second: RightArm|Sprinting
-  - first:
-      74: 7565744921127931679
-    second: Bow|BowAction
-  - first:
-      74: 7498326604138664657
-    second: Bow|BowAction.001
-  - first:
-      74: -7752929724831713927
-    second: Bow|Run
+      74: -623603649343465320
+    second: Scene
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -73,7 +25,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
-    importConstraints: 1
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5

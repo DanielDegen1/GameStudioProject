@@ -1,38 +1,11 @@
 fileFormatVersion: 2
-guid: f04388158ddb559418cdaf519ac337d1
+guid: e713c984a67e34158ad3819af1cc72fb
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: -8922692938717321451
-    second: LeftArm|BowAction
-  - first:
-      74: -9010000087370422626
-    second: LeftArm|BowAction.001
-  - first:
-      74: 1037311041112452823
-    second: LeftArm|Idle
-  - first:
-      74: -7878564875035803693
-    second: LeftArm|RightArmAction
-  - first:
-      74: 2136075005510815643
-    second: RightArm|BowAction
-  - first:
-      74: 6932465898483689728
-    second: RightArm|BowAction.001
-  - first:
-      74: 111314248719782705
-    second: RightArm|Idle
-  - first:
-      74: -6379552911849881254
-    second: RightArm|RightArmAction
-  - first:
-      74: 7565744921127931679
-    second: Bow|BowAction
-  - first:
-      74: 7498326604138664657
-    second: Bow|BowAction.001
+      74: -623603649343465320
+    second: Scene
   externalObjects: {}
   materials:
     materialImportMode: 2
