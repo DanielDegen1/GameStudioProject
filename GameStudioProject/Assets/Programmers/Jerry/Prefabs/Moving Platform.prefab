@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 156575834368883987}
   - component: {fileID: 4178070336789479018}
   - component: {fileID: 392723331072786769}
-  - component: {fileID: 1889670401802497984}
+  - component: {fileID: 4852783852994519593}
   m_Layer: 0
   m_Name: Moving Platform
   m_TagString: Untagged
@@ -97,6 +97,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pivotPoints: []
+  platSpeed: 1
+  delayTimer: 0
 --- !u!65 &392723331072786769
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -110,7 +112,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0045733, y: 0.77636737, z: 1}
   m_Center: {x: -0.00228665, y: 0.87148345, z: 0}
---- !u!65 &1889670401802497984
+--- !u!65 &4852783852994519593
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

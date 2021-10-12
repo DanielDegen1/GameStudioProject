@@ -63,4 +63,12 @@ public class movingPlat : MonoBehaviour
             delayStart = Time.time;
         }
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        other.transform.parent = transform;
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        other.transform.parent = null;
+    }
 }
