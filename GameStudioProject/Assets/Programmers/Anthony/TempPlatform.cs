@@ -7,10 +7,10 @@ public class TempPlatform : MonoBehaviour
     private Vector2 p;
     private GameObject Player;
     public GameObject Platform;
-    private float platformRespawn = 5;
+    public float platformRespawn = 5;
     private float platformReset = 5;
     private float timerReset = 3;
-    private float timer = 3;
+    public float timer = 3;
     private bool timerStart = false;
     private bool respawntimerStart = false;
 
@@ -19,6 +19,8 @@ public class TempPlatform : MonoBehaviour
     {
         Player = GameObject.FindWithTag("Player");
         p = this.transform.position;
+        platformReset = platformRespawn;
+        timerReset = timer;
     }
 
     // Update is called once per frame
