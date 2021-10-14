@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class AnimController : MonoBehaviour
 {
+    private Animator anim;
+    [SerializeField]
+    private PlayerController playerController;
+
     public GameObject bow;
     public GameObject arrow;
     public Transform bowParent;
     public Transform arrowParent;
 
+    public int animIndex;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = this.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -21,7 +27,22 @@ public class AnimController : MonoBehaviour
         
     }
 
+    public void ChangeAnim(int index)
+    {
+        anim.SetInteger("State", index);
+        Debug.Log(anim.GetInteger("State"));
+    }
+
     public void SpawnBowandArrow() {
-        
+        Instantiate(bow, bowParent);
+        Instantiate(arrow, arrowParent);
+    }
+
+    public void DeleteArrow() {
+        Destroy(arrow);
+    }
+
+    public void DeleteBow(){
+        Destroy(bow);
     }
 }
