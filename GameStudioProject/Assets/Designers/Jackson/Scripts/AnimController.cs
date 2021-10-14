@@ -30,6 +30,7 @@ public class AnimController : MonoBehaviour
     public void ChangeAnim(int index)
     {
         anim.SetInteger("State", index);
+        Debug.Log(anim.GetInteger("State"));
     }
 
     public void SpawnBowandArrow() {
