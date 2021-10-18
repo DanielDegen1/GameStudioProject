@@ -123,6 +123,7 @@ public class PlayerController : MonoBehaviour
         //Misc
         UpdateLean();
         UpdateCamLevel();
+        //Debug.Log("MoveDirection Y: " + movement.moveDirection.y);
     }
 
     void UpdateInteraction()
