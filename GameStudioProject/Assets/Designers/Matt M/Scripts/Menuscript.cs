@@ -9,20 +9,17 @@ public class Menuscript : MonoBehaviour
     public GameObject musicController;
     public void ButtonMainMenu(){
         SceneManager.LoadScene("MenuScene");
-        DontDestroyOnLoad(musicController.gameObject);
 
     }
     public void ButtonStart() {
         SceneManager.LoadScene("GameScene");
-        Destroy(musicController.gameObject);
+        Destroy(GameObject.FindGameObjectWithTag("Music Player"));
     }
     public void ButtonOptions() {
         SceneManager.LoadScene("OptionsScene");
-        DontDestroyOnLoad(musicController.gameObject);
     }
     public void ButtonCredits() {
         SceneManager.LoadScene("CreditsScene");
-        DontDestroyOnLoad(musicController.gameObject);
     }
     public void ButtonQuit() {
         Application.Quit();
