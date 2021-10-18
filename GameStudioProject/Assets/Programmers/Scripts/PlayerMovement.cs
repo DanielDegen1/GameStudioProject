@@ -23,6 +23,8 @@ public class PlayerMovement : InterpolatedTransform
     public CharacterController controller;
     [HideInInspector]
     public bool playerControl = false;
+    [HideInInspector]
+    public float animVelocity;
 
     public bool grounded = false;
     public Vector3 jump = Vector3.zero;
@@ -101,6 +103,7 @@ public class PlayerMovement : InterpolatedTransform
             return;
 
         float speed = (!sprint) ? walkSpeed : runSpeed;
+
         if (crouching) speed = crouchSpeed;
 
         if (grounded)

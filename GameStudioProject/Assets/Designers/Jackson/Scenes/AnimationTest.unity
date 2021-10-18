@@ -538,6 +538,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3442382008194376250, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+      propertyPath: wallrunLayer.m_Bits
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 963194229, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
       propertyPath: sensitivity.x
       value: 0.25
@@ -777,6 +781,11 @@ Transform:
 --- !u!4 &1208515425 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6526632516643132702, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+  m_PrefabInstance: {fileID: 530007314}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1238413048 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8140896611726866670, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
   m_PrefabInstance: {fileID: 530007314}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1665765143
@@ -1062,6 +1071,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2023828560 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7085721664118310506, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+  m_PrefabInstance: {fileID: 530007314}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2023828562 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1149800568, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+  m_PrefabInstance: {fileID: 530007314}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023828560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f030344419af3204dbbe544722643965, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2023828571 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6526632517528651534, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+  m_PrefabInstance: {fileID: 530007314}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023828560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bedef31058aa28142829c34206f79b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2023828574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023828560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d69a7bffb700a1d42a9e2715ad1ecf80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  projectile: {fileID: 9192132445135900135, guid: b5ec9996c50795843a7b5312ab28fa6a, type: 3}
+  sourcePoint: {fileID: 1238413048}
+  projectileSpeed: 30
 --- !u!43 &2044727420
 Mesh:
   m_ObjectHideFlags: 0
@@ -1908,7 +1960,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8f203d684cc342e497ab9b7731c67de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 0}
+  playerController: {fileID: 2023828571}
+  playerMovement: {fileID: 2023828562}
   bow: {fileID: 8251008938980675817, guid: f4c8ef744c9c04cae8f4ae41e0552aa9, type: 3}
   arrow: {fileID: 1042874858798715975, guid: 82b97f50c9ab14f95a3f92f849287ea7, type: 3}
   bowParent: {fileID: 9014102511323667767}
