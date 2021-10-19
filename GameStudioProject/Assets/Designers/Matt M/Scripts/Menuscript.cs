@@ -6,11 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class Menuscript : MonoBehaviour
 {
+    public GameObject musicController;
     public void ButtonMainMenu(){
         SceneManager.LoadScene("MenuScene");
+
     }
     public void ButtonStart() {
         SceneManager.LoadScene("GameScene");
+        Destroy(GameObject.FindGameObjectWithTag("Music Player"));
     }
     public void ButtonOptions() {
         SceneManager.LoadScene("OptionsScene");
