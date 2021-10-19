@@ -24,7 +24,10 @@ public class PlayerMovement : InterpolatedTransform
     [HideInInspector]
     public bool playerControl = false;
     [HideInInspector]
-    public float animVelocity;
+    public Vector3 animDir;
+
+    public Vector3 animNewestTransform;
+    public Vector3 animOldTransform;
 
     public bool grounded = false;
     public Vector3 jump = Vector3.zero;
@@ -71,6 +74,9 @@ public class PlayerMovement : InterpolatedTransform
     {
         Vector3 newestTransform = m_lastPositions[m_newTransformIndex];
         Vector3 olderTransform = m_lastPositions[OldTransformIndex()];
+        animNewestTransform = newestTransform;
+        animOldTransform = olderTransform;
+        
 
         Vector3 adjust = Vector3.Lerp(olderTransform, newestTransform, InterpolationController.InterpolationFactor);
         adjust -= transform.position;
