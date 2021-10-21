@@ -17,8 +17,10 @@ public class AnimController : MonoBehaviour
     public int animIndex;
     public Vector3 newMovementVector;
     public Vector3 oldMovementVector;
+    public Vector3 interpolated;
     public float velocity;
-    public float oldVelocity = 0f;
+    public float smoothedVelocity;
+    public float oldVelocity = 8f;
 
     // Start is called before the first frame update
     void Start()
@@ -29,17 +31,20 @@ public class AnimController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        newMovementVector = playerMovement.animNewestTransform;
+        oldMovementVector = playerMovement.animOldTransform;
+        interpolated = ((oldMovementVector + newMovementVector) / 2);
         animIndex = (int)playerController.status;
-        velocity = Mathf.SmoothDamp(oldMovementVector.magnitude, newMovementVector.magnitude, ref oldVelocity, 0.3f);
+        velocity = (playerMovement.groundedSpeed);
         anim.SetFloat("Velocity",(velocity));
-        Debug.Log("Velocity: " + velocity);
+        
         anim.SetBool("isGrounded", playerMovement.grounded);
     }
 
     public void ChangeAnim(int index)
     {
         anim.SetInteger("State", index);
-        Debug.Log(anim.GetInteger("State"));
+        Debug.Log("State: " + playerController.status.ToString() + ", index: " + ((int)playerController.status));
     }
 
     public void SpawnBowandArrow() {

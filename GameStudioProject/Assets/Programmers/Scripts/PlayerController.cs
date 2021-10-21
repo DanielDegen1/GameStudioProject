@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
     
     float crouchCamAdjust;
     float stamina;
+    public Vector3 respawnPOS;
 
     public StatusEvent onStatusChange;
     List<MovementType> movements;
@@ -44,7 +45,7 @@ public class PlayerController : MonoBehaviour
     {
         if (status == s) return;
         status = s;
-        //animController.ChangeAnim((int)status);
+        animController.ChangeAnim((int)status);
         if (onStatusChange != null)
             onStatusChange.Invoke(status, null);
     }
@@ -52,7 +53,7 @@ public class PlayerController : MonoBehaviour
     {
         if (status == s) return;
         status = s;
-        //animController.ChangeAnim((int)status);
+        animController.ChangeAnim((int)status);
         if (onStatusChange != null)
             onStatusChange.Invoke(status, call);
     }
@@ -87,7 +88,7 @@ public class PlayerController : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        
+        respawnPOS = transform.position;
         playerInput = GetComponent<PlayerInput>();
 
         movement = GetComponent<PlayerMovement>();
@@ -313,6 +314,15 @@ public class PlayerController : MonoBehaviour
 
         return (Physics.CapsuleCastAll(top, bottom, 0.25f, transform.right * dir, 0.05f, layer).Length >= 1);
     }
+    public void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Player has entered a trigger");
+        if (other.gameObject.CompareTag("Death"))
+        {
+            Debug.Log("Player has died");
+            transform.position = respawnPOS;
+        }
+    }
 }
 
 public class PlayerInfo
@@ -353,4 +363,5 @@ public class IKData
         data.eulerAngles = handEulerAngles;
         return data;
     }
+
 }
