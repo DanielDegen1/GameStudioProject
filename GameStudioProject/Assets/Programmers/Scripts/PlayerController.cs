@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour
     {
         if (status == s) return;
         status = s;
-        //animController.ChangeAnim((int)status);
+        animController.ChangeAnim((int)status);
         if (onStatusChange != null)
             onStatusChange.Invoke(status, null);
     }
@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
     {
         if (status == s) return;
         status = s;
-        //animController.ChangeAnim((int)status);
+        animController.ChangeAnim((int)status);
         if (onStatusChange != null)
             onStatusChange.Invoke(status, call);
     }

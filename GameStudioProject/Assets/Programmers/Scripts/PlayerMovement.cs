@@ -28,6 +28,7 @@ public class PlayerMovement : InterpolatedTransform
 
     public Vector3 animNewestTransform;
     public Vector3 animOldTransform;
+    public float groundedSpeed;
 
     public bool grounded = false;
     public Vector3 jump = Vector3.zero;
@@ -76,7 +77,6 @@ public class PlayerMovement : InterpolatedTransform
         Vector3 olderTransform = m_lastPositions[OldTransformIndex()];
         animNewestTransform = newestTransform;
         animOldTransform = olderTransform;
-        
 
         Vector3 adjust = Vector3.Lerp(olderTransform, newestTransform, InterpolationController.InterpolationFactor);
         adjust -= transform.position;
@@ -110,6 +110,7 @@ public class PlayerMovement : InterpolatedTransform
 
         float speed = (!sprint) ? walkSpeed : runSpeed;
 
+
         if (crouching) speed = crouchSpeed;
 
         if (grounded)
@@ -131,7 +132,8 @@ public class PlayerMovement : InterpolatedTransform
         // Apply gravity
         moveDirection.y -= gravity * Time.deltaTime;
         // Move the controller, and set grounded true or false depending on whether we're standing on something
-        grounded = (controller.Move(moveDirection * Time.deltaTime) & CollisionFlags.Below) != 0; 
+        grounded = (controller.Move(moveDirection * Time.deltaTime) & CollisionFlags.Below) != 0;
+        groundedSpeed = speed;
     }
 
     public void Move(Vector3 direction, float speed, float appliedGravity)
@@ -152,6 +154,7 @@ public class PlayerMovement : InterpolatedTransform
         UpdateJump();
 
         grounded = (controller.Move(moveDirection * Time.deltaTime) & CollisionFlags.Below) != 0;
+        groundedSpeed = speed;
     }
 
     public void Move(Vector3 direction, float speed, float appliedGravity, float setY)
@@ -173,6 +176,7 @@ public class PlayerMovement : InterpolatedTransform
         UpdateJump();
 
         grounded = (controller.Move(moveDirection * Time.deltaTime) & CollisionFlags.Below) != 0;
+        groundedSpeed = speed;
     }
 
     public void Jump(Vector3 dir, float mult)
@@ -204,6 +208,7 @@ public class PlayerMovement : InterpolatedTransform
         forceTime = time;
         forceGravity = applyGravity;
         moveDirection = direction * speed;
+        groundedSpeed = speed;
     }
 
     void OnControllerColliderHit(ControllerColliderHit hit)
