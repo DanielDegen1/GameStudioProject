@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Destination
   - Music Player
+  - Projectile
+  - bullet
+  - boulder
+  - temp
   layers:
   - Default
   - TransparentFX
