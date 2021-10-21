@@ -15,6 +15,10 @@ public class AnimController : MonoBehaviour
     public Transform bowParent;
     public Transform arrowParent;
     public int animIndex;
+    public Vector3 newMovementVector;
+    public Vector3 oldMovementVector;
+    public float velocity;
+    public float oldVelocity = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -26,8 +30,9 @@ public class AnimController : MonoBehaviour
     void Update()
     {
         animIndex = (int)playerController.status;
-        anim.SetFloat("Velocity",(animIndex*Time.deltaTime)*100);
-        Debug.Log("Velocity: " + anim.GetFloat("Velocity"));
+        velocity = Mathf.SmoothDamp(oldMovementVector.magnitude, newMovementVector.magnitude, ref oldVelocity, 0.3f);
+        anim.SetFloat("Velocity",(velocity));
+        Debug.Log("Velocity: " + velocity);
         anim.SetBool("isGrounded", playerMovement.grounded);
     }
 

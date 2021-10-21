@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class boulderhit : MonoBehaviour
 {
+    public float boulderDespawnTime = 5;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,7 +14,12 @@ public class boulderhit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        boulderDespawnTime -= Time.deltaTime;
+
+        if (boulderDespawnTime < 0)
+        {
+            Destroy(this);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
