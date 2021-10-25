@@ -10,6 +10,7 @@ TagManager:
   - bullet
   - boulder
   - temp
+  - Teleport
   layers:
   - Default
   - TransparentFX
