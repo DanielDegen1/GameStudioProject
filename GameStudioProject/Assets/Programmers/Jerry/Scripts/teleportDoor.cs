@@ -5,9 +5,11 @@ using UnityEngine;
 public class teleportDoor : MonoBehaviour
 {
     // Start is called before the first frame update
+    public GameObject teleportPoint;
+    private Vector3 teleportPOS;
     void Start()
     {
-        
+        teleportPOS = teleportPoint.transform.position;
     }
 
     // Update is called once per frame
@@ -17,9 +19,11 @@ public class teleportDoor : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        //TODO move this to the player script 
-        //TODO when the player moves into the collider get this script component from the object 
-        //TODO set the player position to the gameobject stored in this script
-        //PROBABLY call a function in here to move the player
+
+    }
+    public Vector3 teleportPlayer()
+    {
+        Debug.Log("teleport player function called player should be moved to " + teleportPOS);
+        return teleportPOS;
     }
 }

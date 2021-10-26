@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     PlayerInput playerInput;
     AnimateLean animateLean;
     AnimateCameraLevel animateCamLevel;
-
+    private CharacterController cc;
     public AnimController animController;
 
     bool canInteract;
@@ -90,7 +90,7 @@ public class PlayerController : MonoBehaviour
         Cursor.visible = false;
         respawnPOS = transform.position;
         playerInput = GetComponent<PlayerInput>();
-
+        cc = this.GetComponent<CharacterController>();
         movement = GetComponent<PlayerMovement>();
         movement.AddToReset(() => { status = Status.walking; });
 
@@ -321,6 +321,12 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("Player has died");
             transform.position = respawnPOS;
+        }
+        else if(other.gameObject.CompareTag("Teleport"))
+        {
+            cc.enabled = false;
+            transform.position = other.GetComponent<teleportDoor>().teleportPlayer();
+            cc.enabled = true;
         }
     }
 }

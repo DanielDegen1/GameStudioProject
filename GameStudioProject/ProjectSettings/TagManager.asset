@@ -11,6 +11,7 @@ TagManager:
   - boulder
   - temp
   - Teleport
+  - Death
   layers:
   - Default
   - TransparentFX
