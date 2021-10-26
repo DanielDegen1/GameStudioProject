@@ -215,7 +215,6 @@ public class PlayerInput : MonoBehaviour
             jumpTimer++;
         }
         else if (jumpTimer > 0) {
-            Debug.Log("Jump");
             jump = true;
         }
     }
