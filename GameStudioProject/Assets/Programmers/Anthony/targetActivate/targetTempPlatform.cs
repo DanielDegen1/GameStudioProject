@@ -6,10 +6,10 @@ public class targetTempPlatform : MonoBehaviour
 {
     private GameObject Player;
     public GameObject Platform;
-    private float platformRespawn = 5;
-    private float platformReset = 5;
-    private float timerReset = 3;
-    private float timer = 3;
+    public float platformRespawn = 5;
+    public float platformReset = 5;
+    public float timerReset = 3;
+    public float timer = 3;
     private bool timerStart = false;
     private bool respawntimerStart = false;
     public bool active = false;
@@ -31,7 +31,7 @@ public class targetTempPlatform : MonoBehaviour
             if (Vector3.Distance(transform.position, Player.transform.position) <= 1)
             {
                 Debug.Log("p");
-                timerStart = true;
+                //timerStart = true;
             }
 
             if (timerStart == true)
@@ -72,6 +72,19 @@ public class targetTempPlatform : MonoBehaviour
 
 
 
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            if (active == true)
+            {
+                Debug.Log("temp");
+                timerStart = true;
+            }
+
+             
+        }
     }
 
 

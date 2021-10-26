@@ -8,8 +8,8 @@ public class TempPlatform : MonoBehaviour
     private GameObject Player;
     public GameObject Platform;
     public float platformRespawn = 5;
-    private float platformReset = 5;
-    private float timerReset = 3;
+    public float platformReset = 5;
+    public float timerReset = 3;
     public float timer = 3;
     private bool timerStart = false;
     private bool respawntimerStart = false;
@@ -29,8 +29,8 @@ public class TempPlatform : MonoBehaviour
         
         if (Vector3.Distance(transform.position, Player.transform.position) <= 1)
         {
-            Debug.Log("p");
-            timerStart = true;
+            
+            //timerStart = true;
         }
 
         if (timerStart == true)
@@ -48,7 +48,7 @@ public class TempPlatform : MonoBehaviour
 
         if (respawntimerStart == true)
         {
-            Debug.Log("r");
+            
             platformRespawn -= Time.deltaTime;
         }
 
@@ -60,4 +60,16 @@ public class TempPlatform : MonoBehaviour
             platformRespawn = platformReset;
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            Debug.Log("temp");
+            timerStart = true;
+        }
+    }
+
+
+
 }
