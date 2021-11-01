@@ -14,12 +14,15 @@ public class despawnTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        DespawnTime -= Time.deltaTime;
 
-        if (DespawnTime < 0)
-        {
-            Destroy(gameObject);
-        }
+                    
+            DespawnTime -= Time.deltaTime;
+
+            if (DespawnTime < 0 )
+            {
+                Destroy(gameObject);
+            }
+        
     }
 
  
