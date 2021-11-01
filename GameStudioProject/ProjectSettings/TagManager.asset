@@ -12,7 +12,14 @@ TagManager:
   - temp
   - Teleport
   - Death
+<<<<<<< Updated upstream
   - Respawn Checkpoint
+=======
+  - green
+  - orange
+  - red
+  - blue
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
