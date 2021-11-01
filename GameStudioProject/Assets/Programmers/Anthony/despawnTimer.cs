@@ -18,7 +18,7 @@ public class despawnTimer : MonoBehaviour
 
         if (DespawnTime < 0)
         {
-            Destroy(this);
+            Destroy(gameObject);
         }
     }
 
