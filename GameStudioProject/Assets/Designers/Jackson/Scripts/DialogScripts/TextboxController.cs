@@ -24,6 +24,7 @@ namespace Yarn.Unity
         [YarnCommand("startVoiceLine")]
         public void StartVoiceLine(string name)
         {
+            Debug.Log("yarn command working");
             audioManager.Play(name);
         }
 
