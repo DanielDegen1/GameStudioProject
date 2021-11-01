@@ -12,6 +12,7 @@ TagManager:
   - temp
   - Teleport
   - Death
+  - Respawn Checkpoint
   layers:
   - Default
   - TransparentFX

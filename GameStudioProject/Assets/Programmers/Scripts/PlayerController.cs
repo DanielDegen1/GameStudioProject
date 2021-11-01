@@ -89,6 +89,7 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         respawnPOS = transform.position;
+        respawnPOS.y += 5;
         playerInput = GetComponent<PlayerInput>();
         cc = this.GetComponent<CharacterController>();
         movement = GetComponent<PlayerMovement>();
@@ -336,6 +337,11 @@ public class PlayerController : MonoBehaviour
             cc.enabled = false;
             transform.position = other.GetComponent<teleportDoor>().teleportPlayer();
             cc.enabled = true;
+        }
+        else if(other.gameObject.CompareTag("Respawn Checkpoint"))
+        {
+            respawnPOS = transform.position;
+            respawnPOS.y += 5;
         }
     }
     public void OnTriggerStay(Collider other)
