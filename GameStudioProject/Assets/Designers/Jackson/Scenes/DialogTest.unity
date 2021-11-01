@@ -317,8 +317,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: {fileID: 1858002535}
-  talkToNode: TestDialog
-  scriptToLoad: {fileID: 2480198943629176163, guid: c552c728ea4bc4b52849e40ec808c0ed, type: 3}
+  talkToNode: Start
+  scriptToLoad: {fileID: 2480198943629176163, guid: 25bdb207d647b47c3bcbf7931b9e43e0, type: 3}
 --- !u!4 &229595551
 Transform:
   m_ObjectHideFlags: 0

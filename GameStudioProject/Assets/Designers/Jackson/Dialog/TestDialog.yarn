@@ -1,9 +1,0 @@
-﻿title: TestDialog
-tags:
----
-<<startVoiceLine TextboxController this_is_nathan_meow>>
-Nate: uhh... this is Nathan?? Meow????
-<<stopVoiceLine TextboxController>>
-<<startVoiceLine TextboxController d_told_me_to_say>>
-Nate: this is what D told me to say.
-===

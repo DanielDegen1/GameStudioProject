@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c552c728ea4bc4b52849e40ec808c0ed
+guid: 25bdb207d647b47c3bcbf7931b9e43e0
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -9,9 +9,11 @@ ScriptedImporter:
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
   baseLanguageID: en-US
-  stringIDs: []
-  compilationStatus: 0
+  stringIDs:
+  - NateTestDialog-Start-0
+  - NateTestDialog-Start-1
+  compilationStatus: 1
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
-  baseLanguage: {instanceID: 0}
+  baseLanguage: {fileID: 7128917941130120860, guid: 25bdb207d647b47c3bcbf7931b9e43e0, type: 3}
   localizations: []
