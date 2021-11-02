@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Destination
+  - temp
+  - boulder
+  - bullet
+  - Do Not Destroy
   layers:
   - Default
   - TransparentFX

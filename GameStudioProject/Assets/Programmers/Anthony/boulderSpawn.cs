@@ -7,6 +7,8 @@ public class boulderSpawn : MonoBehaviour
     public float timerReset = 5;
     public float timer = 5;
     public GameObject Boulder;
+    private GameObject boulderRef;
+    private despawnTimer DNDref;
     
     // Start is called before the first frame update
     void Start()
@@ -21,7 +23,9 @@ public class boulderSpawn : MonoBehaviour
 
         if (timer < 0)
         {
-            Instantiate(Boulder, transform.position, transform.rotation);
+            boulderRef = Instantiate(Boulder, transform.position, transform.rotation);
+            DNDref = boulderRef.GetComponent<despawnTimer>();
+            DNDref.DoNotDestroy = false;
             timer = timerReset;           
         }
     }

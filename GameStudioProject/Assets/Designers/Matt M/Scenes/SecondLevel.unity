@@ -2300,6 +2300,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoulderBoulder
       objectReference: {fileID: 0}
+    - target: {fileID: 7392608396328592906, guid: 521965161d26b6244971d9534c9aed8e, type: 3}
+      propertyPath: m_TagString
+      value: boulder
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 521965161d26b6244971d9534c9aed8e, type: 3}
 --- !u!1 &453476998 stripped
@@ -5807,7 +5811,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23890
+  m_Name: pb_Mesh23476
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -28263,7 +28267,7 @@ GameObject:
   - component: {fileID: 1908411038}
   - component: {fileID: 1908411037}
   m_Layer: 0
-  m_Name: BoulderSpawnRoom
+  m_Name: Boulder Template Room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
