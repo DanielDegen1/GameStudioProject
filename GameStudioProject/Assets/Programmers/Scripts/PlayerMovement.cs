@@ -108,6 +108,10 @@ public class PlayerMovement : InterpolatedTransform
                 moveDirection.y -= gravity * Time.deltaTime;
             grounded = (controller.Move(moveDirection * Time.deltaTime) & CollisionFlags.Below) != 0;
         }
+        if(isDead == true)
+        {
+            respawnPlayer();
+        }
     }
 
     public override void LateFixedUpdate()
@@ -235,7 +239,6 @@ public class PlayerMovement : InterpolatedTransform
         {
             Debug.Log("PlayerMovement script has entered a death trigger");
             isDead = true;
-            respawnPlayer();
         }
     }
     private void OnTriggerStay(Collider other)
@@ -246,7 +249,6 @@ public class PlayerMovement : InterpolatedTransform
         {
             Debug.Log("PlayerMovement script is inside a death trigger");
             isDead = true;
-            respawnPlayer();
         }
     }
     private void respawnPlayer()
@@ -254,7 +256,7 @@ public class PlayerMovement : InterpolatedTransform
         controller.enabled = false;
         gravity = 0;
         transform.position = respawnPOS;
-       // Physics.SyncTransforms();
+        Physics.SyncTransforms();
         gravity = gravityRef;
         controller.enabled = true;
         isDead = false;
