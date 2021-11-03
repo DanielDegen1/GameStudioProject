@@ -9,6 +9,12 @@ TagManager:
   - boulder
   - bullet
   - Do Not Destroy
+  - Death
+  - Projectile
+  - orange
+  - blue
+  - green
+  - red
   layers:
   - Default
   - TransparentFX
