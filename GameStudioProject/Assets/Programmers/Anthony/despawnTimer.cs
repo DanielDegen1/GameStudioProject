@@ -26,6 +26,12 @@ public class despawnTimer : MonoBehaviour
             }
         }
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Do Not Destroy"))
+        {
+            DoNotDestroy = true;
+        }
+    }
 
- 
 }
