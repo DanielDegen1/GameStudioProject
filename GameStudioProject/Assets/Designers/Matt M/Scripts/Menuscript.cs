@@ -12,7 +12,7 @@ public class Menuscript : MonoBehaviour
 
     }
     public void ButtonStart() {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("BasicMovementTutorial");
         Destroy(GameObject.FindGameObjectWithTag("Music Player"));
     }
     public void ButtonOptions() {
