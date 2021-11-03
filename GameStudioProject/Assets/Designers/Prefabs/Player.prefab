@@ -186,7 +186,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4709582224568546246}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5850793383232490611}
@@ -523,6 +523,7 @@ GameObject:
   - component: {fileID: 7085721664118310500}
   - component: {fileID: 7085721664118310501}
   - component: {fileID: 6526632517528651535}
+  - component: {fileID: 2621722902122626479}
   - component: {fileID: 6526632517528651534}
   - component: {fileID: 2453986428590421080}
   - component: {fileID: -6076267034084200540}
@@ -586,6 +587,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1157499c673dbce4e8a6b18fafebbfa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2621722902122626479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7085721664118310506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34eaf436a2a6e4b4597771fb27913e89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelName: 
 --- !u!114 &6526632517528651534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -607,7 +621,6 @@ MonoBehaviour:
   sprintReserve: 4
   sprintMinimum: 2
   animController: {fileID: 1916301894470021585}
-  respawnPOS: {x: 0, y: 0, z: 0}
 --- !u!114 &2453986428590421080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -765,6 +778,7 @@ MonoBehaviour:
   groundedSpeed: 0
   grounded: 0
   jump: {x: 0, y: 0, z: 0}
+  respawnPOS: {x: 0, y: 0, z: 0}
 --- !u!114 &7707081060816314902
 MonoBehaviour:
   m_ObjectHideFlags: 0
