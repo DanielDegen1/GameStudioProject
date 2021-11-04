@@ -9,46 +9,33 @@ public class dartTrap : MonoBehaviour
     public float spawnDistance = 3.0f;
     private GameObject current;
     public float spawnTimer = 5;
-    private float spawnTimerReset;
+    private float spawnTimerReset = 5;
     public float speed = 8;
-    public float despawnTimer = 7;
-    private float despawnTimerReset;
 
     Rigidbody dartRigidbody;
     // Start is called before the first frame update
     void Start()
     {
         spawnTimerReset = spawnTimer;
-        despawnTimerReset = despawnTimer;
     }
 
     // Update is called once per frame
     void Update()
     {
-        spawnTimer -= Time.deltaTime;
+        spawnTimer -= Time.deltaTime; //decrement the amount of time set between spawning objects
 
-        if (spawnTimer < 0)
+        if (spawnTimer < 0) //once that spawn time hits 0
         {
             
-            GameObject current = Instantiate(bullet, transform.position + spawnDistance * transform.forward, transform.rotation);        
-            spawnTimer = spawnTimerReset;
+            current = Instantiate(bullet, transform.position + spawnDistance * transform.forward, transform.rotation); //instantiate a bullet/dart     
+            spawnTimer = spawnTimerReset; //reset the spawntimer
         }
 
-        if(despawnTimer < 0)
-        {
-            Destroy(current);
-        }
-
-        dartRigidbody = current.GetComponent<Rigidbody>();
-        dartRigidbody.velocity = transform.forward * speed;
-
-
+        dartRigidbody = current.GetComponent<Rigidbody>(); //store a reference to the instantiated rigidbody
+        dartRigidbody.velocity = transform.forward * speed; //move the dart forward relative to the speed defined in the inspector
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        Destroy(current);
-    }
+    
 
 
 
