@@ -16157,6 +16157,10 @@ PrefabInstance:
       propertyPath: sensitivity.y
       value: 0.15
       objectReference: {fileID: 0}
+    - target: {fileID: 1284584479171242853, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1865902475210120411, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
       propertyPath: vaultLayer.m_Bits
       value: 1
@@ -16164,6 +16168,10 @@ PrefabInstance:
     - target: {fileID: 2453986428590421080, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
       propertyPath: slideSpeed.max
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2854899750141293854, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4247327821211603276, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16357,8 +16365,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 411.38965, y: 737.2943, z: 241.8322}
-  m_Center: {x: 11.664795, y: -350.966, z: 42.226295}
+  m_Size: {x: 411.38965, y: 751.2135, z: 241.8322}
+  m_Center: {x: 11.664795, y: -344.0064, z: 42.226295}
 --- !u!4 &1668345074
 Transform:
   m_ObjectHideFlags: 0

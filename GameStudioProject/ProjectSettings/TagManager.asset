@@ -3,7 +3,21 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Destination
+  - temp
+  - boulder
+  - bullet
+  - Do Not Destroy
+  - Death
+  - Projectile
+  - orange
+  - blue
+  - green
+  - red
+  - Respawn Checkpoint
+  - Teleport
+  - Next Level
   layers:
   - Default
   - TransparentFX

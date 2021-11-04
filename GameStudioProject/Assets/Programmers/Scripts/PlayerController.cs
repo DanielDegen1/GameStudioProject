@@ -34,8 +34,6 @@ public class PlayerController : MonoBehaviour
     
     float crouchCamAdjust;
     float stamina;
-    public Vector3 respawnPOS;
-    private bool isDead = false;
     public StatusEvent onStatusChange;
     List<MovementType> movements;
     WallrunMovement wallrun;
@@ -88,8 +86,6 @@ public class PlayerController : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        respawnPOS = transform.position;
-        respawnPOS.y += 5;
         playerInput = GetComponent<PlayerInput>();
         cc = this.GetComponent<CharacterController>();
         movement = GetComponent<PlayerMovement>();
@@ -122,22 +118,13 @@ public class PlayerController : MonoBehaviour
                 moveType.Check(canInteract);
         }
 
-        if(isDead == true)
-        {
-            respawnPlayer();
-        }
+
         //Misc
         UpdateLean();
         UpdateCamLevel();
         //Debug.Log("MoveDirection Y: " + movement.moveDirection.y);
     }
-    void respawnPlayer()
-    {
-        cc.enabled = false;
-        transform.position = respawnPOS;
-        cc.enabled = true;
-        isDead = false;
-    }
+
     void UpdateInteraction()
     {
         if ((int)status >= 5)
@@ -327,28 +314,20 @@ public class PlayerController : MonoBehaviour
     }
     public void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Player has entered a trigger");
-        if (other.gameObject.CompareTag("Death"))
-        {
-            isDead = true;
-        }
-        else if(other.gameObject.CompareTag("Teleport"))
+       // Debug.Log("PlayerController script has entered a trigger");
+        if(other.gameObject.CompareTag("Teleport"))
         {
             cc.enabled = false;
             transform.position = other.GetComponent<teleportDoor>().teleportPlayer();
             cc.enabled = true;
         }
-        else if(other.gameObject.CompareTag("Respawn Checkpoint"))
-        {
-            respawnPOS = transform.position;
-            respawnPOS.y += 5;
-        }
+
     }
     public void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Death"))
         {
-            isDead = true;
+            //isDead = true;
         }
     }
 }

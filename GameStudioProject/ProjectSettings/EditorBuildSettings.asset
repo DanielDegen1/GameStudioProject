@@ -9,12 +9,18 @@ EditorBuildSettings:
     path: Assets/Designers/Matt M/Scenes/MenuScene.unity
     guid: afa684a6544f84c419425cdd4101968c
   - enabled: 1
-    path: Assets/Designers/Matt M/Scenes/GameScene.unity
-    guid: 2fec172e5ab359448a5b7cfcd71c12cb
-  - enabled: 1
     path: Assets/Designers/Matt M/Scenes/OptionsScene.unity
     guid: 365ddf98a3d81da49960523f8ff6fbbe
   - enabled: 1
     path: Assets/Designers/Matt M/Scenes/CreditsScene.unity
     guid: 6c6fc71cf2514fa4295ab186d3de5bc1
+  - enabled: 1
+    path: Assets/Designers/Matt M/Scenes/SecondLevel.unity
+    guid: 9c35f134f448ee340bd04e3d9a0ab415
+  - enabled: 1
+    path: Assets/Designers/Jackson/Scenes/BasicMovementTutorial.unity
+    guid: c2ac1937427b54a1aacd9d3c5480bdba
+  - enabled: 1
+    path: Assets/Designers/D/Physical Level 1.unity
+    guid: 8def949bdafe25e4997914b4f01ee42a
   m_configObjects: {}

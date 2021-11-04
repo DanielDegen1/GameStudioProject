@@ -33,11 +33,14 @@ public class PlayerMovement : InterpolatedTransform
     public bool grounded = false;
     public Vector3 jump = Vector3.zero;
     Vector3 jumpedDir;
+    public Vector3 respawnPOS;
 
     private bool forceGravity;
     private float forceTime = 0;
     private float jumpPower;
     UnityEvent onReset = new UnityEvent();
+    private float gravityRef;
+    private bool isDead = false;
 
     public override void OnEnable()
     {
@@ -48,8 +51,13 @@ public class PlayerMovement : InterpolatedTransform
     private void Awake()
     {
         controller = GetComponent<CharacterController>();
-    }
 
+    }
+    private void Start()
+    {
+        gravityRef = gravity;
+        respawnPOS = gameObject.transform.position;
+    }
     public void AddToReset(UnityAction call)
     {
         onReset.AddListener(call);
@@ -85,6 +93,10 @@ public class PlayerMovement : InterpolatedTransform
 
         if (forceTime > 0)
             forceTime -= Time.deltaTime;
+        if(isDead == true)
+        {
+            respawnPlayer();
+        }
     }
 
     public override void FixedUpdate()
@@ -95,6 +107,10 @@ public class PlayerMovement : InterpolatedTransform
             if(forceGravity)
                 moveDirection.y -= gravity * Time.deltaTime;
             grounded = (controller.Move(moveDirection * Time.deltaTime) & CollisionFlags.Below) != 0;
+        }
+        if(isDead == true)
+        {
+            respawnPlayer();
         }
     }
 
@@ -214,5 +230,36 @@ public class PlayerMovement : InterpolatedTransform
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
         contactPoint = hit.point;
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("PlayerMovement script has entered a trigger");
+
+        if(other.gameObject.CompareTag("Death"))
+        {
+            Debug.Log("PlayerMovement script has entered a death trigger");
+            isDead = true;
+        }
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        Debug.Log("PlayerMovement script is inside a trigger");
+
+        if (other.gameObject.CompareTag("Death"))
+        {
+            Debug.Log("PlayerMovement script is inside a death trigger");
+            isDead = true;
+        }
+    }
+    private void respawnPlayer()
+    {
+        controller.enabled = false;
+        gravity = 0;
+        transform.position = respawnPOS;
+        Physics.SyncTransforms();
+        gravity = gravityRef;
+        controller.enabled = true;
+        isDead = false;
+        Debug.Log("Player has respawned");
     }
 }

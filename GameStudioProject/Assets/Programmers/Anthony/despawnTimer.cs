@@ -5,6 +5,7 @@ using UnityEngine;
 public class despawnTimer : MonoBehaviour
 {
     public float DespawnTime = 5;
+    public bool DoNotDestroy = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,15 +16,22 @@ public class despawnTimer : MonoBehaviour
     void Update()
     {
 
-                    
+        if (DoNotDestroy == false)
+        {
             DespawnTime -= Time.deltaTime;
 
-            if (DespawnTime < 0 )
+            if (DespawnTime < 0)
             {
                 Destroy(gameObject);
             }
-        
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Do Not Destroy"))
+        {
+            DoNotDestroy = true;
+        }
     }
 
- 
 }

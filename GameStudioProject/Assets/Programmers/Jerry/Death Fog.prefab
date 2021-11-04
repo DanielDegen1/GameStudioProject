@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3722865580809746550
+--- !u!1 &2687333667312504250
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3722865580809746548}
-  - component: {fileID: 3722865580809746549}
+  - component: {fileID: 2687333667312504244}
+  - component: {fileID: 2687333667312504245}
   m_Layer: 0
   m_Name: Death Fog
   m_TagString: Death
@@ -17,30 +17,30 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3722865580809746548
+--- !u!4 &2687333667312504244
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3722865580809746550}
+  m_GameObject: {fileID: 2687333667312504250}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.794865, y: 1.0445567, z: -100.99525}
+  m_LocalPosition: {x: 18.6, y: -9.65, z: -29.840212}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &3722865580809746549
+--- !u!65 &2687333667312504245
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3722865580809746550}
+  m_GameObject: {fileID: 2687333667312504250}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 32.982246, y: 41.493683, z: 42.52145}
-  m_Center: {x: -36.23608, y: -8.918343, z: 22.371351}
+  m_Size: {x: 66.985855, y: 7.780919, z: 158.06308}
+  m_Center: {x: 18.385185, y: 3.3904595, z: 30.477566}
