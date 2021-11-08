@@ -12,8 +12,7 @@ public class PlayerMovement : InterpolatedTransform
     [SerializeField]
     private float jumpSpeed = 8.0f;
     [SerializeField]
-    private float gravity = 20.0f;
-    [SerializeField]
+    
     private float antiBumpFactor = .75f;
     [HideInInspector]
     public Vector3 moveDirection = Vector3.zero;
@@ -25,6 +24,7 @@ public class PlayerMovement : InterpolatedTransform
     public bool playerControl = false;
     [HideInInspector]
     public Vector3 animDir;
+    public float gravity = 20.0f;
 
     public Vector3 animNewestTransform;
     public Vector3 animOldTransform;
@@ -39,7 +39,8 @@ public class PlayerMovement : InterpolatedTransform
     private float forceTime = 0;
     private float jumpPower;
     UnityEvent onReset = new UnityEvent();
-    private float gravityRef;
+    [HideInInspector]
+    public float gravityRef;
     private bool isDead = false;
 
     public override void OnEnable()
@@ -251,6 +252,7 @@ public class PlayerMovement : InterpolatedTransform
             isDead = true;
         }
     }
+    
     private void respawnPlayer()
     {
         controller.enabled = false;
