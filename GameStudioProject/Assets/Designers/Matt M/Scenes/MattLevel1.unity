@@ -2110,7 +2110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2760376500607760476, guid: 337484a546315734793e254822b06424, type: 3}
       propertyPath: DespawnTime
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3209807358833139546, guid: 337484a546315734793e254822b06424, type: 3}
       propertyPath: m_Name
@@ -6378,7 +6378,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25444
+  m_Name: pb_Mesh24642
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
