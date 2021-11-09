@@ -26,7 +26,7 @@ public class LaserEnemy : MonoBehaviour
         {
             Quaternion lookRotation = Quaternion.LookRotation(player.transform.position - headTransform.position);
             headTransform.rotation = lookRotation;
-            laser.SetPosition(1, player.transform.position);
+            //laser.SetPosition(1, player.transform.position);
         }
     }
 

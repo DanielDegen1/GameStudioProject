@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class CameraMovement : MonoBehaviour
 {
@@ -11,6 +12,19 @@ public class CameraMovement : MonoBehaviour
     Vector2 _smoothMouse;
 
     public GameObject characterBody;
+
+    [SerializeField]
+    private PlayerController playerController;
+
+    private CinemachineVirtualCamera vcam;
+
+    private float fov = 60f;
+    [SerializeField]
+    private float normalfov = 60f;
+    [SerializeField]
+    private float sprintfov = 95f;
+    [SerializeField]
+    private float fovSmoothFactor = 10f;
 
     [SerializeField]
     private Vector2 clampInDegrees = new Vector2(360, 180);
@@ -25,6 +39,8 @@ public class CameraMovement : MonoBehaviour
 
     void Start()
     {
+        vcam = this.GetComponent<CinemachineVirtualCamera>();
+
         playerInput = PlayerInput.Instance;
         // Set target direction to the camera's initial orientation.
         targetDirection = transform.localRotation.eulerAngles;
@@ -74,6 +90,25 @@ public class CameraMovement : MonoBehaviour
             var yRotation = Quaternion.AngleAxis(_mouseAbsolute.x, transform.InverseTransformDirection(Vector3.up));
             transform.localRotation *= yRotation;
         }
+
+        //Control FOV based on sprinting status
+        if (playerController.status == Status.sprinting)
+        {
+            if (fov < sprintfov)
+            {
+                fov = Mathf.Lerp(fov, sprintfov, fovSmoothFactor * Time.deltaTime);
+            }
+        }
+        else
+        {
+            if (fov > normalfov)
+            {
+                fov = Mathf.Lerp(fov, normalfov, fovSmoothFactor * Time.deltaTime);
+
+            }
+        }
+        vcam.m_Lens.FieldOfView = fov;
+
     }
 
     public void AddRecoil(Vector3 recoil, float time)
