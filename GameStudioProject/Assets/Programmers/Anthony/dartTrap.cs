@@ -12,6 +12,7 @@ public class dartTrap : MonoBehaviour
     private float spawnTimerReset = 5;
     public float speed = 8;
 
+    private despawnTimer despawnRef;
     Rigidbody dartRigidbody;
     // Start is called before the first frame update
     void Start()
@@ -27,7 +28,9 @@ public class dartTrap : MonoBehaviour
         if (spawnTimer < 0) //once that spawn time hits 0
         {
             
-            current = Instantiate(bullet, transform.position + spawnDistance * transform.forward, transform.rotation); //instantiate a bullet/dart     
+            current = Instantiate(bullet, transform.position + spawnDistance * transform.forward, transform.rotation); //instantiate a bullet/dart   
+            despawnRef = current.GetComponent<despawnTimer>();  
+            despawnRef.DoNotDestroy = false;
             spawnTimer = spawnTimerReset; //reset the spawntimer
         }
 

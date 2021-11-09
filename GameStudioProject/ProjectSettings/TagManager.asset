@@ -18,6 +18,8 @@ TagManager:
   - Respawn Checkpoint
   - Teleport
   - Next Level
+  - Object Plate
+  - Jump Pad
   layers:
   - Default
   - TransparentFX
