@@ -76,6 +76,7 @@ public class PlayerMovement : InterpolatedTransform
             ForgetPreviousTransforms();
             yield return new WaitForEndOfFrame();
         }
+        isDead = false;
         controller.enabled = true;
         onReset.Invoke();
     }
@@ -251,8 +252,10 @@ public class PlayerMovement : InterpolatedTransform
         {
             exitedJumpPad = false;
             gravity = other.gameObject.GetComponent<jumpPad>().updateGravityEnter();
-                //myObject.GetComponent<MyScript>().MyFunction();
-
+        }
+        else if(other.gameObject.CompareTag("Checkpoint"))
+        {
+            respawnPOS = gameObject.transform.position;
         }
     }
     private void OnTriggerStay(Collider other)
