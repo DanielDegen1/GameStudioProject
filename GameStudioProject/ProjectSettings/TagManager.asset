@@ -20,6 +20,9 @@ TagManager:
   - Object Plate
   - Jump Pad
   - Checkpoint
+  - Blockade
+  - moving
+  - Door
   layers:
   - Default
   - TransparentFX
