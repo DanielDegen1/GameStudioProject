@@ -249,6 +249,7 @@ public class PlayerMovement : InterpolatedTransform
         }
         else if(other.gameObject.CompareTag("Jump Pad"))
         {
+            exitedJumpPad = false;
             gravity = other.gameObject.GetComponent<jumpPad>().updateGravityEnter();
                 //myObject.GetComponent<MyScript>().MyFunction();
 
