@@ -31,6 +31,11 @@ public class arrowTarget : MonoBehaviour
             movingplatform = linkedObstacle.GetComponent<targetMovingPlat>();
             movingplatform.active = true;
         }
+
+        if(targethit == true && linkedObstacle.tag == "Blockade")
+        {
+            Destroy(linkedObstacle);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
