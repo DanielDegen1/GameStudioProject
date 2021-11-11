@@ -15,11 +15,11 @@ TagManager:
   - blue
   - green
   - red
-  - Respawn Checkpoint
   - Teleport
   - Next Level
   - Object Plate
   - Jump Pad
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
