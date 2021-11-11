@@ -17,12 +17,12 @@ public class jumpPad : MonoBehaviour
         //TODO add the gravity functions to the triggerenter/exit functions in playermovement
     }
 
-    private void updateGravityEnter(PlayerMovement gravityRef)
+    public float updateGravityEnter()
     {
-        gravityRef.gravity -= gravityReduction;
+        return(gravityReduction);
     }
-    private void updateGravityExit(PlayerMovement gravityRef)
+    public float updateGravityExit(PlayerMovement gravityRef)
     {
-        gravityRef.gravity = gravityRef.gravityRef;
+        return(gravityRef.gravity = gravityRef.gravityRef);
     }
 }

@@ -42,7 +42,7 @@ public class PlayerMovement : InterpolatedTransform
     [HideInInspector]
     public float gravityRef;
     private bool isDead = false;
-
+    private bool exitedJumpPad = false;
     public override void OnEnable()
     {
         base.OnEnable();
@@ -97,6 +97,12 @@ public class PlayerMovement : InterpolatedTransform
         if(isDead == true)
         {
             respawnPlayer();
+        }
+
+        if(grounded == true && gravity != gravityRef && exitedJumpPad == true)
+        {
+            gravity = gravityRef;
+            exitedJumpPad = false;
         }
     }
 
@@ -241,6 +247,12 @@ public class PlayerMovement : InterpolatedTransform
             Debug.Log("PlayerMovement script has entered a death trigger");
             isDead = true;
         }
+        else if(other.gameObject.CompareTag("Jump Pad"))
+        {
+            gravity = other.gameObject.GetComponent<jumpPad>().updateGravityEnter();
+                //myObject.GetComponent<MyScript>().MyFunction();
+
+        }
     }
     private void OnTriggerStay(Collider other)
     {
@@ -252,7 +264,14 @@ public class PlayerMovement : InterpolatedTransform
             isDead = true;
         }
     }
-    
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.gameObject.CompareTag("Jump Pad"))
+        {
+            exitedJumpPad = true;
+        }
+    }
+
     private void respawnPlayer()
     {
         controller.enabled = false;
