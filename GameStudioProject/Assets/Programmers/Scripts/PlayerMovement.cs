@@ -96,7 +96,7 @@ public class PlayerMovement : InterpolatedTransform
             forceTime -= Time.deltaTime;
         if(isDead == true)
         {
-            respawnPlayer();
+            ResetPositionTo(respawnPOS);
         }
 
         if(grounded == true && gravity != gravityRef && exitedJumpPad == true)
@@ -117,7 +117,7 @@ public class PlayerMovement : InterpolatedTransform
         }
         if(isDead == true)
         {
-            respawnPlayer();
+            ResetPositionTo(respawnPOS);
         }
     }
 
@@ -273,15 +273,4 @@ public class PlayerMovement : InterpolatedTransform
         }
     }
 
-    private void respawnPlayer()
-    {
-        controller.enabled = false;
-        gravity = 0;
-        transform.position = respawnPOS;
-        Physics.SyncTransforms();
-        gravity = gravityRef;
-        controller.enabled = true;
-        isDead = false;
-        Debug.Log("Player has respawned");
-    }
 }
