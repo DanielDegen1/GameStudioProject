@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class jumpPad : MonoBehaviour
 {
-    public float gravityReduction = 15.0f;
+    public float newJumpStrength = 15.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +19,7 @@ public class jumpPad : MonoBehaviour
 
     public float updateGravityEnter()
     {
-        return(gravityReduction);
+        return(newJumpStrength);
     }
     public float updateGravityExit(PlayerMovement gravityRef)
     {

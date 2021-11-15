@@ -41,6 +41,8 @@ public class PlayerMovement : InterpolatedTransform
     UnityEvent onReset = new UnityEvent();
     [HideInInspector]
     public float gravityRef;
+    [HideInInspector]
+    public float jumpSpeedRef;
     private bool isDead = false;
     private bool exitedJumpPad = false;
     public override void OnEnable()
@@ -57,6 +59,7 @@ public class PlayerMovement : InterpolatedTransform
     private void Start()
     {
         gravityRef = gravity;
+        jumpSpeedRef = jumpSpeed;
         respawnPOS = gameObject.transform.position;
     }
     public void AddToReset(UnityAction call)
@@ -100,9 +103,9 @@ public class PlayerMovement : InterpolatedTransform
             ResetPositionTo(respawnPOS);
         }
 
-        if(grounded == true && gravity != gravityRef && exitedJumpPad == true)
+        if(grounded == true && jumpSpeed != jumpSpeedRef && exitedJumpPad == true)
         {
-            gravity = gravityRef;
+            jumpSpeed = jumpSpeedRef;
             exitedJumpPad = false;
         }
     }
@@ -251,7 +254,7 @@ public class PlayerMovement : InterpolatedTransform
         else if(other.gameObject.CompareTag("Jump Pad"))
         {
             exitedJumpPad = false;
-            gravity = other.gameObject.GetComponent<jumpPad>().updateGravityEnter();
+            jumpSpeed = other.gameObject.GetComponent<jumpPad>().updateGravityEnter();
         }
         else if(other.gameObject.CompareTag("Checkpoint"))
         {
