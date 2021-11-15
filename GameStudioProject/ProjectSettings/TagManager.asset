@@ -23,6 +23,7 @@ TagManager:
   - Blockade
   - moving
   - Door
+  - Spring Pad
   layers:
   - Default
   - TransparentFX

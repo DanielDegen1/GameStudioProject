@@ -43,8 +43,11 @@ public class PlayerMovement : InterpolatedTransform
     public float gravityRef;
     [HideInInspector]
     public float jumpSpeedRef;
+    [HideInInspector]
+    public float airTimer = 0;
     private bool isDead = false;
     private bool exitedJumpPad = false;
+    
     public override void OnEnable()
     {
         base.OnEnable();
@@ -107,6 +110,15 @@ public class PlayerMovement : InterpolatedTransform
         {
             jumpSpeed = jumpSpeedRef;
             exitedJumpPad = false;
+        }
+
+        if(!grounded)
+        {
+            airTimer += Time.deltaTime;
+        }
+        else
+        {
+            airTimer = 0;
         }
     }
 
@@ -244,11 +256,11 @@ public class PlayerMovement : InterpolatedTransform
     }
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("PlayerMovement script has entered a trigger");
+       // Debug.Log("PlayerMovement script has entered a trigger");
 
         if(other.gameObject.CompareTag("Death"))
         {
-            Debug.Log("PlayerMovement script has entered a death trigger");
+           // Debug.Log("PlayerMovement script has entered a death trigger");
             isDead = true;
         }
         else if(other.gameObject.CompareTag("Jump Pad"))
@@ -260,14 +272,20 @@ public class PlayerMovement : InterpolatedTransform
         {
             respawnPOS = gameObject.transform.position;
         }
+        else if(other.gameObject.CompareTag("Spring Pad"))
+        {
+            Debug.Log("spring pad triggered with an airtimer of " + airTimer);
+            
+            other.GetComponent<springPad>().bouncePlayer(airTimer);
+        }
     }
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log("PlayerMovement script is inside a trigger");
+       // Debug.Log("PlayerMovement script is inside a trigger");
 
         if (other.gameObject.CompareTag("Death"))
         {
-            Debug.Log("PlayerMovement script is inside a death trigger");
+           // Debug.Log("PlayerMovement script is inside a death trigger");
             isDead = true;
         }
     }
