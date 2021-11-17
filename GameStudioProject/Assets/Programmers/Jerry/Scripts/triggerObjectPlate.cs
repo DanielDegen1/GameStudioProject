@@ -23,7 +23,7 @@ public class triggerObjectPlate : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("Player") && other.gameObject.CompareTag("Projectile")) //if the player steps on the pressure plate or shoots it with an arrow
+        if(other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Projectile")) //if the player steps on the pressure plate or shoots it with an arrow
         {
             Debug.Log("Played stepped on plate"); //do nothing since the pressure plate should not be triggerable by the player or their arrows
             //do nothing feedback?
