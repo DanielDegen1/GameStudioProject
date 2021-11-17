@@ -6012,7 +6012,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32490
+  m_Name: pb_Mesh51134
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7552,6 +7552,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3442382008194376250, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+      propertyPath: wallrunLayer.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
     - target: {fileID: 2453986428590421080, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -24964,7 +24968,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh37680
+  m_Name: pb_Mesh51038
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -53541,7 +53545,7 @@ GameObject:
   - component: {fileID: 2005984324}
   - component: {fileID: 2005984323}
   - component: {fileID: 2005984322}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53556,7 +53560,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2005984320}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -139.49432, y: 8.114439, z: -43.3427}
+  m_LocalPosition: {x: -139.49432, y: 8.114439, z: -42.0927}
   m_LocalScale: {x: 1, y: 0.060856, z: 0.52187}
   m_Children: []
   m_Father: {fileID: 530444197}
@@ -57211,7 +57215,7 @@ GameObject:
   - component: {fileID: 2090315621}
   - component: {fileID: 2090315620}
   - component: {fileID: 2090315619}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57226,7 +57230,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090315617}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -139.49432, y: 8.114439, z: -64.7527}
+  m_LocalPosition: {x: -139.49432, y: 8.114439, z: -65.7527}
   m_LocalScale: {x: 1, y: 0.060856, z: 0.52187}
   m_Children: []
   m_Father: {fileID: 530444197}
