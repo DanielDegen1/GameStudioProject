@@ -18,6 +18,14 @@ public class AnimController : MonoBehaviour
     private GameObject bow;
     private GameObject arrow;
 
+    //####### AUDIO STUFF ########
+    private AudioSource playerAudio;
+
+    // Footstep Clip
+    public AudioClip footstep, slide, jumpUp, vault, land, wallrun, fire, dmg;
+
+
+
     public Transform bowParent;
     public Transform arrowParent;
     public int animIndex;
@@ -34,6 +42,7 @@ public class AnimController : MonoBehaviour
         anim = this.GetComponent<Animator>();
         input = playerMovement.gameObject.GetComponent<PlayerInput>();
         shootController = playerMovement.gameObject.GetComponent<Shooting>();
+        playerAudio = this.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -85,5 +94,46 @@ public class AnimController : MonoBehaviour
     public void DeleteBow(){
         bow.SetActive(false);
         Destroy(bow);
+    }
+
+    public void Footstep()
+    {
+        playerAudio.pitch = 1f + Random.Range(-0.2f, 0.2f);
+        playerAudio.PlayOneShot(footstep, 0.9f);
+    }
+
+    public void Slide()
+    {
+        playerAudio.PlayOneShot(slide, 0.9f);
+    }
+
+    public void JumpAscend()
+    {
+        playerAudio.PlayOneShot(jumpUp, 0.9f);
+    }
+
+    public void Land()
+    {
+        playerAudio.PlayOneShot(land, 0.9f);
+    }
+
+    public void Vault()
+    {
+        playerAudio.PlayOneShot(vault, 0.9f);
+    }
+
+    public void Wallrun()
+    {
+        playerAudio.PlayOneShot(wallrun, 0.9f);
+    }
+
+    public void FireBow()
+    {
+        playerAudio.PlayOneShot(fire, 0.9f);
+    }
+
+    public void Hurt()
+    {
+        playerAudio.PlayOneShot(dmg, 0.9f);
     }
 }
