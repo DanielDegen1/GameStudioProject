@@ -38538,7 +38538,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7115236919472180604, guid: 6fdda37bde7bfdc4fb20269b6b363666, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 43
+      value: 42.935
       objectReference: {fileID: 0}
     - target: {fileID: 7115236919472180604, guid: 6fdda37bde7bfdc4fb20269b6b363666, type: 3}
       propertyPath: m_LocalRotation.w
@@ -38570,3 +38570,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fdda37bde7bfdc4fb20269b6b363666, type: 3}
+--- !u!1 &8212980230966412784 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2478796134731766648, guid: 6fdda37bde7bfdc4fb20269b6b363666, type: 3}
+  m_PrefabInstance: {fileID: 8212980230966412783}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8212980230966412785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8212980230966412784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34eaf436a2a6e4b4597771fb27913e89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelName: MattLevel1
+  levelComplete: 0

@@ -33285,8 +33285,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34eaf436a2a6e4b4597771fb27913e89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: MenuScene
-  levelComplete: 1
+  levelName: TexturedOctagonLevel
+  levelComplete: 0
 --- !u!43 &1382498581
 Mesh:
   m_ObjectHideFlags: 0
