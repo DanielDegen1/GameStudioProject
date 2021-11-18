@@ -457,7 +457,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6187028363194667417}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 449ef5ebbe24720439ec31d15f7b6f3d, type: 3}
   m_Name: 
@@ -803,6 +803,8 @@ MonoBehaviour:
   jump: {x: 0, y: 0, z: 0}
   respawnPOS: {x: 0, y: 0, z: 0}
   gravityRef: 0
+  jumpSpeedRef: 0
+  airTimer: 0
 --- !u!114 &7707081060816314902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -938,6 +940,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: arms_edit
       objectReference: {fileID: 0}
+    - target: {fileID: 7797321528481081776, guid: fe18f0e4a7f68409c8f8fa373984e83c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9ea39e47974ccc241b207bf4325cfbd1, type: 2}
+    - target: {fileID: 8226667654741412597, guid: fe18f0e4a7f68409c8f8fa373984e83c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9ea39e47974ccc241b207bf4325cfbd1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe18f0e4a7f68409c8f8fa373984e83c, type: 3}
 --- !u!4 &1284584479171242853 stripped
