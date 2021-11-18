@@ -7572,7 +7572,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2621722902122626479, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
       propertyPath: levelName
-      value: SecondLevel
+      value: MenuScene
       objectReference: {fileID: 0}
     - target: {fileID: 4247327821211603276, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
       propertyPath: m_LocalPosition.x
