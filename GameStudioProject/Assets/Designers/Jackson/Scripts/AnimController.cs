@@ -60,6 +60,9 @@ public class AnimController : MonoBehaviour
             anim.SetTrigger("Fire");
         }
         
+        if (input.Jump()) {
+            anim.SetTrigger("Jump");
+        }
 
         anim.SetFloat("Velocity",(velocity));
         
