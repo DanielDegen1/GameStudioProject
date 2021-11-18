@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class sceneLoader : MonoBehaviour
 {
 
-    public string levelName;
+    //public string levelName;
    // [HideInInspector]
     public bool levelComplete = false;
 
@@ -15,9 +15,8 @@ public class sceneLoader : MonoBehaviour
         Debug.Log("Scene Loader trigger entered");
         if (other.gameObject.CompareTag("Next Level"))
         {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
 
-            // Loading the scene from it's name
-            SceneManager.LoadScene(levelName);
             Debug.Log("New Scene should load");
         }
     }

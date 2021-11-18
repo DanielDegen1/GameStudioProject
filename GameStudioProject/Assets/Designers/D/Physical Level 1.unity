@@ -7592,15 +7592,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7085721664118310500, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 292.1
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 7085721664118310500, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.601
+      value: 26.75
       objectReference: {fileID: 0}
     - target: {fileID: 7085721664118310500, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -73.2
+      value: -70.31
       objectReference: {fileID: 0}
     - target: {fileID: 7085721664118310500, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -24313,11 +24313,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7115236919472180604, guid: 6fdda37bde7bfdc4fb20269b6b363666, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 319.66577
+      value: 325.93
       objectReference: {fileID: 0}
     - target: {fileID: 7115236919472180604, guid: 6fdda37bde7bfdc4fb20269b6b363666, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 26.23
+      value: 23.12
       objectReference: {fileID: 0}
     - target: {fileID: 7115236919472180604, guid: 6fdda37bde7bfdc4fb20269b6b363666, type: 3}
       propertyPath: m_LocalPosition.z
@@ -33285,7 +33285,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34eaf436a2a6e4b4597771fb27913e89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: TexturedOctagonLevel
   levelComplete: 0
 --- !u!43 &1382498581
 Mesh:
