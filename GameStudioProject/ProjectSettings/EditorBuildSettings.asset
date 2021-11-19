@@ -18,11 +18,11 @@ EditorBuildSettings:
     path: Assets/Designers/Jackson/Scenes/BasicMovementTutorial.unity
     guid: c2ac1937427b54a1aacd9d3c5480bdba
   - enabled: 1
-    path: Assets/Designers/Matt M/Scenes/MattLevel1.unity
-    guid: 9c35f134f448ee340bd04e3d9a0ab415
-  - enabled: 1
     path: Assets/Designers/D/Physical Level 1.unity
     guid: 8def949bdafe25e4997914b4f01ee42a
+  - enabled: 1
+    path: Assets/Designers/Matt M/Scenes/MattLevel1.unity
+    guid: 9c35f134f448ee340bd04e3d9a0ab415
   - enabled: 1
     path: Assets/Designers/Matt M/Scenes/TexturedOctagonLevel.unity
     guid: f2ff7269d21d38842ab1eb942dcbe99d
