@@ -7,6 +7,11 @@ using UnityEngine.SceneManagement;
 public class Menuscript : MonoBehaviour
 {
     public GameObject musicController;
+    private void Awake()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
     public void ButtonMainMenu(){
         SceneManager.LoadScene("MenuScene");
 
