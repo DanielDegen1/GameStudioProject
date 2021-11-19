@@ -7,7 +7,7 @@ public class sceneLoader : MonoBehaviour
 {
 
     //public string levelName;
-   // [HideInInspector]
+    [HideInInspector]
     public bool levelComplete = false;
 
     private void OnTriggerEnter(Collider other)
