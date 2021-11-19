@@ -6143,7 +6143,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7392608396328592906, guid: 521965161d26b6244971d9534c9aed8e, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7392608396328592907, guid: 521965161d26b6244971d9534c9aed8e, type: 3}
       propertyPath: m_Mass
@@ -6159,7 +6159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7933353403614166849, guid: 521965161d26b6244971d9534c9aed8e, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 521965161d26b6244971d9534c9aed8e, type: 3}
@@ -7259,7 +7259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6592476060275164667, guid: a69f3bf5cb09e684aac0b3b548710920, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6835087830611451790, guid: a69f3bf5cb09e684aac0b3b548710920, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -29805,7 +29805,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34eaf436a2a6e4b4597771fb27913e89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: NewScene2
   levelComplete: 0
 --- !u!1 &1879426409
 GameObject:
