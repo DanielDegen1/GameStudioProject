@@ -29,7 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Designers/Jackson/Scenes/NewScene2.unity
     guid: df9dd236a89814648a3ba0a67396370a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Programmers/Ryan/Scenes/WackWarps.unity
     guid: 307316d385fd36d49814c74c94668d79
   m_configObjects: {}
