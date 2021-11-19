@@ -9,7 +9,7 @@ public class colorBucket : MonoBehaviour
     public static bool orangecheck;
     public static bool greencheck;
 
-    public sceneLoader levelChange;
+    public GameObject endDoor;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +22,7 @@ public class colorBucket : MonoBehaviour
         if (redcheck==true && bluecheck == true && orangecheck == true && greencheck==true )
         {
             Debug.Log("door");
-            levelChange.levelComplete = true;
+            Destroy(endDoor);
         }
     }
     private void OnTriggerEnter(Collider other)
