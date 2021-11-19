@@ -736,7 +736,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 3841
   crouchHeight: 1
-  sprintTime: 6
+  sprintTime: 8
   sprintReserve: 4
   sprintMinimum: 2
   animController: {fileID: 1916301894470021585}
