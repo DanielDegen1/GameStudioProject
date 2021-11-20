@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Designers/Jackson/Scenes/BasicMovementTutorial.unity
     guid: c2ac1937427b54a1aacd9d3c5480bdba
-  - enabled: 1
+  - enabled: 0
     path: Assets/Designers/D/Physical Level 1.unity
     guid: 8def949bdafe25e4997914b4f01ee42a
   - enabled: 1
