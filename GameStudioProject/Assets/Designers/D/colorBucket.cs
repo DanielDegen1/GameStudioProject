@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class colorBucket : MonoBehaviour
 {
-    public static bool redcheck;
-    public static bool bluecheck;
-    public static bool orangecheck;
-    public static bool greencheck;
+    [SerializeField]
+    private bool redcheck;
+    [SerializeField]
+    private bool bluecheck;
+    [SerializeField]
+    private bool orangecheck;
+    [SerializeField]
+    private bool greencheck;
 
     public GameObject endDoor;
     // Start is called before the first frame update
