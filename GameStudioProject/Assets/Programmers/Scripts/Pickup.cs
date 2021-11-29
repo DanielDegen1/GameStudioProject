@@ -17,13 +17,13 @@ public class Pickup : MonoBehaviour
     private GameObject item;
     private GameObject tempParent;
     public bool isHolding = false;
+    public float grabRange = 100.0f;
 
     Ray RayOrigin;
     RaycastHit HitInfo;
 
     private void Start () {
         item = this.gameObject;
-        //i know this sucks, remind me to improve this eventually
         tempParent = GameObject.FindGameObjectWithTag("Destination");
         playerInput = PlayerInput.Instance;
         impulseSource = GetComponent<CinemachineImpulseSource>();
@@ -80,7 +80,7 @@ public class Pickup : MonoBehaviour
         if (isHolding) {
             return false;
         }
-        if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out HitInfo, 100.0f)) {
+        if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out HitInfo, grabRange)) {
             if(HitInfo.collider.gameObject == item) {
                 return true;
             }
