@@ -105,6 +105,11 @@ public class PlayerInput : MonoBehaviour
         get { return playerControls.PlayerMovement.Crouching.triggered;}
     }
 
+    public bool jumpTrigger
+    {
+        get { return playerControls.PlayerMovement.Jump.triggered; }
+    }
+
     public bool interact {
         get{
             return playerControls.PlayerMovement.Interact.triggered;

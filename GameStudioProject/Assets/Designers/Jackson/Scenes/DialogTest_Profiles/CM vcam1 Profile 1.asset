@@ -111,11 +111,11 @@ MonoBehaviour:
     max: 1
   clamp:
     m_OverrideState: 1
-    m_Value: 65472
+    m_Value: 1
     min: 0
   tint:
     m_OverrideState: 1
-    m_Value: {r: 0.6886792, g: 0.19166073, b: 0.19166073, a: 1}
+    m_Value: {r: 0.6698113, g: 0.45812565, b: 0.45812565, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 1
