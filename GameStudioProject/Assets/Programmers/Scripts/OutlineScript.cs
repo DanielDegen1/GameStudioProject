@@ -12,7 +12,10 @@ public class OutlineScript : MonoBehaviour
     [SerializeField] private float outlineScaleFactor;
     [SerializeField] private Color outlineColor;
     private Renderer outlineRenderer;
-    
+    [SerializeField] public GameObject pickupText;
+
+
+
     void Start() {
         item = this.gameObject;
         outlineRenderer = CreateOutline(outlineMaterial, outlineScaleFactor, outlineColor);
@@ -35,15 +38,18 @@ public class OutlineScript : MonoBehaviour
 
     private void Update() {
         
-        if(this.GetComponent<Pickup>().CanPickUp()) {
+        if(this.GetComponent<Pickup>().CanPickUp()) { //if the player is in range to pick up the item draw the outline and print the "press e to pick up" text
             outlineRenderer.enabled = true;
             outlineRenderer.gameObject.transform.position = this.gameObject.transform.position;
             outlineRenderer.gameObject.transform.rotation = this.gameObject.transform.rotation;
+            pickupText.SetActive(true);
         }
         else {
-            outlineRenderer.enabled = false; 
+            outlineRenderer.enabled = false;
+            pickupText.SetActive(false);
+
         }
-        
+
     }
 
 }
