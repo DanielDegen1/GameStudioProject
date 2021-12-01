@@ -7,6 +7,7 @@ using Cinemachine;
 [RequireComponent (typeof(CinemachineImpulseSource))]
 public class Pickup : MonoBehaviour
 {
+
     private PlayerInput playerInput;
     float throwForce = 600;
     Vector3 objectPos;
@@ -18,7 +19,8 @@ public class Pickup : MonoBehaviour
     private GameObject tempParent;
     public bool isHolding = false;
     public float grabRange = 100.0f;
-
+    public GameObject playerRef;
+    private PlayerMovement movementRef;
     Ray RayOrigin;
     RaycastHit HitInfo;
 
@@ -27,7 +29,7 @@ public class Pickup : MonoBehaviour
         tempParent = GameObject.FindGameObjectWithTag("Destination");
         playerInput = PlayerInput.Instance;
         impulseSource = GetComponent<CinemachineImpulseSource>();
-        
+        movementRef = playerRef.GetComponent<PlayerMovement>();
     }
 
     void Update() {
@@ -37,7 +39,7 @@ public class Pickup : MonoBehaviour
         }
 
         //ok ok ok i know this is a really weird way of doing this if you have a better plan pls let me know
-        if (playerInput.interact) {
+        if (playerInput.interact && movementRef.grounded) {
             if (CanPickUp()){
                     Debug.Log(HitInfo.collider.gameObject.name);
                     isHolding = true;
@@ -51,7 +53,7 @@ public class Pickup : MonoBehaviour
             item.transform.SetParent(tempParent.transform);
             item.transform.position = tempParent.transform.position;
 
-            if (playerInput.Throw) {
+            if (playerInput.Throw || !movementRef.grounded) {
                 item.GetComponent<Rigidbody>().AddForce(tempParent.transform.forward * throwForce);
                 impulseSource.GenerateImpulse();
                 item.GetComponent<Rigidbody>().detectCollisions = true;

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class AnimController : MonoBehaviour
 {
@@ -10,7 +11,9 @@ public class AnimController : MonoBehaviour
     [SerializeField]
     private PlayerMovement playerMovement;
     private PlayerInput input;
+    private PlayerControls playerControls;
     private Shooting shootController;
+    private CinemachineImpulseSource impulseSource;
 
     public GameObject bowPrefab;
     public GameObject arrowPrefab;
@@ -43,6 +46,7 @@ public class AnimController : MonoBehaviour
         input = playerMovement.gameObject.GetComponent<PlayerInput>();
         shootController = playerMovement.gameObject.GetComponent<Shooting>();
         playerAudio = this.GetComponent<AudioSource>();
+        impulseSource = this.GetComponent<CinemachineImpulseSource>();
     }
 
     // Update is called once per frame
@@ -60,7 +64,7 @@ public class AnimController : MonoBehaviour
             anim.SetTrigger("Fire");
         }
         
-        if (input.Jump()) {
+        if (input.jumpTrigger) {
             anim.SetTrigger("Jump");
         }
 
@@ -112,12 +116,15 @@ public class AnimController : MonoBehaviour
 
     public void JumpAscend()
     {
+        Debug.Log("AnimController JumpAscend");
         playerAudio.PlayOneShot(jumpUp, 0.9f);
+        impulseSource.GenerateImpulse();
     }
 
     public void Land()
     {
         playerAudio.PlayOneShot(land, 0.9f);
+        impulseSource.GenerateImpulse();
     }
 
     public void Vault()
@@ -133,6 +140,7 @@ public class AnimController : MonoBehaviour
     public void FireBow()
     {
         playerAudio.PlayOneShot(fire, 0.9f);
+        impulseSource.GenerateImpulse();
     }
 
     public void Hurt()
