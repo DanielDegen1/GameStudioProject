@@ -8,4 +8,7 @@ Nate: uhh... this is Nathan?? Meow????
 <<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager d_told_me_to_say>>
 Nate: this is what D told me to say.
+<<stopVoiceLine DialogManager>>
+<<startVoiceLine DialogManager S1Voice>>
+Nate: buhhhhhh gfdhjsalg;jdskal
 ===

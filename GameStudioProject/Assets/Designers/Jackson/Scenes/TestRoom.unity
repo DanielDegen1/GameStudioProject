@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &268202315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,10 +246,6 @@ PrefabInstance:
     - target: {fileID: 1865902475210120411, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
       propertyPath: vaultLayer.m_Bits
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3635161184409817342, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
-      propertyPath: projectileSpeed
-      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4247327821211603276, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
       propertyPath: m_LocalPosition.x
