@@ -1076,7 +1076,7 @@ MonoBehaviour:
   changeTo: 6
   wallrunLayer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 128
   wallrunMinimum: 0.2
 --- !u!114 &1865902475210120411
 MonoBehaviour:
