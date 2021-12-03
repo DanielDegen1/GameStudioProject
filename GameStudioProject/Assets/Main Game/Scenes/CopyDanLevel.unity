@@ -5771,6 +5771,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 61800703532308249, guid: 3a218587866734043b600d0737df70b0, type: 3}
+      propertyPath: linkedObstacle
+      value: 
+      objectReference: {fileID: 659494961}
     - target: {fileID: 524426605078654688, guid: 3a218587866734043b600d0737df70b0, type: 3}
       propertyPath: m_Name
       value: Target
@@ -8959,7 +8963,7 @@ GameObject:
   - component: {fileID: 659494962}
   m_Layer: 0
   m_Name: End Level Door
-  m_TagString: Untagged
+  m_TagString: Blockade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40542,17 +40546,9 @@ MonoBehaviour:
   assetGuid: 
   m_Mesh: {fileID: 1200682025}
   m_IsSelectable: 1
-  m_SelectedFaces: 6b010000
-  m_SelectedEdges:
-  - a: 1452
-    b: 1453
-  - a: 1455
-    b: 1452
-  - a: 1453
-    b: 1454
-  - a: 1454
-    b: 1455
-  m_SelectedVertices: ac050000ad050000af050000ae050000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!1001 &1290942290
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48477,7 +48473,7 @@ GameObject:
   - component: {fileID: 1647677051}
   - component: {fileID: 1647677050}
   m_Layer: 0
-  m_Name: End Level Door (1)
+  m_Name: Color Bucket Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
