@@ -8,6 +8,9 @@ public class pushableObject : MonoBehaviour
     RaycastHit HitInfo;
     public float pushRange = 20f;
     public float pushForce = 1000f;
+    [SerializeField]
+    public GameObject pushText;
+    private bool pushable = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,14 +20,20 @@ public class pushableObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(input.Push && Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out HitInfo, pushRange) == true)
+        pushable = CanPush();
+        if(pushable)
         {
+            pushText.SetActive(true);
             Debug.Log("First if statement passed");
-            if(HitInfo.rigidbody == true)
+            if(input.Push)
             {
                 Debug.Log("Second if statement passed");
                 pushObject(HitInfo.rigidbody);
             }
+        }
+        else
+        {
+            pushText.SetActive(false);
         }
     }
 
@@ -35,5 +44,30 @@ public class pushableObject : MonoBehaviour
         // We then get the opposite (-Vector3) and normalize it
         dir = -dir.normalized; 
         objectToPush.AddForce(dir * pushForce);
+    }
+
+    public bool CanPush()
+    {
+        Debug.Log("Can push called");
+        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out HitInfo, pushRange))
+        {
+            if (HitInfo.rigidbody)
+            {
+                Debug.Log("can push object");
+                return true;
+            }
+            else
+            {
+                Debug.Log("can not push object");
+
+                return false;
+            }
+        }
+        else
+        {
+            Debug.Log("can not push object");
+
+            return false;
+        }
     }
 }

@@ -12,7 +12,7 @@ public class OutlineScript : MonoBehaviour
     [SerializeField] private float outlineScaleFactor;
     [SerializeField] private Color outlineColor;
     private Renderer outlineRenderer;
-    [SerializeField] public GameObject pickupText;
+    [SerializeField] public GameObject textToEnable;
 
 
 
@@ -42,11 +42,11 @@ public class OutlineScript : MonoBehaviour
             outlineRenderer.enabled = true;
             outlineRenderer.gameObject.transform.position = this.gameObject.transform.position;
             outlineRenderer.gameObject.transform.rotation = this.gameObject.transform.rotation;
-            pickupText.SetActive(true);
+            textToEnable.SetActive(true);
         }
         else {
             outlineRenderer.enabled = false;
-            pickupText.SetActive(false);
+            textToEnable.SetActive(false);
 
         }
 

@@ -624,6 +624,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &175642578 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1748430467452404647, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+  m_PrefabInstance: {fileID: 1013297988}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &197101472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6163,6 +6168,100 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 521965161d26b6244971d9534c9aed8e, type: 3}
+--- !u!1 &722938538 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7392608396328592906, guid: 521965161d26b6244971d9534c9aed8e, type: 3}
+  m_PrefabInstance: {fileID: 722938537}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &722938539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722938538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e5a6e3382764364b8dc4c88e5b74ac8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMaterial: {fileID: 2100000, guid: ee712b17d1749b341bca571ce21221ca, type: 2}
+  outlineScaleFactor: 1.05
+  outlineColor: {r: 1, g: 0.9949388, b: 0.68490565, a: 0.44705883}
+  textToEnable: {fileID: 175642578}
+--- !u!114 &722938540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722938538}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306dc4f8ee4969b4581a50ad9a0d3db4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canHold: 0
+  isHolding: 0
+  grabRange: 100
+  playerRef: {fileID: 917478621}
+--- !u!114 &722938541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722938538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ImpulseDefinition:
+    m_ImpulseChannel: 1
+    m_RawSignal: {fileID: 0}
+    m_AmplitudeGain: 1
+    m_FrequencyGain: 1
+    m_RepeatMode: 0
+    m_Randomize: 1
+    m_TimeEnvelope:
+      m_AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_AttackTime: 0
+      m_SustainTime: 0.2
+      m_DecayTime: 0.7
+      m_ScaleWithImpact: 1
+      m_HoldForever: 0
+    m_ImpactRadius: 100
+    m_DirectionMode: 0
+    m_DissipationMode: 2
+    m_DissipationDistance: 1000
+    m_PropagationSpeed: 343
+--- !u!114 &722938548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722938538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 825297741fcc5aa4ea1c895a63db6676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pushRange: 20
+  pushForce: 1000
+  pushText: {fileID: 175642578}
 --- !u!43 &751020212
 Mesh:
   m_ObjectHideFlags: 0
@@ -7432,6 +7531,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &917478621 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7085721664118310506, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+  m_PrefabInstance: {fileID: 1013297988}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &924403779
 GameObject:
   m_ObjectHideFlags: 0
@@ -10271,6 +10375,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -6.4429865
       objectReference: {fileID: 0}
+    - target: {fileID: 1748430467452404647, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+      propertyPath: m_Name
+      value: Push Text
+      objectReference: {fileID: 0}
     - target: {fileID: 1792702277819100232, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 44.541084
@@ -10646,6 +10754,10 @@ PrefabInstance:
     - target: {fileID: 8991795768864346949, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1.1195503
+      objectReference: {fileID: 0}
+    - target: {fileID: 9008459979009592371, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+      propertyPath: m_Text
+      value: Press 'E' to push this boulder!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
