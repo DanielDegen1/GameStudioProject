@@ -8,13 +8,18 @@ public class PauseMenu : MonoBehaviour
 	private float m_TimeScaleRef = 1f;
     private float m_VolumeRef = 1f;
     private bool m_Paused;
+    PlayerInput playerInput;
 
 
     void Awake()
     {
         m_MenuToggle = GetComponent <Toggle> ();
 	}
+    private void Start()
+    {
+        playerInput = GetComponent<PlayerInput>();
 
+    }
 
     private void MenuOn ()
     {
@@ -25,6 +30,7 @@ public class PauseMenu : MonoBehaviour
         AudioListener.volume = 0f;
 
         m_Paused = true;
+        Debug.Log("menu should be on");
     }
 
 
@@ -49,15 +55,14 @@ public class PauseMenu : MonoBehaviour
     }
 
 
-#if !MOBILE_INPUT
 	void Update()
 	{
-		if(Input.GetKeyUp(KeyCode.Escape))
+		if(playerInput.Pause)
 		{
+            Debug.Log("Pause Input detected");
 		    m_MenuToggle.isOn = !m_MenuToggle.isOn;
             Cursor.visible = m_MenuToggle.isOn;//force the cursor visible if anythign had hidden it
 		}
 	}
-#endif
 
 }
