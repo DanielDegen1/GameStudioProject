@@ -3,6 +3,8 @@ tags:
 colorID: 0
 position: -53,-52
 ---
+<<setNameLabel DialogManager Nate>>
+<<setPortrait DialogManager nuzion>>
 <<startVoiceLine DialogManager this_is_nathan_meow>>
 Nate: uhh... this is Nathan?? Meow????
 <<stopVoiceLine DialogManager>>
