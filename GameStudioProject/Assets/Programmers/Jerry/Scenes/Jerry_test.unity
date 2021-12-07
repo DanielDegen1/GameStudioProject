@@ -15378,11 +15378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pushRange: 20
   pushForce: 1000
---- !u!1 &1105640119 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1748430467452404647, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
-  m_PrefabInstance: {fileID: 1562408160}
-  m_PrefabAsset: {fileID: 0}
+  pushText: {fileID: 0}
 --- !u!1 &1129255881
 GameObject:
   m_ObjectHideFlags: 0
@@ -15400,6 +15396,7 @@ GameObject:
   - component: {fileID: 1129255884}
   - component: {fileID: 1129255883}
   - component: {fileID: 1129255882}
+  - component: {fileID: 1129255891}
   m_Layer: 0
   m_Name: Icosphere
   m_TagString: green
@@ -15422,7 +15419,7 @@ MonoBehaviour:
   outlineMaterial: {fileID: 2100000, guid: ee712b17d1749b341bca571ce21221ca, type: 2}
   outlineScaleFactor: 1.05
   outlineColor: {r: 1, g: 0.9949388, b: 0.68490565, a: 0.44705883}
-  pickupText: {fileID: 1105640119}
+  textToEnable: {fileID: 0}
 --- !u!135 &1129255883
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17729,6 +17726,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1129255891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129255881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ff086b15676b241974425608115b05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1172675108
 GameObject:
   m_ObjectHideFlags: 3
@@ -17873,7 +17882,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23508
+  m_Name: pb_Mesh31218
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21043,7 +21052,7 @@ MonoBehaviour:
   outlineMaterial: {fileID: 2100000, guid: ee712b17d1749b341bca571ce21221ca, type: 2}
   outlineScaleFactor: 1.1
   outlineColor: {r: 0.4716981, g: 0.064524755, b: 0.064524755, a: 0}
-  pickupText: {fileID: 0}
+  textToEnable: {fileID: 0}
 --- !u!114 &1966586869
 MonoBehaviour:
   m_ObjectHideFlags: 0
