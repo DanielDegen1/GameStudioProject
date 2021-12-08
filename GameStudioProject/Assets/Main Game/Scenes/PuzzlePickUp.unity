@@ -13306,7 +13306,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh67984
+  m_Name: pb_Mesh35120
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -23390,7 +23390,7 @@ MonoBehaviour:
   outlineMaterial: {fileID: 2100000, guid: ee712b17d1749b341bca571ce21221ca, type: 2}
   outlineScaleFactor: 1.05
   outlineColor: {r: 1, g: 0.9949388, b: 0.68490565, a: 0.44705883}
-  pickupText: {fileID: 2065890389}
+  textToEnable: {fileID: 0}
 --- !u!135 &1897229109
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -27521,11 +27521,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
---- !u!1 &2065890389 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1748430467452404647, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
-  m_PrefabInstance: {fileID: 2065890388}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2065890390 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7085721664118310506, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
