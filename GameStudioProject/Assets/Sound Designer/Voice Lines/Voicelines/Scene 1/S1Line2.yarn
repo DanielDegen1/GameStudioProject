@@ -5,7 +5,7 @@ position: -53,-52
 ---
 <<setNameLabel DialogManager Eniki >>
 <<setPortrait DialogManager Eniki>>
-<<startVoiceLine Complete_each_challenge_and_we_will_achieve_victory_together._only_through_trust_will_I_be_able_to_get_you_out_of_this_place.>>
-Eniki: Complete each challenge and we will achieve victory together. Only through trust will I be able to get you out of this place.
+<<startVoiceLine DialogManager S1VoiceLine2>>
+Complete each challenge and we will achieve victory together. Only through trust will I be able to get you out of this place.
 <<stopVoiceLine DialogManager>>
 ===
