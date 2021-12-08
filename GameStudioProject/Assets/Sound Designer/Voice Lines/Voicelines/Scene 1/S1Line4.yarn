@@ -5,7 +5,7 @@ position: -53,-52
 ---
 <<setNameLabel DialogManager Eniki >>
 <<setPortrait DialogManager Eniki>>
-<<startVoiceLine Take_my_bow_champion._Use_it_well_and_there's_nothing_you_can't_overcome.>>
+<<startVoiceLine DialogManager S1VoiceLine4>>
 Eniki: Take my bow champion. Use it well and there’s nothing you can’t overcome
 <<stopVoiceLine DialogManager>>
 ===
