@@ -1,0 +1,11 @@
+﻿title: S2Line3
+tags: 
+colorID: 0
+position: -53,-52
+---
+<<setNameLabel DialogManager Eniki >>
+<<setPortrait DialogManager Eniki>>
+<<startVoiceLine DialogManager S2VoiceLine3>>
+Remember champion. I am the one who chose you. Don’t listen to the others, they will attempt to deceive and turn you against me
+<<stopVoiceLine DialogManager>>
+===
