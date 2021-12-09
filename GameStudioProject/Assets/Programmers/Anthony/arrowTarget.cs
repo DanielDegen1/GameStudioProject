@@ -10,11 +10,14 @@ public class arrowTarget : MonoBehaviour
 
     public GameObject linkedObstacle;
     private bool targethit = false;
-    
+    public AudioClip targetHit;
+    public float Volume = 1.0f;
+    public GameObject audioSource;
+    private AudioSource sourceRef;
     // Start is called before the first frame update
     void Start()
     {
-        
+        sourceRef = audioSource.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -22,18 +25,21 @@ public class arrowTarget : MonoBehaviour
     {
         if (targethit == true && linkedObstacle.tag=="temp")
         {
+            Play();
             tempplatform = linkedObstacle.GetComponent<targetTempPlatform>();
             tempplatform.active = true;
         }
 
         if (targethit == true && linkedObstacle.tag == "moving")
         {
+            Play();
             movingplatform = linkedObstacle.GetComponent<targetMovingPlat>();
             movingplatform.active = true;
         }
 
         if(targethit == true && linkedObstacle.tag == "Blockade")
         {
+            Play();
             Destroy(linkedObstacle);
         }
     }
@@ -46,6 +52,15 @@ public class arrowTarget : MonoBehaviour
             targethit = true;
         }
     }
+    public void Play()
+    {
+        Debug.Log("Target hit audio should play");
+        sourceRef.PlayOneShot(targetHit, Volume);
+    }
 
+    public void Stop()
+    {
+        this.GetComponent<AudioSource>().Stop();
+    }
 
 }

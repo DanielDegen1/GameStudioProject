@@ -6,13 +6,17 @@ public class triggerObjectPlate : MonoBehaviour
 {
     private bool plateTriggered = false;
     public GameObject linkedObject;
-    public Sound pressurePlateSound;
-    
+    public AudioClip plateSound;
+    public float Volume = 1.0f;
+    public GameObject audioSource;
+    private AudioSource sourceRef;
     // Start is called before the first frame update
     void Start()
     {
-        
+        sourceRef = audioSource.GetComponent<AudioSource>();
+
     }
+
 
     // Update is called once per frame
     void Update()
@@ -41,7 +45,7 @@ public class triggerObjectPlate : MonoBehaviour
     }
     public void Play()
     {
-        pressurePlateSound.source.Play();
+        sourceRef.PlayOneShot(plateSound, Volume);
     }
 
     public void Stop()

@@ -27986,6 +27986,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 61800703532308249, guid: 3a218587866734043b600d0737df70b0, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1579484919}
+    - target: {fileID: 61800703532308249, guid: 3a218587866734043b600d0737df70b0, type: 3}
       propertyPath: linkedObstacle
       value: 
       objectReference: {fileID: 873560995}

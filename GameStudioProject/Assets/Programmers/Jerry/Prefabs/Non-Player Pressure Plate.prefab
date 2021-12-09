@@ -97,13 +97,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   linkedObject: {fileID: 0}
-  pressurePlateSound:
-    name: 
-    clip: {fileID: 8300000, guid: 83fb1ca85db316f4cbc078d179bc80fb, type: 3}
-    volume: 0
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
+  plateSound: {fileID: 8300000, guid: 83fb1ca85db316f4cbc078d179bc80fb, type: 3}
+  Volume: 1
+  audioSource: {fileID: 0}
 --- !u!65 &2783902261666005716
 BoxCollider:
   m_ObjectHideFlags: 0
