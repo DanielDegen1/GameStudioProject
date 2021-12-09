@@ -1,0 +1,11 @@
+﻿title: S3Line1
+tags: 
+colorID: 0
+position: -53,-52
+---
+<<setNameLabel DialogManager Londros >>
+<<setPortrait DialogManager Londros>>
+<<startVoiceLine DialogManager S3VoiceLine1>>
+you’ve done well! My champion disappoints me. I told him to break down the door and he’s knocked himself out!  Maybe I ought to back you!
+<<stopVoiceLine DialogManager>>
+===
