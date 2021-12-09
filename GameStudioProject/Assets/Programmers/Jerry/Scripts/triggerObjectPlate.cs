@@ -6,6 +6,7 @@ public class triggerObjectPlate : MonoBehaviour
 {
     private bool plateTriggered = false;
     public GameObject linkedObject;
+    public Sound pressurePlateSound;
     
     // Start is called before the first frame update
     void Start()
@@ -35,7 +36,16 @@ public class triggerObjectPlate : MonoBehaviour
     }
     private void doorTrigger()
     {
-        //Potential TODO: add an animation of door opening and rework this code here
+        Play();
         Destroy(linkedObject); //destory the door
+    }
+    public void Play()
+    {
+        pressurePlateSound.source.Play();
+    }
+
+    public void Stop()
+    {
+        this.GetComponent<AudioSource>().Stop();
     }
 }
