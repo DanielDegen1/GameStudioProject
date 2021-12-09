@@ -51,7 +51,7 @@ public class pushableObject : MonoBehaviour
         Debug.Log("Can push called");
         if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out HitInfo, pushRange))
         {
-            if (HitInfo.rigidbody)
+            if (HitInfo.rigidbody && HitInfo.transform.tag != "Projectile")
             {
                 Debug.Log("can push object");
                 return true;
