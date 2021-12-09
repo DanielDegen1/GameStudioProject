@@ -25026,6 +25026,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3595856123250508331, guid: c98317ec9eafc9e4d9df2c4fd13866ee, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1579484919}
+    - target: {fileID: 3595856123250508331, guid: c98317ec9eafc9e4d9df2c4fd13866ee, type: 3}
       propertyPath: linkedObject
       value: 
       objectReference: {fileID: 1652727425}
