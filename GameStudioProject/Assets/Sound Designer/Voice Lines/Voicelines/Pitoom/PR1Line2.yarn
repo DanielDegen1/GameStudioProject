@@ -1,0 +1,11 @@
+﻿title: PR1Line2
+tags: 
+colorID: 0
+position: -53,-52
+---
+<<setNameLabel DialogManager Eniki >>
+<<setPortrait DialogManager Eniki>>
+<<startVoiceLine DialogManager PR1VoiceLine2>>
+Just remember no matter the challenge you face I will always keep you safe. All I ask in return is that you follow my commands.
+<<stopVoiceLine DialogManager>>
+===
