@@ -1295,6 +1295,97 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1001 &757281337
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2478796134731766648, guid: 6fdda37bde7bfdc4fb20269b6b363666, type: 3}
+      propertyPath: m_Name
+      value: Next Level Trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 2632998127702262186, guid: 6fdda37bde7bfdc4fb20269b6b363666, type: 3}
+      propertyPath: m_Size.y
+      value: 14.22874
+      objectReference: {fileID: 0}
+    - target: {fileID: 2632998127702262186, guid: 6fdda37bde7bfdc4fb20269b6b363666, type: 3}
+      propertyPath: m_Size.z
+      value: 21.345032
+      objectReference: {fileID: 0}
+    - target: {fileID: 2632998127702262186, guid: 6fdda37bde7bfdc4fb20269b6b363666, type: 3}
+      propertyPath: m_Center.y
+      value: 5.389588
+      objectReference: {fileID: 0}
+    - target: {fileID: 2632998127702262186, guid: 6fdda37bde7bfdc4fb20269b6b363666, type: 3}
+      propertyPath: m_Center.z
+      value: -3.169342
+      objectReference: {fileID: 0}
+    - target: {fileID: 7115236919472180604, guid: 6fdda37bde7bfdc4fb20269b6b363666, type: 3}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 7115236919472180604, guid: 6fdda37bde7bfdc4fb20269b6b363666, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2032.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 7115236919472180604, guid: 6fdda37bde7bfdc4fb20269b6b363666, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 7115236919472180604, guid: 6fdda37bde7bfdc4fb20269b6b363666, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -665.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7115236919472180604, guid: 6fdda37bde7bfdc4fb20269b6b363666, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7115236919472180604, guid: 6fdda37bde7bfdc4fb20269b6b363666, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7115236919472180604, guid: 6fdda37bde7bfdc4fb20269b6b363666, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7115236919472180604, guid: 6fdda37bde7bfdc4fb20269b6b363666, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7115236919472180604, guid: 6fdda37bde7bfdc4fb20269b6b363666, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7115236919472180604, guid: 6fdda37bde7bfdc4fb20269b6b363666, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7115236919472180604, guid: 6fdda37bde7bfdc4fb20269b6b363666, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6fdda37bde7bfdc4fb20269b6b363666, type: 3}
+--- !u!1 &757281338 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2478796134731766648, guid: 6fdda37bde7bfdc4fb20269b6b363666, type: 3}
+  m_PrefabInstance: {fileID: 757281337}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &757281339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757281338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34eaf436a2a6e4b4597771fb27913e89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelComplete: 0
 --- !u!1 &854092932
 GameObject:
   m_ObjectHideFlags: 0
@@ -1372,7 +1463,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 2
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
