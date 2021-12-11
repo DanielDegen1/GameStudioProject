@@ -11973,7 +11973,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28520
+  m_Name: pb_Mesh48234
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12345,7 +12345,6 @@ GameObject:
   - component: {fileID: 813102147}
   - component: {fileID: 813102146}
   - component: {fileID: 813102145}
-  - component: {fileID: 813102144}
   - component: {fileID: 813102143}
   - component: {fileID: 813102142}
   m_Layer: 0
@@ -12385,20 +12384,6 @@ MonoBehaviour:
   orangecheck: 1
   greencheck: 0
   endDoor: {fileID: 1108329261}
---- !u!64 &813102144
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 813102141}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 761437940}
 --- !u!33 &813102145
 MeshFilter:
   m_ObjectHideFlags: 10
