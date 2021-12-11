@@ -804,8 +804,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df40fbd2711e84399a1b241775d89773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkToNode: CutScene2
-  scriptToLoad: {fileID: 2480198943629176163, guid: 0d648f7e8114cf64990b5eeda5ba9b94, type: 3}
+  talkToNode: CutScene1
+  scriptToLoad: {fileID: 2480198943629176163, guid: cfaa0a23e2c7158408a4babcc0b48f59, type: 3}
 --- !u!65 &1404973337
 BoxCollider:
   m_ObjectHideFlags: 0
