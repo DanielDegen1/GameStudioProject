@@ -256,11 +256,11 @@ public class PlayerMovement : InterpolatedTransform
     }
     private void OnTriggerEnter(Collider other)
     {
-       // Debug.Log("PlayerMovement script has entered a trigger");
+        // Debug.Log("PlayerMovement script has entered a trigger");
 
-        if(other.gameObject.CompareTag("Death"))
+        if (other.gameObject.CompareTag("Death") || other.gameObject.CompareTag("boulder"))
         {
-           // Debug.Log("PlayerMovement script has entered a death trigger");
+            // Debug.Log("PlayerMovement script has entered a death trigger");
             isDead = true;
         }
         else if(other.gameObject.CompareTag("Jump Pad"))
@@ -283,7 +283,7 @@ public class PlayerMovement : InterpolatedTransform
     {
        // Debug.Log("PlayerMovement script is inside a trigger");
 
-        if (other.gameObject.CompareTag("Death"))
+        if (other.gameObject.CompareTag("Death")|| other.gameObject.CompareTag("boulder"))
         {
            // Debug.Log("PlayerMovement script is inside a death trigger");
             isDead = true;

@@ -1,0 +1,29 @@
+﻿title: FinalCutScene
+tags: 
+colorID: 0
+position: -53,-52
+---
+<<setNameLabel DialogManager Gods>>
+<<setPortrait DialogManager Cosmos>>
+<<startVoiceLine DialogManager FS1>>
+Cosmos: I cannot allow you to leave. Our society will collapse with you at the helm
+<<stopVoiceLine DialogManager>>
+<<startVoiceLine DialogManager FS2>>
+Eniki: You think you’re better than me!? You’ve led us to ruin! I offer salvation for everyone, not just my “favorites".         
+<<stopVoiceLine DialogManager>>
+<<startVoiceLine DialogManager FS3>>
+Londros: As much as I want to see my sister lose I know you’re no good for this society. Remember what happened last time you won?
+<<stopVoiceLine DialogManager>>
+<<startVoiceLine DialogManager FS4>>
+Nuzion: you’ve made a mockery of our traditions and impersonated me to pursue your own agenda. We cannot allow you to win. I’m sorry
+<<stopVoiceLine DialogManager>>
+<<startVoiceLine DialogManager FS5>>
+Cosmos: I have the backing of Londros and Nuzion you cannot escape. You may be powerful but your champion is not
+<<stopVoiceLine DialogManager>>
+<<startVoiceLine DialogManager FS6>>
+Eniki: Well… I guess it’s time for a different approach then
+<<stopVoiceLine DialogManager>>
+<<startVoiceLine DialogManager FS7>>
+Eniki: I thank you champion. With your physical form not a single one of the gods can stop me. Enjoy the ride
+<<stopVoiceLine DialogManager>>
+===

@@ -6,12 +6,17 @@ public class triggerObjectPlate : MonoBehaviour
 {
     private bool plateTriggered = false;
     public GameObject linkedObject;
-    
+    public AudioClip plateSound;
+    public float Volume = 1.0f;
+    public GameObject audioSource;
+    private AudioSource sourceRef;
     // Start is called before the first frame update
     void Start()
     {
-        
+        sourceRef = audioSource.GetComponent<AudioSource>();
+
     }
+
 
     // Update is called once per frame
     void Update()
@@ -35,7 +40,16 @@ public class triggerObjectPlate : MonoBehaviour
     }
     private void doorTrigger()
     {
-        //Potential TODO: add an animation of door opening and rework this code here
+        Play();
         Destroy(linkedObject); //destory the door
+    }
+    public void Play()
+    {
+        sourceRef.PlayOneShot(plateSound, Volume);
+    }
+
+    public void Stop()
+    {
+        this.GetComponent<AudioSource>().Stop();
     }
 }

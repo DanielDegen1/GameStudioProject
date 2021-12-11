@@ -6,13 +6,15 @@ using UnityEngine.SceneManagement;
 public class Pausing : MonoBehaviour
 {
     private PlayerInput playerInput;
-    public GameObject player;
     public GameObject pauseMenu;
-    public bool isPaused;
+    private bool isPaused;
+    public GameObject camRef;
+    private CameraMovement camMovement;
     // Start is called before the first frame update
 
     void Start() {
-        playerInput = player.GetComponent<PlayerInput>();
+        playerInput = GetComponent<PlayerInput>();
+        camMovement = camRef.GetComponent<CameraMovement>();
     }
 
     void Awake()
@@ -44,6 +46,7 @@ public class Pausing : MonoBehaviour
         Cursor.visible = true;
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
+        camMovement.enabled = false;
         isPaused = true;
     }
 
@@ -52,6 +55,7 @@ public class Pausing : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
+        camMovement.enabled = true;
         isPaused = false;
 
     }

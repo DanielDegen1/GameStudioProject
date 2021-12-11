@@ -17,8 +17,8 @@ public class Menuscript : MonoBehaviour
 
     }
     public void ButtonStart() {
+        Destroy(musicController);
         SceneManager.LoadScene("BasicMovementTutorial");
-        Destroy(GameObject.FindGameObjectWithTag("Music Player"));
     }
     public void ButtonOptions() {
         SceneManager.LoadScene("OptionsScene");

@@ -109,3 +109,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   linkedObstacle: {fileID: 0}
+  targetHit: {fileID: 8300000, guid: 7dbc246950464a743a5e45f30b48ca89, type: 3}
+  audioSource: {fileID: 0}

@@ -1,0 +1,11 @@
+﻿title: S3Line2
+tags: 
+colorID: 0
+position: -53,-52
+---
+<<setNameLabel DialogManager Eniki >>
+<<setPortrait DialogManager Eniki>>
+<<startVoiceLine DialogManager S3VoiceLine2>>
+oh you met Londros… he’s a bit too...jubilant for me.”
+<<stopVoiceLine DialogManager>>
+===

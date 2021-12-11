@@ -1,0 +1,11 @@
+﻿title: PR1Line5
+tags: 
+colorID: 0
+position: -53,-52
+---
+<<setNameLabel DialogManager Nuzion >>
+<<setPortrait DialogManager Nuzion>>
+<<startVoiceLine DialogManager PR1VoiceLine5>>
+See? That wasn’t so hard now was it. Don’t question me again and you and I will be an unstoppable duo!
+<<stopVoiceLine DialogManager>>
+===

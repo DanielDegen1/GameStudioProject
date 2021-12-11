@@ -1,0 +1,11 @@
+﻿title: S5Line2
+tags: 
+colorID: 0
+position: -53,-52
+---
+<<setNameLabel DialogManager Eniki >>
+<<setPortrait DialogManager Eniki>>
+<<startVoiceLine DialogManager S5VoiceLine2>>
+We must hurry. I have a feeling the other gods will be resorting to tricks to try and turn you against me. They won’t take you from me. We will rule together!
+<<stopVoiceLine DialogManager>>
+===

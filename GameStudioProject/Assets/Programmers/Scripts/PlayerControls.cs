@@ -113,6 +113,14 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Push"",
+                    ""type"": ""Button"",
+                    ""id"": ""1f7265d6-668d-4758-a11b-207eff9c6457"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -313,6 +321,17 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""77ea01c5-ff12-434b-91c9-d8c7fcc8e695"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Push"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -333,6 +352,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_PlayerMovement_Shoot = m_PlayerMovement.FindAction("Shoot", throwIfNotFound: true);
         m_PlayerMovement_Stasis = m_PlayerMovement.FindAction("Stasis", throwIfNotFound: true);
         m_PlayerMovement_Pause = m_PlayerMovement.FindAction("Pause", throwIfNotFound: true);
+        m_PlayerMovement_Push = m_PlayerMovement.FindAction("Push", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -394,6 +414,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputAction m_PlayerMovement_Shoot;
     private readonly InputAction m_PlayerMovement_Stasis;
     private readonly InputAction m_PlayerMovement_Pause;
+    private readonly InputAction m_PlayerMovement_Push;
     public struct PlayerMovementActions
     {
         private @PlayerControls m_Wrapper;
@@ -410,6 +431,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         public InputAction @Shoot => m_Wrapper.m_PlayerMovement_Shoot;
         public InputAction @Stasis => m_Wrapper.m_PlayerMovement_Stasis;
         public InputAction @Pause => m_Wrapper.m_PlayerMovement_Pause;
+        public InputAction @Push => m_Wrapper.m_PlayerMovement_Push;
         public InputActionMap Get() { return m_Wrapper.m_PlayerMovement; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -455,6 +477,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Pause.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnPause;
                 @Pause.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnPause;
                 @Pause.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnPause;
+                @Push.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnPush;
+                @Push.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnPush;
+                @Push.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnPush;
             }
             m_Wrapper.m_PlayerMovementActionsCallbackInterface = instance;
             if (instance != null)
@@ -495,6 +520,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Pause.started += instance.OnPause;
                 @Pause.performed += instance.OnPause;
                 @Pause.canceled += instance.OnPause;
+                @Push.started += instance.OnPush;
+                @Push.performed += instance.OnPush;
+                @Push.canceled += instance.OnPush;
             }
         }
     }
@@ -513,5 +541,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         void OnShoot(InputAction.CallbackContext context);
         void OnStasis(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
+        void OnPush(InputAction.CallbackContext context);
     }
 }

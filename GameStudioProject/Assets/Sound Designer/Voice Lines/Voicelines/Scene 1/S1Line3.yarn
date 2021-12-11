@@ -1,0 +1,11 @@
+﻿title: S1Line3
+tags: 
+colorID: 0
+position: -53,-52
+---
+<<setNameLabel DialogManager Eniki >>
+<<setPortrait DialogManager Eniki>>
+<<startVoiceLine DialogManager S1VoiceLine3>>
+Eniki: At the end of this chamber I have a special weapon that will help us
+<<stopVoiceLine DialogManager>>
+===

@@ -6,27 +6,51 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Main Game/Scenes/IntroScene.unity
+    guid: 51bbd52e42c90f84f83adafafca878d4
+  - enabled: 1
     path: Assets/Main Game/Scenes/MenuScene.unity
     guid: afa684a6544f84c419425cdd4101968c
   - enabled: 1
     path: Assets/Main Game/Scenes/OptionsScene.unity
     guid: 365ddf98a3d81da49960523f8ff6fbbe
   - enabled: 1
-    path: Assets/Main Game/Scenes/CreditsScene.unity
-    guid: 6c6fc71cf2514fa4295ab186d3de5bc1
-  - enabled: 1
     path: Assets/Main Game/Scenes/BasicMovementTutorial.unity
     guid: c2ac1937427b54a1aacd9d3c5480bdba
   - enabled: 1
-    path: Assets/Main Game/Scenes/MattLevel1.unity
+    path: Assets/Main Game/Scenes/Boulder&Plats.unity
     guid: 9c35f134f448ee340bd04e3d9a0ab415
+  - enabled: 1
+    path: Assets/Main Game/Scenes/PuzzlePickUp.unity
+    guid: ae80ab03639478b498b6efa68b0c57a6
+  - enabled: 1
+    path: Assets/Main Game/Scenes/ReworkedWallrun.unity
+    guid: 44ea228516b0fdf4db2cb713ac7ab250
+  - enabled: 1
+    path: Assets/Main Game/Scenes/NewScene2.unity
+    guid: df9dd236a89814648a3ba0a67396370a
   - enabled: 1
     path: Assets/Main Game/Scenes/TexturedOctagonLevel.unity
     guid: f2ff7269d21d38842ab1eb942dcbe99d
   - enabled: 1
-    path: Assets/Main Game/Scenes/NewScene2.unity
-    guid: df9dd236a89814648a3ba0a67396370a
-  - enabled: 0
+    path: Assets/Main Game/Scenes/CutScene1.unity
+    guid: 5a9e622945624b548a804233f4abe302
+  - enabled: 1
+    path: Assets/Main Game/Scenes/NewLevel.unity
+    guid: fdc2c741a1a694f92bf160c3432b1bca
+  - enabled: 1
+    path: Assets/Main Game/Scenes/CutScene2.unity
+    guid: eee1ae70912e18f49903b28cf84998bd
+  - enabled: 1
     path: Assets/Main Game/Scenes/WackWarps.unity
     guid: 307316d385fd36d49814c74c94668d79
+  - enabled: 1
+    path: Assets/Main Game/Scenes/ColorBucketPuzzle.unity
+    guid: 8f45eaca5566a13488130943a8e31643
+  - enabled: 1
+    path: Assets/Main Game/Scenes/CutScene3.unity
+    guid: 212790cdfbd1c6a40bf4919bb0e02600
+  - enabled: 1
+    path: Assets/Main Game/Scenes/CreditsScene.unity
+    guid: 6c6fc71cf2514fa4295ab186d3de5bc1
   m_configObjects: {}

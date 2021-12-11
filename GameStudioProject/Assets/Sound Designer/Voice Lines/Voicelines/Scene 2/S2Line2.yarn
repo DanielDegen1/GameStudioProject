@@ -1,0 +1,11 @@
+﻿title: S2Line2
+tags: 
+colorID: 0
+position: -53,-52
+---
+<<setNameLabel DialogManager Eniki >>
+<<setPortrait DialogManager Eniki>>
+<<startVoiceLine DialogManager S2VoiceLine2>>
+You might be wondering why you are here. You were chosen as a potential leader. A purpose more glorious than the inconsequential life you were living before
+<<stopVoiceLine DialogManager>>
+===

@@ -233,4 +233,10 @@ public class PlayerInput : MonoBehaviour
     {
         jumpTimer = -1;
     }
+
+    public bool Push
+    {
+        get { return playerControls.PlayerMovement.Push.triggered; }
+    }
+
 }
