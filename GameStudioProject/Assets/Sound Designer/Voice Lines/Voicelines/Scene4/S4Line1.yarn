@@ -6,6 +6,6 @@ position: -53,-52
 <<setNameLabel DialogManager Cosmos >>
 <<setPortrait DialogManager Cosmos>>
 <<startVoiceLine DialogManager S4VoiceLine1>>
-greetings champion. It would seem the scales tip in your favor. Don’t gloat. You haven’t won yet.
+Greetings champion. It would seem the scales tip in your favor. Don’t gloat. You haven’t won yet.
 <<stopVoiceLine DialogManager>>
 ===

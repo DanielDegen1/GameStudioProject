@@ -6,6 +6,6 @@ position: -53,-52
 <<setNameLabel DialogManager Cosmos >>
 <<setPortrait DialogManager Cosmos>>
 <<startVoiceLine DialogManager F1>>
-Hear me champion. Eniki cannot win this challenge. I will not allow it. If you get caught in the crossfire better you than the entire society
+Hear me champion. Eniki cannot win this challenge. I will not allow it. If you get caught in the crossfire better you than the entire society.
 <<stopVoiceLine DialogManager>>
 ===

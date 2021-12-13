@@ -3,9 +3,9 @@ tags:
 colorID: 0
 position: -53,-52
 ---
-<<setNameLabel DialogManager Eniki >>
-<<setPortrait DialogManager Eniki>>
+<<setNameLabel DialogManager Nuzion >>
+<<setPortrait DialogManager Nuzion>>
 <<startVoiceLine DialogManager S1VoiceLine4>>
-Eniki: Take my bow champion. Use it well and there’s nothing you can’t overcome
+Take my bow champion. Use it well and there’s nothing you can’t overcome.
 <<stopVoiceLine DialogManager>>
 ===

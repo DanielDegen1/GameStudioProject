@@ -3,9 +3,9 @@ tags:
 colorID: 0
 position: -53,-52
 ---
-<<setNameLabel DialogManager Eniki >>
-<<setPortrait DialogManager Eniki>>
+<<setNameLabel DialogManager Nuzion >>
+<<setPortrait DialogManager Nuzion>>
 <<startVoiceLine DialogManager S3VoiceLine3>>
-I’ve heard the other Gods’ outrage. Their champions must be doing poorly. Proceed with caution champion, treachery is afoot
+I’ve heard the other Gods’ outrage. Their champions must be doing poorly. Proceed with caution champion, treachery is afoot.
 <<stopVoiceLine DialogManager>>
 ===

@@ -3,8 +3,8 @@ tags:
 colorID: 0
 position: -53,-52
 ---
-<<setNameLabel DialogManager Eniki >>
-<<setPortrait DialogManager Eniki>>
+<<setNameLabel DialogManager Nuzion >>
+<<setPortrait DialogManager Nuzion>>
 <<startVoiceLine DialogManager S1VoiceLine2>>
 Complete each challenge and we will achieve victory together. Only through trust will I be able to get you out of this place.
 <<stopVoiceLine DialogManager>>

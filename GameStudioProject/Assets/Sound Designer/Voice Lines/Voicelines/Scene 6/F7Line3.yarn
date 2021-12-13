@@ -6,6 +6,6 @@ position: -53,-52
 <<setNameLabel DialogManager Londros >>
 <<setPortrait DialogManager Londros>>
 <<startVoiceLine DialogManager Toot3>>
-my sister's vision concerns me she’s never been wrong before. Your actions will have dire consequences. Good luck champion, you’ll need it. 
+My sister's vision concerns me she’s never been wrong before. Your actions will have dire consequences. Good luck champion, you’ll need it. 
 <<stopVoiceLine DialogManager>>
 ===

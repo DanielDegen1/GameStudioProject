@@ -3,9 +3,9 @@ tags:
 colorID: 0
 position: -53,-52
 ---
-<<setNameLabel DialogManager Eniki >>
-<<setPortrait DialogManager Eniki>>
+<<setNameLabel DialogManager Nuzion >>
+<<setPortrait DialogManager Nuzion>>
 <<startVoiceLine DialogManager S4VoiceLine2>>
-we’re pulling ahead champion! They cannot match our power! Soon no one will be able to stop us
+We’re pulling ahead champion! They cannot match our power! Soon no one will be able to stop us.
 <<stopVoiceLine DialogManager>>
 ===

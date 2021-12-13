@@ -3,9 +3,9 @@ tags:
 colorID: 0
 position: -53,-52
 ---
-<<setNameLabel DialogManager Eniki >>
-<<setPortrait DialogManager Eniki>>
+<<setNameLabel DialogManager Nuzion >>
+<<setPortrait DialogManager Nuzion>>
 <<startVoiceLine DialogManager PR1VoiceLine4>>
-Jump now or i‘ll strike you down where you stand! I have no time for disloyalty
+Jump now or I‘ll strike you down where you stand! I have no time for disloyalty!
 <<stopVoiceLine DialogManager>>
 ===

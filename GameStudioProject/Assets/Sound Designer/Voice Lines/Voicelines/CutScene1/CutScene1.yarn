@@ -4,20 +4,20 @@ colorID: 0
 position: -53,-52
 ---
 <<setNameLabel DialogManager Gods>>
-<<setPortrait DialogManager Cosmos>>
+<<setPortrait DialogManager Gods>>
 <<startVoiceLine DialogManager S6.1>>
-Cosmos: as I’m sure you know it’s just the two of us left. Just remember the scales are what bind us together. Tip one side too far and the consequences are disastrous. Know who and what you are fighting for.
+Cosmos: As I’m sure you know it’s just the two of us left. Just remember the scales are what bind us together. Tip one side too far and the consequences are disastrous. Know who and what you are fighting for.
 <<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager S6.2>>
 Londros: HA! My followers would chop off limbs just to show their loyalty to me!          
 <<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager S6.3>>
-Eniki: “I will not stand for this treachery. They’re trying to turn you against me! I’ve done nothing but help you!
+Nuzion: I will not stand for this treachery. They’re trying to turn you against me! I’ve done nothing but help you!
 <<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager S6.4>>
-Nuzion: ugh please tell me you don’t actually believe that rat. Eniki wants only chaos and destruction; he'll bring your society to ruin.
+Nuzion: Ugh please tell me you don’t actually believe that rat. Eniki wants only chaos and destruction; he'll bring your society to ruin.
 <<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager S6.5>>
-Cosmos: I’ve had a vision. One where entire fields are burning and children huddle in corners of their huts hidden as they watch their family be slaughtered
+Cosmos: I’ve had a vision. One where entire fields are burning and children huddle in corners of their huts hidden as they watch their family be slaughtered.
 <<stopVoiceLine DialogManager>>
 ===

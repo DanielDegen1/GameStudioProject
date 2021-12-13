@@ -3,9 +3,9 @@ tags:
 colorID: 0
 position: -53,-52
 ---
-<<setNameLabel DialogManager Eniki >>
-<<setPortrait DialogManager Eniki>>
+<<setNameLabel DialogManager Nuzion >>
+<<setPortrait DialogManager Nuzion>>
 <<startVoiceLine DialogManager S5VoiceLine1>>
-That’s… concerning. I’ve been trying to contact you but I’ve been blocked for some time. I am Nuzion. I believe you’ve met the other three. I must go now but I’ll be in contact
+That’s… concerning. I’ve been trying to contact you but I’ve been blocked for some time. I am Nuzion. I believe you’ve met the other three. I must go now but I’ll be in contact.
 <<stopVoiceLine DialogManager>>
 ===

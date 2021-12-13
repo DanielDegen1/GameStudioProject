@@ -6,6 +6,6 @@ position: -53,-52
 <<setNameLabel DialogManager Cosmos >>
 <<setPortrait DialogManager Cosmos>>
 <<startVoiceLine DialogManager F6>>
-Don’t fret champion focus on surviving the challenge and we’ll take care of Eniki
+Don’t fret champion, focus on surviving the challenge and we’ll take care of Eniki.
 <<stopVoiceLine DialogManager>>
 ===

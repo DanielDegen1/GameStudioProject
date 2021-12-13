@@ -6,6 +6,6 @@ position: -53,-52
 <<setNameLabel DialogManager Eniki >>
 <<setPortrait DialogManager Eniki>>
 <<startVoiceLine DialogManager F8>>
-You’ve done well champion! Now it’s time to set the record straight!!!
+You’ve done well champion! Now it’s time to set the record straight!
 <<stopVoiceLine DialogManager>>
 ===
