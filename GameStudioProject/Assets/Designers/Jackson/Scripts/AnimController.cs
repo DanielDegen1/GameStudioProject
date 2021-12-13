@@ -38,6 +38,7 @@ public class AnimController : MonoBehaviour
     public float velocity;
     public float smoothedVelocity;
     public float oldVelocity = 8f;
+    [HideInInspector] public bool hasBow = true;
 
     // Start is called before the first frame update
     void Start()
@@ -59,7 +60,7 @@ public class AnimController : MonoBehaviour
         velocity = (playerMovement.groundedSpeed);
 
         
-        if (input.shoot)
+        if (input.shoot && hasBow)
         {
             anim.SetTrigger("Fire");
         }

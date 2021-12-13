@@ -35,16 +35,21 @@ public class Shooting : MonoBehaviour
     }
 
     public void ShootProjectile() {
-        Ray raycast = cam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
-        RaycastHit hit;
+        if(PauseMenu.m_Paused == false)
+        {
+            Ray raycast = cam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
+            RaycastHit hit;
 
-        if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit)) {
-            destination = hit.point;
-            //projectileRotation = Quaternion.LookRotation(transform.position, hit.point);
+            if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit))
+            {
+                destination = hit.point;
+                //projectileRotation = Quaternion.LookRotation(transform.position, hit.point);
+            }
+            Debug.Log("Destination 1: " + destination.ToString());
+
+            InstantiateProjectile(sourcePoint);
         }
-        Debug.Log("Destination 1: " + destination.ToString());
 
-        InstantiateProjectile(sourcePoint);
     }
 
     public void InstantiateProjectile(Transform firePoint) {
