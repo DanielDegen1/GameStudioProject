@@ -1,0 +1,18 @@
+﻿title: CutScene2
+tags: 
+colorID: 0
+position: -53,-52
+---
+<<setNameLabel DialogManager Gods>>
+<<setPortrait DialogManager Cosmos>>
+<<startVoiceLine DialogManager CutScene1>>
+Cosmos: my champion has fallen. You’re the last one left. After centuries of ruling, never forget what I have done for this society. I don’t claim to be perfect but you know my rule works. Reject Eniki and make the right decision
+<<stopVoiceLine DialogManager>>
+<<startVoiceLine DialogManager CutScene2>>
+Eniki: we’ve won champion! Now allow me to properly introduce myself.           
+My name is Eniki and despite what the other gods have told you I’m only here to help. Your society has struggled under the rule of Cosmos for so long. You need a new approach. Under me everyone is on the same playing field. No more trials, no more hunger, no more needless poverty. Anyone who wants something simply has to go out and take it! Is that really that bad?
+<<stopVoiceLine DialogManager>>
+<<startVoiceLine DialogManager CutScene3>>
+Cosmos: I cannot believe this… bested by the rat?
+<<stopVoiceLine DialogManager>>
+===

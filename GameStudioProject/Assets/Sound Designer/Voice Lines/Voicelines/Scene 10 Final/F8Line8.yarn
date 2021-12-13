@@ -1,0 +1,11 @@
+﻿title: F8Line8
+tags: 
+colorID: 0
+position: -53,-52
+---
+<<setNameLabel DialogManager Eniki >>
+<<setPortrait DialogManager Eniki>>
+<<startVoiceLine DialogManager F8>>
+You’ve done well champion! Now it’s time to set the record straight!!!
+<<stopVoiceLine DialogManager>>
+===

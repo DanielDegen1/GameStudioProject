@@ -24,6 +24,8 @@ TagManager:
   - moving
   - Door
   - Spring Pad
+  - voice
+  - voiceChild
   layers:
   - Default
   - TransparentFX
