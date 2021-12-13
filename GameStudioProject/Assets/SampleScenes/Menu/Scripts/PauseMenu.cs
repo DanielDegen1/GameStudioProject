@@ -7,7 +7,7 @@ public class PauseMenu : MonoBehaviour
     private Toggle m_MenuToggle;
 	private float m_TimeScaleRef = 1f;
     private float m_VolumeRef = 1f;
-    private bool m_Paused;
+    public static bool m_Paused;
     PlayerInput playerInput;
 
 

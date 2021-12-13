@@ -6348,6 +6348,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 520908777295203924, guid: 252221ddd3067488b949a758e94410f1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 520908777295203930, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -9041,6 +9045,11 @@ Transform:
   m_Father: {fileID: 1148045789}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &867521388 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 898696295772187094, guid: 95cc080592a9a47c58b0dffd20dd8d3d, type: 3}
+  m_PrefabInstance: {fileID: 2138822293}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &879675099
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27172,7 +27181,7 @@ GameObject:
   - component: {fileID: 1647511679}
   m_Layer: 0
   m_Name: VoiceLinesS1
-  m_TagString: Untagged
+  m_TagString: voice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39986,6 +39995,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: Name
       objectReference: {fileID: 0}
+    - target: {fileID: 898696295772187094, guid: 95cc080592a9a47c58b0dffd20dd8d3d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2060946445653755761, guid: 95cc080592a9a47c58b0dffd20dd8d3d, type: 3}
       propertyPath: m_Text
       value: '''E'' to Continue'
@@ -40310,6 +40323,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialogue
       objectReference: {fileID: 0}
+    - target: {fileID: 9223190536412907629, guid: 95cc080592a9a47c58b0dffd20dd8d3d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9223190536412907629, guid: 95cc080592a9a47c58b0dffd20dd8d3d, type: 3}
+      propertyPath: m_TagString
+      value: voiceChild
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95cc080592a9a47c58b0dffd20dd8d3d, type: 3}
 --- !u!1001 &2143647334
@@ -40555,6 +40576,67 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.8342435, y: 5.6743097, z: 1.4178923}
   m_Center: {x: 0.05784951, y: 2.841598, z: -0.33648607}
+--- !u!1001 &5009485872836174379
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1889439327235522747, guid: 2de37c65bce6a8e44a2a008c45f64e08, type: 3}
+      propertyPath: voice
+      value: 
+      objectReference: {fileID: 867521388}
+    - target: {fileID: 8235731354325554825, guid: 2de37c65bce6a8e44a2a008c45f64e08, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235731354325554825, guid: 2de37c65bce6a8e44a2a008c45f64e08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.786185
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235731354325554825, guid: 2de37c65bce6a8e44a2a008c45f64e08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.201392
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235731354325554825, guid: 2de37c65bce6a8e44a2a008c45f64e08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.8785
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235731354325554825, guid: 2de37c65bce6a8e44a2a008c45f64e08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235731354325554825, guid: 2de37c65bce6a8e44a2a008c45f64e08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235731354325554825, guid: 2de37c65bce6a8e44a2a008c45f64e08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235731354325554825, guid: 2de37c65bce6a8e44a2a008c45f64e08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235731354325554825, guid: 2de37c65bce6a8e44a2a008c45f64e08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235731354325554825, guid: 2de37c65bce6a8e44a2a008c45f64e08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235731354325554825, guid: 2de37c65bce6a8e44a2a008c45f64e08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8939006179876672707, guid: 2de37c65bce6a8e44a2a008c45f64e08, type: 3}
+      propertyPath: m_Name
+      value: voiceDisabler
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2de37c65bce6a8e44a2a008c45f64e08, type: 3}
 --- !u!1001 &8212980230966412783
 PrefabInstance:
   m_ObjectHideFlags: 0
