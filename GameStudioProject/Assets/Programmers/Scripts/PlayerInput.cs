@@ -142,6 +142,8 @@ public class PlayerInput : MonoBehaviour
     }
 
 
+
+
     /*
     public bool throw {
         get {
@@ -237,6 +239,21 @@ public class PlayerInput : MonoBehaviour
     public bool Push
     {
         get { return playerControls.PlayerMovement.Push.triggered; }
+    }
+
+    public bool Skip
+    {
+        get
+        {
+            if (playerControls.PlayerMovement.Skip.ReadValue<float>() > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 
 }
