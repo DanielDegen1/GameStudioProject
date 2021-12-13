@@ -8555,8 +8555,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df40fbd2711e84399a1b241775d89773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkToNode: S4Line3
-  scriptToLoad: {fileID: 2480198943629176163, guid: bcab8464f654d0a4ba0b07252b4daad4, type: 3}
+  talkToNode: S3Line3
+  scriptToLoad: {fileID: 2480198943629176163, guid: 69a81a2a39c368242a354c238f6a52c4, type: 3}
 --- !u!65 &419739445
 BoxCollider:
   m_ObjectHideFlags: 0
