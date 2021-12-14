@@ -6,18 +6,20 @@ using UnityEngine.SceneManagement;
 
 public class Menuscript : MonoBehaviour
 {
-    public GameObject musicController;
+    private Music musicRef;
     private void Awake()
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        musicRef = (Music)FindObjectOfType(typeof(Music));
+
     }
     public void ButtonMainMenu(){
         SceneManager.LoadScene("MenuScene");
 
     }
     public void ButtonStart() {
-        Destroy(musicController);
+        Destroy(musicRef.gameObject);
         SceneManager.LoadScene("BasicMovementTutorial");
     }
     public void ButtonOptions() {
