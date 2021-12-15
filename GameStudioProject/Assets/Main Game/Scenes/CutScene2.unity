@@ -178,7 +178,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh85330
+  m_Name: pb_Mesh24520
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1752,7 +1752,7 @@ PrefabInstance:
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[3].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 9c97aca5b2abac8429392d8f4a554586, type: 3}
+      objectReference: {fileID: 8300000, guid: 46dfbbdbe3a5c1d4fabdb5d3225fa5bf, type: 3}
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[3].name
       value: CutScene4
@@ -1760,7 +1760,7 @@ PrefabInstance:
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[4].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 9c97aca5b2abac8429392d8f4a554586, type: 3}
+      objectReference: {fileID: 8300000, guid: 82a0db5b7be1031429470e4537b03e08, type: 3}
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[4].name
       value: CutScene5
@@ -1768,7 +1768,7 @@ PrefabInstance:
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[5].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 9c97aca5b2abac8429392d8f4a554586, type: 3}
+      objectReference: {fileID: 8300000, guid: b5cca66c5a3c9094e91f4dffae42c69d, type: 3}
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[5].name
       value: CutScene6
@@ -1795,7 +1795,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[3].volume
-      value: 1
+      value: 0.501
       objectReference: {fileID: 0}
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[4].volume
