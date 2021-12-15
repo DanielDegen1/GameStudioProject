@@ -15,4 +15,13 @@ My name is Eniki and despite what the other gods have told you I’m only here t
 <<startVoiceLine DialogManager CutScene3>>
 Cosmos: I cannot believe this… bested by the rat?
 <<stopVoiceLine DialogManager>>
+<<startVoiceLine DialogManager CutScene4>>
+Eniki: I chose you for a reason, champion. You know your society needs to change, think of the bloodlines cut short from the trials and poverty. That would have happened to you had I not chosen you. Why should some families live while others die? I simply want to even the playing field.
+<<stopVoiceLine DialogManager>>
+<<startVoiceLine DialogManager CutScene5>>
+Cosmos: Without a leader our society wouldn’t work champion. The commonwealth needs that figurehead if we are to continue existing. Eniki may promise many things but there will be more bloodshed without the trials. You must reject him or he will doom us all!
+<<stopVoiceLine DialogManager>>
+<<startVoiceLine DialogManager CutScene6>>
+Eniki: funny. As soon as they realize we won all of a sudden they all turn on me. They don’t care about the society or your family champion. They just care that they lost.
+<<stopVoiceLine DialogManager>>
 ===

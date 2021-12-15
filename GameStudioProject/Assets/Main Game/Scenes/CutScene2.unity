@@ -1723,7 +1723,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.size
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[0].clip
@@ -1752,10 +1752,26 @@ PrefabInstance:
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[3].clip
       value: 
-      objectReference: {fileID: 8300000, guid: af44c20703967004792379fc85a97e24, type: 3}
+      objectReference: {fileID: 8300000, guid: 9c97aca5b2abac8429392d8f4a554586, type: 3}
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[3].name
-      value: Take_my_bow_champion._Use_it_well_and_there's_nothing_you_can't_overcome
+      value: CutScene4
+      objectReference: {fileID: 0}
+    - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
+      propertyPath: sounds.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9c97aca5b2abac8429392d8f4a554586, type: 3}
+    - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
+      propertyPath: sounds.Array.data[4].name
+      value: CutScene5
+      objectReference: {fileID: 0}
+    - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
+      propertyPath: sounds.Array.data[5].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9c97aca5b2abac8429392d8f4a554586, type: 3}
+    - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
+      propertyPath: sounds.Array.data[5].name
+      value: CutScene6
       objectReference: {fileID: 0}
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[2].pitch
@@ -1766,11 +1782,27 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
+      propertyPath: sounds.Array.data[4].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
+      propertyPath: sounds.Array.data[5].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[2].volume
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[3].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
+      propertyPath: sounds.Array.data[4].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
+      propertyPath: sounds.Array.data[5].volume
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
