@@ -17737,7 +17737,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh95048
+  m_Name: pb_Mesh73172
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21806,6 +21806,9 @@ MonoBehaviour:
   orangecheck: 1
   greencheck: 1
   endDoor: {fileID: 1550278374}
+  bucketFilled: {fileID: 8300000, guid: 3a5f4d91b1373de49a39b372854b4407, type: 3}
+  Volume: 1
+  audioSource: {fileID: 260450939}
 --- !u!64 &1278674422
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23163,6 +23166,9 @@ MonoBehaviour:
   orangecheck: 1
   greencheck: 1
   endDoor: {fileID: 1492860338}
+  bucketFilled: {fileID: 8300000, guid: 3a5f4d91b1373de49a39b372854b4407, type: 3}
+  Volume: 1
+  audioSource: {fileID: 260450939}
 --- !u!64 &1345322453
 MeshCollider:
   m_ObjectHideFlags: 0
