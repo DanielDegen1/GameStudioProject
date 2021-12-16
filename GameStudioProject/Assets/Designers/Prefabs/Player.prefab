@@ -911,6 +911,7 @@ GameObject:
   - component: {fileID: 1149800568}
   - component: {fileID: 7707081060816314902}
   - component: {fileID: 3635161184409817342}
+  - component: {fileID: 1347888921183150926}
   m_Layer: 31
   m_Name: Player
   m_TagString: Player
@@ -1188,6 +1189,20 @@ MonoBehaviour:
   animController: {fileID: 1916301894470021585}
   sourcePoint: {fileID: 8140896611726866670}
   projectileSpeed: 30
+--- !u!114 &1347888921183150926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7085721664118310506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42dab2a45c21b3540820f09640c68734, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 0}
+  camRef: {fileID: 6187028363194667417}
 --- !u!1 &8574328538127347550
 GameObject:
   m_ObjectHideFlags: 0
