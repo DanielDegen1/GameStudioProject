@@ -654,7 +654,7 @@ PrefabInstance:
     - target: {fileID: 2760901431328104228, guid: 81bc6ce187ac1db49a4dc01237ba462d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d8f7e4105727e2e449710d07961a17ba, type: 3}
+      objectReference: {fileID: 21300000, guid: 65b33534adc27a8488e721e4c664e36f, type: 3}
     - target: {fileID: 7705938759272111578, guid: 81bc6ce187ac1db49a4dc01237ba462d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -6886,7 +6886,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh130286
+  m_Name: pb_Mesh24014
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7525,7 +7525,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh69116
+  m_Name: pb_Mesh23790
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -31788,8 +31788,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 0a46429b2974bff409d670b99bcbfe6e, type: 3}
     - target: {fileID: 7218906748999336494, guid: 81bc6ce187ac1db49a4dc01237ba462d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7218906748999336494, guid: 81bc6ce187ac1db49a4dc01237ba462d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 7218906748999336494, guid: 81bc6ce187ac1db49a4dc01237ba462d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 7218906748999336494, guid: 81bc6ce187ac1db49a4dc01237ba462d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.72
+      value: 2.82
       objectReference: {fileID: 0}
     - target: {fileID: 7705938759272111578, guid: 81bc6ce187ac1db49a4dc01237ba462d, type: 3}
       propertyPath: m_StaticEditorFlags
