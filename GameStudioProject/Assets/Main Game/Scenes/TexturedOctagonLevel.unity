@@ -7516,7 +7516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 825297741fcc5aa4ea1c895a63db6676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushRange: 20
+  pushRange: 5
   pushForce: 1000
   pushText: {fileID: 175642578}
 --- !u!43 &751020212
@@ -12066,7 +12066,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9008459979009592371, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
       propertyPath: m_Text
-      value: Press 'E' to push this boulder!
+      value: "Repeatedly press 'E' \nto push this boulder!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9008459979009592371, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9008459979009592371, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9008459979009592371, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9008459979009592371, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
@@ -26028,6 +26044,10 @@ PrefabInstance:
     - target: {fileID: 2783902261666005719, guid: c98317ec9eafc9e4d9df2c4fd13866ee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3595856123250508331, guid: c98317ec9eafc9e4d9df2c4fd13866ee, type: 3}
+      propertyPath: Volume
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3595856123250508331, guid: c98317ec9eafc9e4d9df2c4fd13866ee, type: 3}
       propertyPath: audioSource
