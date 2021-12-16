@@ -402,6 +402,7 @@ GameObject:
   - component: {fileID: 1228396179}
   - component: {fileID: 1228396178}
   - component: {fileID: 1228396177}
+  - component: {fileID: 1228396180}
   - component: {fileID: 1228396176}
   - component: {fileID: 1228396175}
   m_Layer: 0
@@ -825,6 +826,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1228396180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228396174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f92716207dcb4a943b97db558f726a68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1404973334
 GameObject:
   m_ObjectHideFlags: 0
@@ -1318,6 +1331,34 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 6906245396350967028, guid: 95cc080592a9a47c58b0dffd20dd8d3d, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906245396350967028, guid: 95cc080592a9a47c58b0dffd20dd8d3d, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906245396350967028, guid: 95cc080592a9a47c58b0dffd20dd8d3d, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1228396180}
+    - target: {fileID: 6906245396350967028, guid: 95cc080592a9a47c58b0dffd20dd8d3d, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906245396350967028, guid: 95cc080592a9a47c58b0dffd20dd8d3d, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: nextLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906245396350967028, guid: 95cc080592a9a47c58b0dffd20dd8d3d, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: cutsceneEnd, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906245396350967028, guid: 95cc080592a9a47c58b0dffd20dd8d3d, type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7954191104881608765, guid: 95cc080592a9a47c58b0dffd20dd8d3d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1684,7 +1725,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh84954
+  m_Name: pb_Mesh38520
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
