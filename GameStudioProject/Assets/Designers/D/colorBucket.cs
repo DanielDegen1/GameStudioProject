@@ -14,10 +14,16 @@ public class colorBucket : MonoBehaviour
     private bool greencheck;
 
     public GameObject endDoor;
+
+    public AudioClip bucketFilled;
+    public float Volume = 1.0f;
+    public GameObject audioSource;
+    private AudioSource sourceRef;
     // Start is called before the first frame update
     void Start()
     {
-        
+        sourceRef = audioSource.GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -26,6 +32,7 @@ public class colorBucket : MonoBehaviour
         if (redcheck==true && bluecheck == true && orangecheck == true && greencheck==true )
         {
             Debug.Log("door");
+            Play();
             Destroy(endDoor);
         }
     }
@@ -74,5 +81,15 @@ public class colorBucket : MonoBehaviour
             Debug.Log("green!");
             greencheck = true;
         }
+    }
+    public void Play()
+    {
+        Debug.Log("bucket audio should play");
+        sourceRef.PlayOneShot(bucketFilled, Volume);
+    }
+
+    public void Stop()
+    {
+        this.GetComponent<AudioSource>().Stop();
     }
 }
