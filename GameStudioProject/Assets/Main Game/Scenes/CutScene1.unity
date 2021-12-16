@@ -312,7 +312,7 @@ PrefabInstance:
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[0].clip
       value: 
-      objectReference: {fileID: 8300000, guid: dfe434bb6cfa2394686464d838defbef, type: 3}
+      objectReference: {fileID: 8300000, guid: 57d931393d18c5e4d95880c1144ae9d3, type: 3}
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[0].name
       value: S6.1
@@ -320,7 +320,7 @@ PrefabInstance:
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[1].clip
       value: 
-      objectReference: {fileID: 8300000, guid: caa8d13d26810d843b2672ec836b925e, type: 3}
+      objectReference: {fileID: 8300000, guid: 247c1e1992a926f4a8861ab2ca06347b, type: 3}
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[1].name
       value: S6.2
@@ -336,7 +336,7 @@ PrefabInstance:
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[3].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 924473f51e852de4990d5f57835ee480, type: 3}
+      objectReference: {fileID: 8300000, guid: 4ca18a8d44124a64490198a3103c8500, type: 3}
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[3].name
       value: S6.4
@@ -344,7 +344,7 @@ PrefabInstance:
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[4].clip
       value: 
-      objectReference: {fileID: 8300000, guid: e39312b08cb092c4c9bddea0412f02ee, type: 3}
+      objectReference: {fileID: 8300000, guid: 45869b666ab67664088501ecabfa8a11, type: 3}
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[4].name
       value: S6.5

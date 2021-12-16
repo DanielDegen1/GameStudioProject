@@ -1781,7 +1781,7 @@ PrefabInstance:
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[0].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 85f59558805f3384e905166d2e6adecf, type: 3}
+      objectReference: {fileID: 8300000, guid: 8da244a3db0280c48ad6abb961339e25, type: 3}
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[0].name
       value: CutScene1
@@ -1789,7 +1789,7 @@ PrefabInstance:
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[1].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 85122a94eaf09f544ad122dc463a2972, type: 3}
+      objectReference: {fileID: 8300000, guid: 1a7e35988a0fa5445b083a07b9787306, type: 3}
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[1].name
       value: CutScene2
@@ -1797,7 +1797,7 @@ PrefabInstance:
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[2].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 9c97aca5b2abac8429392d8f4a554586, type: 3}
+      objectReference: {fileID: 8300000, guid: 838019857f6d28649a2da9ea6814ff18, type: 3}
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[2].name
       value: CutScene3
@@ -1805,7 +1805,7 @@ PrefabInstance:
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[3].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 46dfbbdbe3a5c1d4fabdb5d3225fa5bf, type: 3}
+      objectReference: {fileID: 8300000, guid: 64d22797f5a61f1498a8402597658e7c, type: 3}
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[3].name
       value: CutScene4
@@ -1813,7 +1813,7 @@ PrefabInstance:
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[4].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 82a0db5b7be1031429470e4537b03e08, type: 3}
+      objectReference: {fileID: 8300000, guid: c7d3340448395bd4f8635904a5e8b0c2, type: 3}
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[4].name
       value: CutScene5
@@ -1821,7 +1821,7 @@ PrefabInstance:
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[5].clip
       value: 
-      objectReference: {fileID: 8300000, guid: b5cca66c5a3c9094e91f4dffae42c69d, type: 3}
+      objectReference: {fileID: 8300000, guid: 001aa456f3cf09e4ab450c30d4a499ae, type: 3}
     - target: {fileID: 520908777295203931, guid: 252221ddd3067488b949a758e94410f1, type: 3}
       propertyPath: sounds.Array.data[5].name
       value: CutScene6
