@@ -33004,6 +33004,14 @@ PrefabInstance:
       propertyPath: m_Text
       value: '''E'' to Continue'
       objectReference: {fileID: 0}
+    - target: {fileID: 2060946445653755761, guid: 95cc080592a9a47c58b0dffd20dd8d3d, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2060946445653755761, guid: 95cc080592a9a47c58b0dffd20dd8d3d, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 2509833418945251114, guid: 95cc080592a9a47c58b0dffd20dd8d3d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
