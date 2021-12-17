@@ -1,10 +1,10 @@
-﻿title: F7Line4
+title: F7Line4
 tags: 
 colorID: 0
 position: -53,-52
 ---
-<<setNameLabel DialogManager Eniki >>
-<<setPortrait DialogManager Eniki>>
+<<setNameLabel DialogManager Nuzion >>
+<<setPortrait DialogManager Nuzion>>
 <<startVoiceLine DialogManager Toot4>>
 I sense Cosmos’ despair. You’re getting closer champion. Your family is almost back in your grasp. 
 <<stopVoiceLine DialogManager>>
