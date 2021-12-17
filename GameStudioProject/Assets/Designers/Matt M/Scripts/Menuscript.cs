@@ -25,6 +25,10 @@ public class Menuscript : MonoBehaviour
     public void ButtonOptions() {
         SceneManager.LoadScene("OptionsScene");
     }
+    public void ButtonControls()
+    {
+        SceneManager.LoadScene("ControlScene");
+    }
     public void ButtonCredits() {
         SceneManager.LoadScene("CreditsScene");
     }
