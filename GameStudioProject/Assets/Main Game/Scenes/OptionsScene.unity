@@ -1880,7 +1880,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5bd918babc8df044abc8866b316a0aac, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a3e103b7ca2ac0146b16797383eee365, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1927,7 +1927,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 514bc87f131aff642ba09fdbf0f2071b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicController: {fileID: 0}
 --- !u!4 &1421774644
 Transform:
   m_ObjectHideFlags: 0
