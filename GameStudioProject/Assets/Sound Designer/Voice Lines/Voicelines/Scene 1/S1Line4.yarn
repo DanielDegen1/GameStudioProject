@@ -4,7 +4,7 @@ colorID: 0
 position: -53,-52
 ---
 <<setNameLabel DialogManager Nuzion >>
-<<setPortrait DialogManager Nuzion>>
+<<setPortrait DialogManager nuzion>>
 <<startVoiceLine DialogManager S1VoiceLine4>>
 Take my bow champion. Use it well and there’s nothing you can’t overcome.
 <<stopVoiceLine DialogManager>>

@@ -4,7 +4,7 @@ colorID: 0
 position: -53,-52
 ---
 <<setNameLabel DialogManager Londros >>
-<<setPortrait DialogManager Londros>>
+<<setPortrait DialogManager londros>>
 <<startVoiceLine DialogManager PR1VoiceLine3>>
 Ha! That drop looks far enough to kill you as soon as you hit the floor! Not even my champion could survive that fall!
 <<stopVoiceLine DialogManager>>

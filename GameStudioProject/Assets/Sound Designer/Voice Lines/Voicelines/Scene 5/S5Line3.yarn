@@ -4,7 +4,7 @@ colorID: 0
 position: -53,-52
 ---
 <<setNameLabel DialogManager Nuzion >>
-<<setPortrait DialogManager Nuzion>>
+<<setPortrait DialogManager nuzion>>
 <<startVoiceLine DialogManager S5VoiceLine3>>
 It’s down to you and Cosmos’ champion. I don’t know what Eniki promised you but I beg of you to not let him win.
 <<stopVoiceLine DialogManager>>

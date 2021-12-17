@@ -4,7 +4,7 @@ colorID: 0
 position: -53,-52
 ---
 <<setNameLabel DialogManager Nuzion >>
-<<setPortrait DialogManager Nuzion>>
+<<setPortrait DialogManager nuzion>>
 <<startVoiceLine DialogManager S1VoiceLine3>>
 At the end of this chamber I have a special weapon that will help us.
 <<stopVoiceLine DialogManager>>

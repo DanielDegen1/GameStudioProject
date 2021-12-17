@@ -4,24 +4,29 @@ colorID: 0
 position: -53,-52
 ---
 <<setNameLabel DialogManager Gods>>
-<<setPortrait DialogManager Gods>>
 <<startVoiceLine DialogManager CutScene1>>
+<<setPortrait DialogManager cosmos>>
 Cosmos: My champion has fallen. You’re the last one left. After centuries of ruling, never forget what I have done for this society. I don’t claim to be perfect but you know my rule works. Reject Eniki and make the right decision.
 <<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager CutScene2>>
+<<setPortrait DialogManager eniki>>
 Eniki: We’ve won champion! Now allow me to properly introduce myself.           
 My name is Eniki and despite what the other gods have told you I’m only here to help. Your society has struggled under the rule of Cosmos for so long. You need a new approach. Under me everyone is on the same playing field. No more trials, no more hunger, no more needless poverty. Anyone who wants something simply has to go out and take it! Is that really that bad?
 <<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager CutScene3>>
+<<setPortrait DialogManager cosmos>>
 Cosmos: I cannot believe this… bested by the rat?
 <<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager CutScene4>>
+<<setPortrait DialogManager eniki>>
 Eniki: I chose you for a reason, champion. You know your society needs to change, think of the bloodlines cut short from the trials and poverty. That would have happened to you had I not chosen you. Why should some families live while others die? I simply want to even the playing field.
 <<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager CutScene5>>
+<<setPortrait DialogManager cosmos>>
 Cosmos: Without a leader our society wouldn’t work champion. The commonwealth needs that figurehead if we are to continue existing. Eniki may promise many things but there will be more bloodshed without the trials. You must reject him or he will doom us all!
 <<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager CutScene6>>
+<<setPortrait DialogManager eniki>>
 Eniki: funny. As soon as they realize we won all of a sudden they all turn on me. They don’t care about the society or your family champion. They just care that they lost.
 <<stopVoiceLine DialogManager>>
 ===

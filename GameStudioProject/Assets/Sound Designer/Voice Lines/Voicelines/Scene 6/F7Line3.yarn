@@ -4,7 +4,7 @@ colorID: 0
 position: -53,-52
 ---
 <<setNameLabel DialogManager Londros >>
-<<setPortrait DialogManager Londros>>
+<<setPortrait DialogManager londros>>
 <<startVoiceLine DialogManager Toot3>>
 My sister's vision concerns me she’s never been wrong before. Your actions will have dire consequences. Good luck champion, you’ll need it. 
 <<stopVoiceLine DialogManager>>

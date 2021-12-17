@@ -66,6 +66,9 @@ namespace Yarn.Unity
                 case "champion":
                     dialogIcon.sprite = champPortrait;
                     break;
+                case "possessed":
+                    dialogIcon.sprite = possessedPortrait;
+                    break;
             }
         }
 

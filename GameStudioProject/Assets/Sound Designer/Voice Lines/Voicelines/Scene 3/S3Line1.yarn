@@ -4,7 +4,7 @@ colorID: 0
 position: -53,-52
 ---
 <<setNameLabel DialogManager Londros >>
-<<setPortrait DialogManager Londros>>
+<<setPortrait DialogManager londros>>
 <<startVoiceLine DialogManager S3VoiceLine1>>
 You’ve done well! My champion disappoints me. I told him to break down the door and he’s knocked himself out!  Maybe I ought to back you!
 <<stopVoiceLine DialogManager>>

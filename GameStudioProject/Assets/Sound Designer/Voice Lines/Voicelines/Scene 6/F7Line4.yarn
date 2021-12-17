@@ -4,7 +4,7 @@ colorID: 0
 position: -53,-52
 ---
 <<setNameLabel DialogManager Nuzion >>
-<<setPortrait DialogManager Nuzion>>
+<<setPortrait DialogManager nuzion>>
 <<startVoiceLine DialogManager Toot4>>
 I sense Cosmos’ despair. You’re getting closer champion. Your family is almost back in your grasp. 
 <<stopVoiceLine DialogManager>>

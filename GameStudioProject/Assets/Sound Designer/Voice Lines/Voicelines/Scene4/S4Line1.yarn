@@ -4,7 +4,7 @@ colorID: 0
 position: -53,-52
 ---
 <<setNameLabel DialogManager Cosmos >>
-<<setPortrait DialogManager Cosmos>>
+<<setPortrait DialogManager cosmos>>
 <<startVoiceLine DialogManager S4VoiceLine1>>
 Greetings champion. It would seem the scales tip in your favor. Don’t gloat. You haven’t won yet.
 <<stopVoiceLine DialogManager>>

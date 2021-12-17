@@ -4,7 +4,7 @@ colorID: 0
 position: -53,-52
 ---
 <<setNameLabel DialogManager Nuzion >>
-<<setPortrait DialogManager Nuzion>>
+<<setPortrait DialogManager nuzion>>
 <<startVoiceLine DialogManager S2VoiceLine4>>
 I know you wish to get back to your family. Don’t worry you will see them again. I don’t plan on letting you die.
 <<stopVoiceLine DialogManager>>

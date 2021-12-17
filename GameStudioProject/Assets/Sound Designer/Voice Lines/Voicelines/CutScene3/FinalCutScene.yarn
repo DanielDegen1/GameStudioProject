@@ -6,24 +6,31 @@ position: -53,-52
 <<setNameLabel DialogManager Gods>>
 <<setPortrait DialogManager Gods>>
 <<startVoiceLine DialogManager FS1>>
+<<setPortrait DialogManager cosmos>>
 Cosmos: I cannot allow you to leave. Our society will collapse with you at the helm.
 <<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager FS2>>
+<<setPortrait DialogManager eniki>>
 Eniki: You think you’re better than me!? You’ve led us to ruin! I offer salvation for everyone, not just my “favorites".         
 <<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager FS3>>
+<<setPortrait DialogManager londros>>
 Londros: As much as I want to see my sister lose I know you’re no good for this society. Remember what happened last time you won?
 <<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager FS4>>
+<<setPortrait DialogManager nuzion>>
 Nuzion: You’ve made a mockery of our traditions and impersonated me to pursue your own agenda. We cannot allow you to win. I’m sorry.
 <<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager FS5>>
+<<setPortrait DialogManager cosmos>>
 Cosmos: I have the backing of Londros and Nuzion you cannot escape. You may be powerful but your champion is not.
 <<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager FS6>>
+<<setPortrait DialogManager eniki>>
 Eniki: Well… I guess it’s time for a different approach then.
 <<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager FS7>>
+<<setPortrait DialogManager possessed>>
 Eniki: I thank you champion. With your physical form not a single one of the gods can stop me. Enjoy the ride.
 <<stopVoiceLine DialogManager>>
 ===
