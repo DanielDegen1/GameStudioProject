@@ -12,7 +12,7 @@ namespace Yarn.Unity
         public AudioManager audioManager;
         public Text dialogName;
 
-        public Sprite enikiPortrait, nuzionPortrait, londrosPortrait, cosmosPortrait, champPortrait;
+        public Sprite enikiPortrait, nuzionPortrait, londrosPortrait, cosmosPortrait, champPortrait, possessedPortrait;
 
         public Image dialogIcon;
 
