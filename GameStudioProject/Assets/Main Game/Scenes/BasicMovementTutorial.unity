@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.385
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3038216, g: 0.30156767, b: 0.24433842, a: 0.385}
+  m_IndirectSpecularColor: {r: 0.30382162, g: 0.30156773, b: 0.24433848, a: 0.385}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -387,7 +387,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh152778
+  m_Name: pb_Mesh198234
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -936,7 +936,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh153686
+  m_Name: pb_Mesh198508
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1647,6 +1647,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1ca0af96184cd45ff9e06f6e37168010, type: 3}
       propertyPath: m_Name
       value: barrel (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ca0af96184cd45ff9e06f6e37168010, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 1ca0af96184cd45ff9e06f6e37168010, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ca0af96184cd45ff9e06f6e37168010, type: 3}
@@ -3917,6 +3925,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1ca0af96184cd45ff9e06f6e37168010, type: 3}
       propertyPath: m_Name
       value: barrel (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ca0af96184cd45ff9e06f6e37168010, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 1ca0af96184cd45ff9e06f6e37168010, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ca0af96184cd45ff9e06f6e37168010, type: 3}
@@ -7316,6 +7332,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: barrel
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ca0af96184cd45ff9e06f6e37168010, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 1ca0af96184cd45ff9e06f6e37168010, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ca0af96184cd45ff9e06f6e37168010, type: 3}
 --- !u!4 &669826500 stripped
@@ -7516,7 +7540,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh153190
+  m_Name: pb_Mesh198364
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9119,6 +9143,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: barrel (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ca0af96184cd45ff9e06f6e37168010, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 1ca0af96184cd45ff9e06f6e37168010, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ca0af96184cd45ff9e06f6e37168010, type: 3}
 --- !u!4 &779786828 stripped
@@ -9539,7 +9571,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh153946
+  m_Name: pb_Mesh198626
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10905,7 +10937,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh152676
+  m_Name: pb_Mesh198206
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11099,7 +11131,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh152934
+  m_Name: pb_Mesh198294
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -20871,7 +20903,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh154172
+  m_Name: pb_Mesh198710
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21129,7 +21161,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh154020
+  m_Name: pb_Mesh198650
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -24048,7 +24080,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh153120
+  m_Name: pb_Mesh198340
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -24611,6 +24643,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: crateShort
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f6d6d40b1dff14d428f4cd46ff4181be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: f6d6d40b1dff14d428f4cd46ff4181be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6d6d40b1dff14d428f4cd46ff4181be, type: 3}
 --- !u!4 &1242877843 stripped
@@ -25025,7 +25065,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh154232
+  m_Name: pb_Mesh198742
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25283,7 +25323,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh154204
+  m_Name: pb_Mesh198730
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25580,6 +25620,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f6d6d40b1dff14d428f4cd46ff4181be, type: 3}
       propertyPath: m_Name
       value: crateShort (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f6d6d40b1dff14d428f4cd46ff4181be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: f6d6d40b1dff14d428f4cd46ff4181be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6d6d40b1dff14d428f4cd46ff4181be, type: 3}
@@ -26054,7 +26102,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh152826
+  m_Name: pb_Mesh198258
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -26238,7 +26286,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh152342
+  m_Name: pb_Mesh198094
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29403,7 +29451,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh152380
+  m_Name: pb_Mesh198114
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29824,6 +29872,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: crate (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 517266e93b6fa4d2dbec7cb8e1a80b2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 517266e93b6fa4d2dbec7cb8e1a80b2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 517266e93b6fa4d2dbec7cb8e1a80b2e, type: 3}
 --- !u!4 &1672807136 stripped
@@ -30151,6 +30207,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2ca098057bc1f444abcd291a89eb9c7e, type: 3}
       propertyPath: m_Name
       value: crate2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2ca098057bc1f444abcd291a89eb9c7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 2ca098057bc1f444abcd291a89eb9c7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ca098057bc1f444abcd291a89eb9c7e, type: 3}
@@ -30555,6 +30619,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1ca0af96184cd45ff9e06f6e37168010, type: 3}
       propertyPath: m_Name
       value: barrel (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ca0af96184cd45ff9e06f6e37168010, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 1ca0af96184cd45ff9e06f6e37168010, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ca0af96184cd45ff9e06f6e37168010, type: 3}
@@ -35228,6 +35300,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: crate
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 517266e93b6fa4d2dbec7cb8e1a80b2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 517266e93b6fa4d2dbec7cb8e1a80b2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -35235,6 +35311,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: 517266e93b6fa4d2dbec7cb8e1a80b2e, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.5112543
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 517266e93b6fa4d2dbec7cb8e1a80b2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 517266e93b6fa4d2dbec7cb8e1a80b2e, type: 3}
@@ -36178,7 +36258,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh152438
+  m_Name: pb_Mesh198138
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -36505,6 +36585,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1ca0af96184cd45ff9e06f6e37168010, type: 3}
       propertyPath: m_Name
       value: barrel (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ca0af96184cd45ff9e06f6e37168010, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 1ca0af96184cd45ff9e06f6e37168010, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ca0af96184cd45ff9e06f6e37168010, type: 3}
