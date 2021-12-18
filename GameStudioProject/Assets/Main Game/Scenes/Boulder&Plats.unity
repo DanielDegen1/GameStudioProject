@@ -26964,6 +26964,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: crate2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5905915264848039669, guid: 852b439f5c47f0d42977c8382e880f17, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852b439f5c47f0d42977c8382e880f17, type: 3}
 --- !u!1 &1468850048
