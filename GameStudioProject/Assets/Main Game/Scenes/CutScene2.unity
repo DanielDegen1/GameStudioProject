@@ -789,7 +789,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Press "X" to skip
+  m_Text: Hold "X" to skip
 --- !u!222 &805982338
 CanvasRenderer:
   m_ObjectHideFlags: 0
