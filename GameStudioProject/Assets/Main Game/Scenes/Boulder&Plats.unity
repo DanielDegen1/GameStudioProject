@@ -193,6 +193,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: crate2 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3205381252604524076, guid: 852b439f5c47f0d42977c8382e880f17, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5905915264848039669, guid: 852b439f5c47f0d42977c8382e880f17, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852b439f5c47f0d42977c8382e880f17, type: 3}
 --- !u!1001 &54762115
@@ -1869,6 +1877,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: barrel (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2094675628877064907, guid: 0812bb433cac471499c20c24a1eca61d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961442983623381522, guid: 0812bb433cac471499c20c24a1eca61d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0812bb433cac471499c20c24a1eca61d, type: 3}
 --- !u!1001 &311926499
@@ -2111,6 +2127,14 @@ PrefabInstance:
     - target: {fileID: 3205381252604524076, guid: 852b439f5c47f0d42977c8382e880f17, type: 3}
       propertyPath: m_Name
       value: crate2 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205381252604524076, guid: 852b439f5c47f0d42977c8382e880f17, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5905915264848039669, guid: 852b439f5c47f0d42977c8382e880f17, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852b439f5c47f0d42977c8382e880f17, type: 3}
@@ -6778,9 +6802,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 596465491038162230, guid: bb715633eff14c84cad722cc02241f64, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8487835954369312239, guid: bb715633eff14c84cad722cc02241f64, type: 3}
       propertyPath: m_Name
       value: vase2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8487835954369312239, guid: bb715633eff14c84cad722cc02241f64, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9115577535554973525, guid: bb715633eff14c84cad722cc02241f64, type: 3}
       propertyPath: m_RootOrder
@@ -27744,9 +27776,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 596465491038162230, guid: bb715633eff14c84cad722cc02241f64, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8487835954369312239, guid: bb715633eff14c84cad722cc02241f64, type: 3}
       propertyPath: m_Name
       value: vase2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8487835954369312239, guid: bb715633eff14c84cad722cc02241f64, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9115577535554973525, guid: bb715633eff14c84cad722cc02241f64, type: 3}
       propertyPath: m_RootOrder
@@ -27848,6 +27888,14 @@ PrefabInstance:
     - target: {fileID: 3205381252604524076, guid: 852b439f5c47f0d42977c8382e880f17, type: 3}
       propertyPath: m_Name
       value: crate2 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205381252604524076, guid: 852b439f5c47f0d42977c8382e880f17, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5905915264848039669, guid: 852b439f5c47f0d42977c8382e880f17, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852b439f5c47f0d42977c8382e880f17, type: 3}
@@ -29093,9 +29141,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 596465491038162230, guid: bb715633eff14c84cad722cc02241f64, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8487835954369312239, guid: bb715633eff14c84cad722cc02241f64, type: 3}
       propertyPath: m_Name
       value: vase2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8487835954369312239, guid: bb715633eff14c84cad722cc02241f64, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9115577535554973525, guid: bb715633eff14c84cad722cc02241f64, type: 3}
       propertyPath: m_RootOrder
@@ -29271,6 +29327,14 @@ PrefabInstance:
     - target: {fileID: 2094675628877064907, guid: 0812bb433cac471499c20c24a1eca61d, type: 3}
       propertyPath: m_Name
       value: barrel (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2094675628877064907, guid: 0812bb433cac471499c20c24a1eca61d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961442983623381522, guid: 0812bb433cac471499c20c24a1eca61d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0812bb433cac471499c20c24a1eca61d, type: 3}
