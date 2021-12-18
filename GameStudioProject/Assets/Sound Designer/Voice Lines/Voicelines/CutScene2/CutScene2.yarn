@@ -27,6 +27,6 @@ Cosmos: Without a leader our society wouldn’t work champion. The commonwealth 
 <<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager CutScene6>>
 <<setPortrait DialogManager eniki>>
-Eniki: funny. As soon as they realize we won all of a sudden they all turn on me. They don’t care about the society or your family champion. They just care that they lost.
+Eniki: funny. As soon as they realize we won all of a sudden they all turn on me. They don’t care about the society or your family, champion. They just care that they lost.
 <<stopVoiceLine DialogManager>>
 ===

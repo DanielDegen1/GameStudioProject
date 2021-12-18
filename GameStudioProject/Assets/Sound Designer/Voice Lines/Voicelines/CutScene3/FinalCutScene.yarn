@@ -29,6 +29,7 @@ Cosmos: I have the backing of Londros and Nuzion you cannot escape. You may be p
 <<setPortrait DialogManager eniki>>
 Eniki: Well… I guess it’s time for a different approach then.
 <<stopVoiceLine DialogManager>>
+<<setNameLabel DialogManager Eniki>>
 <<startVoiceLine DialogManager FS7>>
 <<setPortrait DialogManager possessed>>
 Eniki: I thank you champion. With your physical form not a single one of the gods can stop me. Enjoy the ride.
