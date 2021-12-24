@@ -5,6 +5,7 @@ position: -53,-52
 ---
 <<setNameLabel DialogManager Gods>>
 <<setPortrait DialogManager Gods>>
+<<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager FS1>>
 <<setPortrait DialogManager cosmos>>
 Cosmos: I cannot allow you to leave. Our society will collapse with you at the helm.

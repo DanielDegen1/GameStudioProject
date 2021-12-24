@@ -9046,13 +9046,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 333324149}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &336545671 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2688771952080392541, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+  m_PrefabInstance: {fileID: 215330452}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &344207219
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh91500
+  m_Name: pb_Mesh144778
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9782,7 +9787,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh92060
+  m_Name: pb_Mesh145342
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12016,7 +12021,8 @@ MonoBehaviour:
   outlineMaterial: {fileID: 0}
   outlineScaleFactor: 0
   outlineColor: {r: 0, g: 0, b: 0, a: 0}
-  textToEnable: {fileID: 0}
+  textToEnable: {fileID: 797584243}
+  pickupTut: 1
 --- !u!135 &605149531
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12045,7 +12051,9 @@ MonoBehaviour:
   canHold: 1
   isHolding: 0
   grabRange: 100
-  playerRef: {fileID: 0}
+  playerRef: {fileID: 1170772009}
+  throwTut: 1
+  throwTutorialText: {fileID: 336545671}
 --- !u!114 &605149533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14499,6 +14507,9 @@ MonoBehaviour:
   orangecheck: 0
   greencheck: 0
   endDoor: {fileID: 0}
+  bucketFilled: {fileID: 0}
+  Volume: 1
+  audioSource: {fileID: 0}
 --- !u!64 &642310286
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17290,6 +17301,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 105512522650913255, guid: 0f09f1df436432a44beb299d33882fc8, type: 3}
   m_PrefabInstance: {fileID: 791197676}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &797584243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1748430467452404647, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+  m_PrefabInstance: {fileID: 215330452}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &804209750
 Mesh:
   m_ObjectHideFlags: 0
@@ -19348,6 +19364,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 105512522650913255, guid: 0f09f1df436432a44beb299d33882fc8, type: 3}
   m_PrefabInstance: {fileID: 1158599343}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1170772009 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7085721664118310506, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+  m_PrefabInstance: {fileID: 215330452}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1217895311
 GameObject:
@@ -44308,7 +44329,8 @@ MonoBehaviour:
   outlineMaterial: {fileID: 2100000, guid: ee712b17d1749b341bca571ce21221ca, type: 2}
   outlineScaleFactor: 1.5
   outlineColor: {r: 0, g: 0, b: 0, a: 0}
-  textToEnable: {fileID: 0}
+  textToEnable: {fileID: 797584243}
+  pickupTut: 1
 --- !u!135 &1932355276
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -44337,7 +44359,9 @@ MonoBehaviour:
   canHold: 1
   isHolding: 0
   grabRange: 100
-  playerRef: {fileID: 0}
+  playerRef: {fileID: 1170772009}
+  throwTut: 1
+  throwTutorialText: {fileID: 336545671}
 --- !u!114 &1932355278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47157,6 +47181,9 @@ MonoBehaviour:
   orangecheck: 0
   greencheck: 0
   endDoor: {fileID: 0}
+  bucketFilled: {fileID: 0}
+  Volume: 1
+  audioSource: {fileID: 0}
 --- !u!64 &2041500229
 MeshCollider:
   m_ObjectHideFlags: 0

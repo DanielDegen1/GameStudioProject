@@ -5,6 +5,7 @@ position: -53,-52
 ---
 <<setNameLabel DialogManager Nuzion >>
 <<setPortrait DialogManager nuzion>>
+<<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager S1VoiceLine2>>
 Complete each challenge and we will achieve victory together. Only through trust will I be able to get you out of this place.
 <<stopVoiceLine DialogManager>>

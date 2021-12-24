@@ -5,6 +5,7 @@ position: -53,-52
 ---
 <<setNameLabel DialogManager Nuzion >>
 <<setPortrait DialogManager nuzion>>
+<<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager S2VoiceLine3>>
 Remember champion. I am the one who chose you. Don’t listen to the others, they will attempt to deceive and turn you against me.
 <<stopVoiceLine DialogManager>>

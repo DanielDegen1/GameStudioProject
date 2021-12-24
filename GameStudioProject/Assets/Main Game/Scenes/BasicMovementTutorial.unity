@@ -8946,6 +8946,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1916301894470021585, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+      propertyPath: shootTut
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916301894470021585, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+      propertyPath: shootText
+      value: 
+      objectReference: {fileID: 857763109}
     - target: {fileID: 2621722902122626479, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
       propertyPath: levelName
       value: Physical Level 1
@@ -8985,6 +8993,10 @@ PrefabInstance:
     - target: {fileID: 5135953797858814862, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0.49999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 6526632517528651534, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+      propertyPath: crouchTut
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6526632517528651534, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
       propertyPath: sprintTime
@@ -10191,6 +10203,11 @@ Transform:
   m_Father: {fileID: 1148045789}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &857763109 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 488473854241883953, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+  m_PrefabInstance: {fileID: 771065647}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &867521388 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 898696295772187094, guid: 95cc080592a9a47c58b0dffd20dd8d3d, type: 3}
@@ -10468,6 +10485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armRef: {fileID: 1965655428}
+  shootText: {fileID: 857763109}
 --- !u!1 &938252000
 GameObject:
   m_ObjectHideFlags: 0
@@ -25757,6 +25775,7 @@ GameObject:
   - component: {fileID: 1454517146}
   - component: {fileID: 1454517145}
   - component: {fileID: 1454517144}
+  - component: {fileID: 1454517148}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Untagged
@@ -25854,6 +25873,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1454517142}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1454517148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454517142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c778b9bbd43bbd247a3d42018855c91d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crouchText: {fileID: 1943262962}
 --- !u!1001 &1455435717
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35941,6 +35973,11 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2908170550419783649, guid: 2208be6c2f523ba40a2ad579c4f53bfe, type: 3}
   m_PrefabInstance: {fileID: 1277456121}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1943262962 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6661847929577305247, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+  m_PrefabInstance: {fileID: 771065647}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1944308721
 PrefabInstance:

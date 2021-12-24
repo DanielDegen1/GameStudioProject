@@ -5,6 +5,7 @@ position: -53,-52
 ---
 <<setNameLabel DialogManager Eniki >>
 <<setPortrait DialogManager eniki>>
+<<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager F4>>
 I’m thinking our first decree is do away with Cosmos’s elite class. We must show the commonwealth there is more to life!
 <<stopVoiceLine DialogManager>>

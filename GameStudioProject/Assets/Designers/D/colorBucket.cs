@@ -29,7 +29,7 @@ public class colorBucket : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (redcheck==true && bluecheck == true && orangecheck == true && greencheck==true )
+        if (redcheck==true && bluecheck == true && orangecheck == true && greencheck==true)
         {
             Debug.Log("door");
             Play();
@@ -38,22 +38,22 @@ public class colorBucket : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "red")
+        if (other.tag == "red" && other.GetComponent<Pickup>().isHolding == false)
         {
             Debug.Log("red!");
             redcheck = true;
         }
-        if (other.tag == "blue")
+        if (other.tag == "blue" && other.GetComponent<Pickup>().isHolding == false)
         {
             Debug.Log("blue!");
             bluecheck = true;
         }
-        if (other.tag == "orange")
+        if (other.tag == "orange" && other.GetComponent<Pickup>().isHolding == false)
         {
             Debug.Log("orange!");
             orangecheck = true;
         }
-        if (other.tag == "green")
+        if (other.tag == "green" && other.GetComponent<Pickup>().isHolding == false)
         {
             Debug.Log("green!");
             greencheck = true;
@@ -61,22 +61,22 @@ public class colorBucket : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "red")
+        if (other.tag == "red" && other.GetComponent<Pickup>().isHolding == false)
         {
             Debug.Log("red!");
             redcheck = true;
         }
-        if (other.tag == "blue")
+        if (other.tag == "blue" && other.GetComponent<Pickup>().isHolding == false)
         {
             Debug.Log("blue!");
             bluecheck = true;
         }
-        if (other.tag == "orange")
+        if (other.tag == "orange" && other.GetComponent<Pickup>().isHolding == false)
         {
             Debug.Log("orange!");
             orangecheck = true;
         }
-        if (other.tag == "green")
+        if (other.tag == "green" && other.GetComponent<Pickup>().isHolding == false)
         {
             Debug.Log("green!");
             greencheck = true;

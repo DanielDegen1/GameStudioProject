@@ -5,6 +5,7 @@ position: -53,-52
 ---
 <<setNameLabel DialogManager Nuzion >>
 <<setPortrait DialogManager nuzion>>
+<<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager PR1VoiceLine4>>
 Jump now or I‘ll strike you down where you stand! I have no time for disloyalty!
 <<stopVoiceLine DialogManager>>

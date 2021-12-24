@@ -14,6 +14,7 @@ public class arrowTarget : MonoBehaviour
     public float Volume = 1.0f;
     public GameObject audioSource;
     private AudioSource sourceRef;
+    private bool triggered = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,25 +24,32 @@ public class arrowTarget : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (targethit == true && linkedObstacle.tag=="temp")
+        if(!triggered)
         {
-            Play();
-            tempplatform = linkedObstacle.GetComponent<targetTempPlatform>();
-            tempplatform.active = true;
-        }
+            if (targethit == true && linkedObstacle.tag == "temp")
+            {
+                Play();
+                tempplatform = linkedObstacle.GetComponent<targetTempPlatform>();
+                tempplatform.active = true;
+                triggered = true;
+            }
 
-        if (targethit == true && linkedObstacle.tag == "moving")
-        {
-            Play();
-            movingplatform = linkedObstacle.GetComponent<targetMovingPlat>();
-            movingplatform.active = true;
-        }
+            if (targethit == true && linkedObstacle.tag == "moving")
+            {
+                Play();
+                movingplatform = linkedObstacle.GetComponent<targetMovingPlat>();
+                movingplatform.active = true;
+                triggered = true;
+            }
 
-        if(targethit == true && linkedObstacle.tag == "Blockade")
-        {
-            Play();
-            Destroy(linkedObstacle);
+            if (targethit == true && linkedObstacle.tag == "Blockade")
+            {
+                Play();
+                Destroy(linkedObstacle);
+                triggered = true;
+            }
         }
+        
     }
 
     private void OnTriggerEnter(Collider other)

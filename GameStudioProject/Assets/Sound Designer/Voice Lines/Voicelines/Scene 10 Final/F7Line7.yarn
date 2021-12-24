@@ -5,6 +5,7 @@ position: -53,-52
 ---
 <<setNameLabel DialogManager Londros >>
 <<setPortrait DialogManager londros>>
+<<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager F7>>
 Cosmos wants to cheat! Ha! Now that’s something you don’t hear every millennium!
 <<stopVoiceLine DialogManager>>

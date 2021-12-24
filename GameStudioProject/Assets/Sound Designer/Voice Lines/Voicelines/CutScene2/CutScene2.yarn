@@ -4,6 +4,7 @@ colorID: 0
 position: -53,-52
 ---
 <<setNameLabel DialogManager Gods>>
+<<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager CutScene1>>
 <<setPortrait DialogManager cosmos>>
 Cosmos: My champion has fallen. You’re the last one left. After centuries of ruling, never forget what I have done for this society. I don’t claim to be perfect but you know my rule works. Reject Eniki and make the right decision.

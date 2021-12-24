@@ -6,18 +6,16 @@ public class enableShooting : MonoBehaviour
 {
     public GameObject armRef;
     private AnimController animRef;
+    private PlayerInput playerInput;
+    public GameObject shootText;
     // Start is called before the first frame update
     void Start()
     {
         animRef = armRef.GetComponent<AnimController>();
         animRef.hasBow = false;
+        playerInput = PlayerInput.Instance;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -26,7 +24,7 @@ public class enableShooting : MonoBehaviour
             Shooting shootRef = other.GetComponent<Shooting>();
             shootRef.enabled = true;
             animRef.hasBow = true;
-
+            shootText.SetActive(true);
         }
     }
 }

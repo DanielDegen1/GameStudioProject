@@ -39,6 +39,8 @@ public class PlayerController : MonoBehaviour
     WallrunMovement wallrun;
     SurfaceSwimmingMovement swimming;
 
+    public bool crouchTut = true;
+    public GameObject crouchText;
     public void ChangeStatus(Status s)
     {
         if (status == s) return;
@@ -273,7 +275,15 @@ public class PlayerController : MonoBehaviour
         if (playerInput.crouch)
         {
             if (status != Status.crouching)
+            {
+                if (!crouchTut)
+                {
+                    crouchText.SetActive(false);
+                    crouchTut = true;
+                }
                 Crouch(true);
+            }
+
             else
                 Uncrouch();
         }

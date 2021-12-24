@@ -5,6 +5,7 @@ position: -53,-52
 ---
 <<setNameLabel DialogManager Gods>>
 <<setPortrait DialogManager Gods>>
+<<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager S6.1>>
 <<setPortrait DialogManager cosmos>>
 Cosmos: As I’m sure you know it’s just the two of us left. Just remember the scales are what bind us together. Tip one side too far and the consequences are disastrous. Know who and what you are fighting for.

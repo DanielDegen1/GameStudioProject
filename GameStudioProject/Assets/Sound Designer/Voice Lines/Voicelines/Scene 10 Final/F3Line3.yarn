@@ -5,6 +5,7 @@ position: -53,-52
 ---
 <<setNameLabel DialogManager Londros >>
 <<setPortrait DialogManager londros>>
+<<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager F3>>
 I hate to admit it but strategy is needed sometimes. To side with Eniki is fools folly champion even I know that.
 <<stopVoiceLine DialogManager>>

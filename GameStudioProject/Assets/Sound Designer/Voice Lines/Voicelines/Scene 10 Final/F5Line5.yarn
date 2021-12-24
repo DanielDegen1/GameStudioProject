@@ -5,6 +5,7 @@ position: -53,-52
 ---
 <<setNameLabel DialogManager Eniki >>
 <<setPortrait DialogManager eniki>>
+<<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager F5>>
 This is the final challenge. Don’t disappoint me now.
 <<stopVoiceLine DialogManager>>

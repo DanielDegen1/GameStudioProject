@@ -5,6 +5,7 @@ position: -53,-52
 ---
 <<setNameLabel DialogManager Nuzion >>
 <<setPortrait DialogManager nuzion>>
+<<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager S2VoiceLine1>>
 Now the real challenge begins! Use what you’ve learned quickly now! Time is of the essence.
 <<stopVoiceLine DialogManager>>

@@ -5,6 +5,7 @@ position: -53,-52
 ---
 <<setNameLabel DialogManager Nuzion >>
 <<setPortrait DialogManager nuzion>>
+<<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager F2>>
 It’ll be a dark day if Eniki wins. I’ve never seen it happen before. His champions have never been this strong.
 <<stopVoiceLine DialogManager>>

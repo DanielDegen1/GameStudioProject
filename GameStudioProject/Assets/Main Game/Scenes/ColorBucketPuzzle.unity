@@ -7600,7 +7600,8 @@ MonoBehaviour:
   outlineMaterial: {fileID: 2100000, guid: ee712b17d1749b341bca571ce21221ca, type: 2}
   outlineScaleFactor: 1.1
   outlineColor: {r: 1, g: 1, b: 1, a: 0}
-  textToEnable: {fileID: 0}
+  textToEnable: {fileID: 1192298650}
+  pickupTut: 1
 --- !u!135 &378135128
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7630,6 +7631,8 @@ MonoBehaviour:
   isHolding: 0
   grabRange: 4
   playerRef: {fileID: 266193121}
+  throwTut: 1
+  throwTutorialText: {fileID: 1192298651}
 --- !u!114 &378135130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9925,7 +9928,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26936
+  m_Name: pb_Mesh123578
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10899,7 +10902,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26736
+  m_Name: pb_Mesh123378
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16844,7 +16847,8 @@ MonoBehaviour:
   outlineMaterial: {fileID: 2100000, guid: ee712b17d1749b341bca571ce21221ca, type: 2}
   outlineScaleFactor: 1.1
   outlineColor: {r: 1, g: 1, b: 1, a: 0}
-  textToEnable: {fileID: 0}
+  textToEnable: {fileID: 1192298650}
+  pickupTut: 1
 --- !u!135 &661641952
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16874,6 +16878,8 @@ MonoBehaviour:
   isHolding: 0
   grabRange: 4
   playerRef: {fileID: 266193121}
+  throwTut: 1
+  throwTutorialText: {fileID: 1192298651}
 --- !u!114 &661641954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28976,7 +28982,8 @@ MonoBehaviour:
   outlineMaterial: {fileID: 2100000, guid: ee712b17d1749b341bca571ce21221ca, type: 2}
   outlineScaleFactor: 1.1
   outlineColor: {r: 1, g: 1, b: 1, a: 0}
-  textToEnable: {fileID: 0}
+  textToEnable: {fileID: 1192298650}
+  pickupTut: 1
 --- !u!135 &986738082
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -29006,6 +29013,8 @@ MonoBehaviour:
   isHolding: 0
   grabRange: 4
   playerRef: {fileID: 266193121}
+  throwTut: 1
+  throwTutorialText: {fileID: 1192298651}
 --- !u!114 &986738084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38289,6 +38298,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1157499c673dbce4e8a6b18fafebbfa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1192298650 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1748430467452404647, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+  m_PrefabInstance: {fileID: 1192298648}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1192298651 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2688771952080392541, guid: c2dc14f109b09a743b03757ef68006c7, type: 3}
+  m_PrefabInstance: {fileID: 1192298648}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1197982463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39701,7 +39720,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh27106
+  m_Name: pb_Mesh123748
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -44549,7 +44568,8 @@ MonoBehaviour:
   outlineMaterial: {fileID: 2100000, guid: ee712b17d1749b341bca571ce21221ca, type: 2}
   outlineScaleFactor: 1.1
   outlineColor: {r: 1, g: 1, b: 1, a: 0}
-  textToEnable: {fileID: 0}
+  textToEnable: {fileID: 1192298650}
+  pickupTut: 1
 --- !u!135 &1442374080
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -44579,6 +44599,8 @@ MonoBehaviour:
   isHolding: 0
   grabRange: 4
   playerRef: {fileID: 266193121}
+  throwTut: 1
+  throwTutorialText: {fileID: 1192298651}
 --- !u!114 &1442374082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65661,7 +65683,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh27482
+  m_Name: pb_Mesh124124
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
