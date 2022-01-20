@@ -3,9 +3,10 @@ tags:
 colorID: 0
 position: -53,-52
 ---
-<<setNameLabel DialogManager Eniki >>
-<<setPortrait DialogManager Eniki>>
+<<setNameLabel DialogManager Nuzion >>
+<<setPortrait DialogManager nuzion>>
+<<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager PR1VoiceLine1>>
-The challenges are starting to become more difficult. I’m concerned about your loyalty and trust in me champion.”
+The challenges are starting to become more difficult. I’m concerned about your loyalty and trust in me, champion.
 <<stopVoiceLine DialogManager>>
 ===

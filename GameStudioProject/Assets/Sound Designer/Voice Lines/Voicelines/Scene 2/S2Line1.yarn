@@ -3,9 +3,10 @@ tags:
 colorID: 0
 position: -53,-52
 ---
-<<setNameLabel DialogManager Eniki >>
-<<setPortrait DialogManager Eniki>>
+<<setNameLabel DialogManager Nuzion >>
+<<setPortrait DialogManager nuzion>>
+<<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager S2VoiceLine1>>
-Now the real challenge begins! Use what you’ve learned quickly now! Time is of the essence
+Now the real challenge begins! Use what you’ve learned quickly now! Time is of the essence.
 <<stopVoiceLine DialogManager>>
 ===

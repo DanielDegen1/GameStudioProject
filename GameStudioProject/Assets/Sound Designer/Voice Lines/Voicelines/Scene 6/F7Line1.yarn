@@ -3,8 +3,9 @@ tags:
 colorID: 0
 position: -53,-52
 ---
-<<setNameLabel DialogManager Eniki >>
-<<setPortrait DialogManager Eniki>>
+<<setNameLabel DialogManager Nuzion >>
+<<setPortrait DialogManager nuzion>>
+<<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager Toot1>>
 You might have noticed them before but those banners represent the four champions. Can you guess which is which?
 <<stopVoiceLine DialogManager>>

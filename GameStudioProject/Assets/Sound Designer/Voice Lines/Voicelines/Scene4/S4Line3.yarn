@@ -3,9 +3,10 @@ tags:
 colorID: 0
 position: -53,-52
 ---
-<<setNameLabel DialogManager Londros >>
-<<setPortrait DialogManager Londros>>
+<<setNameLabel DialogManager Londros>>
+<<setPortrait DialogManager londros>>
+<<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager S4VoiceLine3>>
-ah champion we meet again! I’ve decided that you’re a much better choice for me. Think about my offer champion if you join me you could have anything you imagine… absolute power!
+Ah champion we meet again! I’ve decided that you’re a much better choice for me. Think about my offer champion if you join me you could have anything you imagine… absolute power!
 <<stopVoiceLine DialogManager>>
 ===

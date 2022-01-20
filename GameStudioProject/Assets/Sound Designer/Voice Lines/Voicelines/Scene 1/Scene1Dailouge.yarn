@@ -3,9 +3,10 @@ tags:
 colorID: 0
 position: -53,-52
 ---
-<<setNameLabel DialogManager Eniki >>
-<<setPortrait DialogManager Eniki>>
+<<setNameLabel DialogManager Nuzion >>
+<<setPortrait DialogManager nuzion>>
+<<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager ah_champion_you’ve_awoken!_I_am_nuzion._We_must_get_to_work_immediately_if_we_are_to_win_and_you_are_to_survive.>>
-Eniki: ah champion you’ve awoken! I am nuzion. We must get to work immediately if we are to win and you are to survive.???
+Ah champion you’ve awoken! I am Nuzion. We must get to work immediately if we are to win and you are to survive.
 <<stopVoiceLine DialogManager>>
 ===

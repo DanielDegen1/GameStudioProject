@@ -1,11 +1,12 @@
-﻿title: F5Line5
+title: F5Line5
 tags: 
 colorID: 0
 position: -53,-52
 ---
 <<setNameLabel DialogManager Eniki >>
-<<setPortrait DialogManager Eniki>>
+<<setPortrait DialogManager eniki>>
+<<stopVoiceLine DialogManager>>
 <<startVoiceLine DialogManager F5>>
-this is the final challenge. Don’t disappoint me now.
+This is the final challenge. Don’t disappoint me now.
 <<stopVoiceLine DialogManager>>
 ===

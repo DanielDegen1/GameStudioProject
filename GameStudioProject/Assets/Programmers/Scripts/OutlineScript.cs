@@ -14,7 +14,7 @@ public class OutlineScript : MonoBehaviour
     private Renderer outlineRenderer;
     [SerializeField] public GameObject textToEnable;
 
-
+    [SerializeField] public bool pickupTut = false;
 
     void Start() {
         item = this.gameObject;
@@ -42,7 +42,14 @@ public class OutlineScript : MonoBehaviour
             outlineRenderer.enabled = true;
             outlineRenderer.gameObject.transform.position = this.gameObject.transform.position;
             outlineRenderer.gameObject.transform.rotation = this.gameObject.transform.rotation;
-            textToEnable.SetActive(true);
+            if(!pickupTut)
+            {
+                textToEnable.SetActive(true);
+            }
+            else
+            {
+                textToEnable.SetActive(false);
+            }
         }
         else {
             outlineRenderer.enabled = false;

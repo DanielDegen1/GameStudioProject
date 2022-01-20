@@ -121,6 +121,14 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Skip"",
+                    ""type"": ""Value"",
+                    ""id"": ""920866f8-9136-4dcc-ae6c-43d8aba0f408"",
+                    ""expectedControlType"": ""Analog"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -332,6 +340,17 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""action"": ""Push"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ea4a9cce-2e18-440f-89e5-3e4a87689558"",
+                    ""path"": ""<Keyboard>/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Skip"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -353,6 +372,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_PlayerMovement_Stasis = m_PlayerMovement.FindAction("Stasis", throwIfNotFound: true);
         m_PlayerMovement_Pause = m_PlayerMovement.FindAction("Pause", throwIfNotFound: true);
         m_PlayerMovement_Push = m_PlayerMovement.FindAction("Push", throwIfNotFound: true);
+        m_PlayerMovement_Skip = m_PlayerMovement.FindAction("Skip", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -415,6 +435,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputAction m_PlayerMovement_Stasis;
     private readonly InputAction m_PlayerMovement_Pause;
     private readonly InputAction m_PlayerMovement_Push;
+    private readonly InputAction m_PlayerMovement_Skip;
     public struct PlayerMovementActions
     {
         private @PlayerControls m_Wrapper;
@@ -432,6 +453,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         public InputAction @Stasis => m_Wrapper.m_PlayerMovement_Stasis;
         public InputAction @Pause => m_Wrapper.m_PlayerMovement_Pause;
         public InputAction @Push => m_Wrapper.m_PlayerMovement_Push;
+        public InputAction @Skip => m_Wrapper.m_PlayerMovement_Skip;
         public InputActionMap Get() { return m_Wrapper.m_PlayerMovement; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -480,6 +502,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Push.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnPush;
                 @Push.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnPush;
                 @Push.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnPush;
+                @Skip.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnSkip;
+                @Skip.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnSkip;
+                @Skip.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnSkip;
             }
             m_Wrapper.m_PlayerMovementActionsCallbackInterface = instance;
             if (instance != null)
@@ -523,6 +548,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Push.started += instance.OnPush;
                 @Push.performed += instance.OnPush;
                 @Push.canceled += instance.OnPush;
+                @Skip.started += instance.OnSkip;
+                @Skip.performed += instance.OnSkip;
+                @Skip.canceled += instance.OnSkip;
             }
         }
     }
@@ -542,5 +570,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         void OnStasis(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
         void OnPush(InputAction.CallbackContext context);
+        void OnSkip(InputAction.CallbackContext context);
     }
 }

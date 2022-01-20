@@ -23,7 +23,8 @@ public class Pickup : MonoBehaviour
     private PlayerMovement movementRef;
     Ray RayOrigin;
     RaycastHit HitInfo;
-
+    [SerializeField] public bool throwTut = false;
+    public GameObject throwTutorialText;
     private void Start () {
         item = this.gameObject;
         tempParent = GameObject.FindGameObjectWithTag("Destination");
@@ -39,25 +40,50 @@ public class Pickup : MonoBehaviour
         }
 
         //ok ok ok i know this is a really weird way of doing this if you have a better plan pls let me know
-        if (playerInput.interact && movementRef.grounded) {
-            if (CanPickUp()){
-                    Debug.Log(HitInfo.collider.gameObject.name);
+
+        if (playerInput.interact && isHolding)
+        {
+            Debug.Log("Player dropping object");
+            throwTut = true;
+            throwTutorialText.SetActive(false);
+            isHolding = false;
+        }
+        else if (playerInput.interact && movementRef.grounded &&!isHolding) 
+        {
+            Debug.Log("Player attempted to pickup an object");
+            if (CanPickUp())
+            {
+                    Debug.Log("Player can pickup " +HitInfo.collider.gameObject.name);
                     isHolding = true;
                     item.GetComponent<Rigidbody>().useGravity = false;
-                }
-        }
+                    this.GetComponent<OutlineScript>().pickupTut = true;
 
-        if (isHolding == true) {
+            }
+        }
+        
+
+
+
+
+            if (isHolding == true) {
             item.GetComponent<Rigidbody>().velocity = Vector3.zero;
             item.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
             item.transform.SetParent(tempParent.transform);
             item.transform.position = tempParent.transform.position;
-
-            if (playerInput.Throw || !movementRef.grounded) {
+            if(!throwTut)
+            {
+                throwTutorialText.SetActive(true);
+            }
+            if (playerInput.Throw) {
                 item.GetComponent<Rigidbody>().AddForce(tempParent.transform.forward * throwForce);
                 impulseSource.GenerateImpulse();
                 item.GetComponent<Rigidbody>().detectCollisions = true;
-                
+                throwTut = true;
+                throwTutorialText.SetActive(false);
+                isHolding = false;
+            }
+            if(!movementRef.grounded)
+            {
                 isHolding = false;
             }
         }
@@ -84,6 +110,7 @@ public class Pickup : MonoBehaviour
         }
         if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out HitInfo, grabRange)) {
             if(HitInfo.collider.gameObject == item) {
+
                 return true;
             }
             else {

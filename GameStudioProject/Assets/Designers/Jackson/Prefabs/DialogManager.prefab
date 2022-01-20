@@ -45,3 +45,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: {fileID: 0}
   audioManager: {fileID: 0}
+  dialogName: {fileID: 0}
+  enikiPortrait: {fileID: 21300000, guid: e59139b2933cbd740a75a24d7234b21b, type: 3}
+  nuzionPortrait: {fileID: 21300000, guid: 26ea78db3b048f141a9d18469b4c10e5, type: 3}
+  londrosPortrait: {fileID: 21300000, guid: b668bb446e97fcd4a838c8d7181da93c, type: 3}
+  cosmosPortrait: {fileID: 21300000, guid: d963df4873656b9449bd00636b26449c, type: 3}
+  champPortrait: {fileID: 21300000, guid: 141b7c76f4a9dcc4983de78e207f5886, type: 3}
+  possessedPortrait: {fileID: 21300000, guid: c8b54dfadcbd9c142be4da87b0b78c58, type: 3}
+  dialogIcon: {fileID: 0}
