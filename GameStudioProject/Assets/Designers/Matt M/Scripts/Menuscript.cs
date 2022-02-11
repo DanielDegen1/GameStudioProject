@@ -23,7 +23,7 @@ public class Menuscript : MonoBehaviour
         SceneManager.LoadScene("BasicMovementTutorial");
     }
     public void ButtonOptions() {
-        SceneManager.LoadScene("OptionsScene");
+        SceneManager.LoadScene("Options");
     }
     public void ButtonControls()
     {
